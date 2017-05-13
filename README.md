@@ -14,6 +14,7 @@ blank files (0 KB) :
 1. `additional/Type_1/5893.jpg`
 2. `additional/Type_2/5892.jpg`
 3. `additional/Type_2/2845.jpg`
+4. `additional/Type_2/6360.jpg`
 
 Non-cervix images:
 
