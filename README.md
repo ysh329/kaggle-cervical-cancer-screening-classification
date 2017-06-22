@@ -1,5 +1,5 @@
 # cervical-cancer-screening
-Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screening. Below is document structure:
+Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screening. Below is repo. structure:
 ```
 ├── `code` contains pre-processing step (image crop), boosting notebook and other no relative this repo. Jupyter notebook on Kaggle discussion.
 ├── `intel` contains remote host environments intel provided (useless for me)
@@ -34,7 +34,7 @@ Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screen
     └── `tmp` useless files
 ```
 
-## 0. Data:
+## 0. Data
 
 * Training set has 1700+ images.
 * Training + Additional set have 8000+ images.
@@ -85,7 +85,7 @@ Besides, I only made parameter optimization about learning rate, which I find **
 
 Generally speaking, I found deeper the network is, better the result I get, but it's not always true. For instance. Below networks are great:
 
- |        network      |best val-acc epoch|submission score (log-loss) | val-acc   |train-acc |
+ |        model        |best val-acc epoch|submission score (log-loss) | val-acc   |train-acc |
  |---------------------|------------------|--------------------------  |---------  |--------- |
  |ResNeXt-50-lr-0.01   |         3        | 0.74195                    |  0.695312 | 0.875    |
  |ResNeXt-101-lr-0.01  |         3        | 0.77904                    |  0.630208 | 0.864583 |
