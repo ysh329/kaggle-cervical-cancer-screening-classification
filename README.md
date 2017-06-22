@@ -28,9 +28,15 @@ First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNe
 
 However, the best submission is not those models, which have highest val-acc (such as 70%), but those models whose train-acc and val-acc are similar and just reach a not bad val-acc (such as 60%).
 
+What a pity! I don't try to make augmentation based on original training and additional images. I think it must make sense.
+
+Note: I found that the index order of GPU in `MXNet` (when declaring `mx.gpu(i)`) is opposite to `nvidia-smi` printed order.
+
 ## Fine-tune from pre-trained model
 
-Although result of training `inception-ResNet-v2` and `ResNet` from scratch is good, but I found the results from fine-tuning pre-trained models (based on ImageNet data set) are better.
+Although results of training `inception-ResNet-v2` and `ResNet` from scratch are good, but I found the results from fine-tuning pre-trained models (based on ImageNet data set) are better.
 
-First
+I fine-tuned `ResNet-18`, `ResNet-34`, `ResNet-50`, `ResNet-101`, `ResNet-152`, `ResNet-200`, `ResNeXt-50`, `ResNeXt-101` models.
+
+Besides, I only made parameter optimization about learning rate, which I find **smaller the learning rate is, more easily over-fitting the model is.**
 
