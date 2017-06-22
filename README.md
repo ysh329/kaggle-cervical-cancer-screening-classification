@@ -1,6 +1,6 @@
 # cervical-cancer-screening
 Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screening. Below is document structure:
-
+```
 ├── `code` contains pre-processing step (image crop), boosting notebook and other no relative this repo notebook on Kaggle discussion.
 ├── `intel` contains remote host environments intel provided (useless for me)
 ├── `model` MXNet models, which prepare to make boosting based on these models
@@ -32,7 +32,7 @@ Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screen
     ├── models
     ├── submitted
     └── tmp
-
+```
 
 ## 0. Data:
 
