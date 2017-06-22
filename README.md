@@ -60,3 +60,12 @@ Generally speaking, I found deeper the network is, better the result I get, but 
  |ResNet-152-lr-0.01   |         3        | 0.74618                    |  0.673077 | 0.822917 |
  |ResNet-200-lr-0.01   |         3        | 0.76409                    |  0.666667 | 0.84375  |
 
+so far, I make some parameter modified about learning rate and adding momentum. However, after reudce the learning rate to 0.001 and adding momentum as 0.9, the validation accuracy and submission score (log-loss) have no improvement but submission score dropped.
+
+
+
+## 3. Boosting
+
+After fine-tuning those network, I think I can make more progress on submission score using boosting based on fine-tuned models.
+
+However, it seems no improvement but dropped a lot (1.1x log-loss). I think maybe I have something wrong with use of `XGBoost`. Of course, I have to admit I'm, in fact, new to use `XGBoost`.
