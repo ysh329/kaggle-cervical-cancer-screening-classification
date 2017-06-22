@@ -1,5 +1,38 @@
 # cervical-cancer-screening
-Solution for Intel &amp; MobileODT Cervical Cancer Screening
+Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screening. Below is document structure:
+
+├── `code` contains pre-processing step (image crop), boosting notebook and other no relative this repo notebook on Kaggle discussion.
+├── `intel` contains remote host environments intel provided (useless for me)
+├── `model` MXNet models, which prepare to make boosting based on these models
+├── `pre-submit` preparing submit file
+│   ├── [result]finetune-resnet-152-train-add-seg-224-lr-0.001-momentum-0.9
+│   ├── [result]finetune-resnet-200-train-add-seg-224-lr-0.001-momentum-0.9
+│   └── [result]inception-resnet-v2-152-train-add-seg-224-lr-0.01
+├── `submitted` stage1 submitted file
+│   ├── [result]finetune-resnet-101-train-add-seg-224-lr-0.001-momentum-0.9
+│   ├── [result]finetune-resnet-152-imagenet-11k-365-ch-train-add-seg-224-lr-0.01
+│   ├── [result]finetune-resnet-152-imagenet-11k-train-add-seg-224-lr-0.01
+│   ├── [result]finetune-resnet-200-train-add-seg-224
+│   ├── [result]finetune-resnet-34-train-add-seg-224-lr-0.01
+│   ├── [result]finetune-resnet-50-imagenet-11k-365-ch-train-add-seg-224-lr-0.01
+│   ├── [result]finetune-resnet-50-trian-add-seg-224-lr-0.01
+│   ├── [result]finetune-resnext-101-train-add-seg-224-lr-0.001-momentum-0.9
+│   ├── [result]finetune-resneXt-101-train-add-seg-224-lr-0.01
+│   ├── [result]finetune-resnext-50-train-add-seg-224-lr-0.001-momentum-0.9
+│   ├── [result]finetune-resneXt-50-train-add-seg-224-lr-0.01
+│   ├── [result]inception-resnet-v2-18-train-add-seg-224-lr-0.01
+│   ├── [result]inception-resnet-v2-50-train-add-seg-224-lr-0.01
+│   ├── [result]inception-resnet-v2-train-add-seg-224-lr-0.01
+│   ├── [result]inception-resnet-v2-train-seg-224-lr-0.05
+│   ├── [result]inception-resnt-v2-train-224-lr-0.05
+│   ├── [result]resnet-50-train-seg-224-lr-0.05
+│   └── [result-v2?]inception-resnet-v2-50-train-add-seg-224-lr-0.01
+└── `train-or-finetune-model` those trained from scratch and fine-tuned models
+    ├── finetune-models
+    ├── models
+    ├── submitted
+    └── tmp
+
 
 ## 0. Data:
 
@@ -60,12 +93,20 @@ Generally speaking, I found deeper the network is, better the result I get, but 
  |ResNet-152-lr-0.01   |         3        | 0.74618                    |  0.673077 | 0.822917 |
  |ResNet-200-lr-0.01   |         3        | 0.76409                    |  0.666667 | 0.84375  |
 
-so far, I make some parameter modified about learning rate and adding momentum. However, after reudce the learning rate to 0.001 and adding momentum as 0.9, the validation accuracy and submission score (log-loss) have no improvement but submission score dropped.
+so far, I make some parameter modified about learning rate and adding momentum. However, after reducing the learning rate to 0.001 and adding momentum as 0.9, the validation accuracy and submission score (log-loss) have no improvement but submission score dropped.
+
+### 2.4 Pre-trained model
+
+Different pre-trained data sets make fine-tuned model different performance.
+
+I tried pre-trained models based on two kind images: the one is `ImageNet-11k`, the other is `ImageNet-11k-place365-ch`.
+
+I don't know what's the `ImageNet-11k-place365-ch` image, it seems place or street-view images. The performance of this kind pre-trained model is not good, same as train from scratch.
 
 
 
 ## 3. Boosting
 
-After fine-tuning those network, I think I can make more progress on submission score using boosting based on fine-tuned models.
+After fine-tuning those networks, I think I can make more progress on submission score using boosting based on fine-tuned models.
 
-However, it seems no improvement but dropped a lot (1.1x log-loss). I think maybe I have something wrong with use of `XGBoost`. Of course, I have to admit I'm, in fact, new to use `XGBoost`.
+However, it seems no improvement but dropped a lot (dropped 0.4~0.6 log-loss). I think maybe I have something wrong with use of `XGBoost`. Of course, I have to admit I'm, in fact, new to use `XGBoost`.
