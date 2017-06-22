@@ -97,7 +97,7 @@ so far, I make some parameter modified about learning rate and adding momentum. 
 
 ### 2.4 Pre-trained model
 
-All pre-trained model're all from [data.dmlc.ml/models](http://data.dmlc.ml/models/)
+All pre-trained models're from [data.dmlc.ml/models](http://data.dmlc.ml/models/).
 
 Different pre-trained data sets make fine-tuned model different performance.
 
