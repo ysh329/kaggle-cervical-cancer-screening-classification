@@ -97,6 +97,8 @@ so far, I make some parameter modified about learning rate and adding momentum. 
 
 ### 2.4 Pre-trained model
 
+All pre-trained model're all from [data.dmlc.ml/models](http://data.dmlc.ml/models/)
+
 Different pre-trained data sets make fine-tuned model different performance.
 
 I tried pre-trained models based on two kind images: the one is `ImageNet-11k`, the other is `ImageNet-11k-place365-ch`.
