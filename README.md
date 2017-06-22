@@ -1,13 +1,7 @@
 # cervical-cancer-screening
 Solution for Intel &amp; MobileODT Cervical Cancer Screening
 
-## submit result
-
-| submit file |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|a|a|a|a|a|a|a|a|
-
-## Note:
+## Data:
 
 blank files (0 KB) :
 
@@ -25,7 +19,18 @@ Non-cervix images:
 5. `additional/Type_2/1813.jpg`
 6. `additional/Type_2/3086.jpg`
 
-首先，我用end2end的方法，测试了mlp,lenet,googlenet,alexnet,resnet-50,resnet-152,inception-resnet-v2,resnext。  
-*  mlp还有lenet基本不收敛，30个epoch内val-acc一直在17%~30%之间，或许训练再长时间也和随机猜差不多；
-*  resnext,alexnet,googlenet在30个epoch内val-acc在30%~50%之间；
-*  inception-resnet-v2,resnet效果不错，300个epoch内val-acc可以达到60%~70%之间，但是提交的结果最好的rank不是val-acc最高的模型，而是val-acc刚上60%的；
+## Train from scratch
+
+First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNet-152`, `inception-ResNet-v2`, and `ResNeXt` models from scratch based on training and additional data.
+*  `MLP` and `LeNet` doesn't converge in 30 even more epochs, logging as the accuracy of validation and training set is between 17%~30%;
+*  `ResNeXt`, `AlexNet`, `GoogLeNet` in 30 even more epochs, logging as the accuracy of validation and training set is between 30%~50%;
+*  I found that `inception-ResNet-v2`, `ResNet` performance are best, in 300 epochs val-acc can reach 60% above even 70%.
+
+However, the best submission is not those models, which have highest val-acc (such as 70%), but those models whose train-acc and val-acc are similar and just reach a not bad val-acc (such as 60%).
+
+## Fine-tune from pre-trained model
+
+Although result of training `inception-ResNet-v2` and `ResNet` from scratch is good, but I found the results from fine-tuning pre-trained models (based on ImageNet data set) are better.
+
+First
+

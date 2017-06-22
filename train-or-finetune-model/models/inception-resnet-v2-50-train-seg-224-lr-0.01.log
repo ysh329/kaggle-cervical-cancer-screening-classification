@@ -1,0 +1,1534 @@
+[inception-resnet-v2]
+  File "train_ccs-train.py", line 45
+    image_shape    = '3,224,224',
+              ^
+SyntaxError: invalid syntax
+[inception-resnet-v2]
+INFO:root:start with arguments Namespace(batch_size=16, benchmark=0, data_nthreads=4, data_train='./data/ccs-train-seg-224_train.rec', data_val='./data/ccs-train-seg-224_val.rec', disp_batches=20, dtype='float32', gpus='0,1,2', image_shape='3,224,224', kv_store='device', load_epoch=None, lr=0.01, lr_factor=0.1, lr_step_epochs='200,250', max_random_aspect_ratio=0, max_random_h=36, max_random_l=50, max_random_rotate_angle=0, max_random_s=50, max_random_scale=1, max_random_shear_ratio=0, min_random_scale=1, model_prefix='./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01', mom=0.9, monitor=0, network='inception-resnet-v2', num_classes=3, num_epochs=300, num_examples=7804, num_layers=50, optimizer='sgd', pad_size=4, random_crop=1, random_mirror=1, rgb_mean='123.68,116.779,103.939', test_io=0, top_k=0, wd=0.0001)
+[11:53:22] src/io/iter_image_recordio_2.cc:135: ImageRecordIOParser2: ./data/ccs-train-seg-224_train.rec, use 4 threads for decoding..
+[11:53:23] src/io/iter_image_recordio_2.cc:135: ImageRecordIOParser2: ./data/ccs-train-seg-224_val.rec, use 4 threads for decoding..
+[11:53:31] src/kvstore/././comm.h:304: only 2 out of 6 GPU pairs are enabled direct access. It may affect the performance. You can set MXNET_ENABLE_GPU_P2P=0 to turn it off
+[11:53:31] src/kvstore/././comm.h:313: ...
+[11:53:31] src/kvstore/././comm.h:313: ..v
+[11:53:31] src/kvstore/././comm.h:313: .v.
+INFO:root:Epoch[0] Batch [20]	Speed: 9.06 samples/sec	Train-accuracy=0.494048
+INFO:root:Epoch[0] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.421875
+INFO:root:Epoch[0] Batch [60]	Speed: 8.89 samples/sec	Train-accuracy=0.465625
+INFO:root:Epoch[0] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.443750
+INFO:root:Epoch[0] Train-accuracy=0.401786
+INFO:root:Epoch[0] Time cost=160.255
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0001.params"
+INFO:root:Epoch[0] Validation-accuracy=0.475000
+INFO:root:Epoch[1] Batch [20]	Speed: 9.05 samples/sec	Train-accuracy=0.455357
+INFO:root:Epoch[1] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.409375
+INFO:root:Epoch[1] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.515625
+INFO:root:Epoch[1] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.440625
+INFO:root:Epoch[1] Train-accuracy=0.410714
+INFO:root:Epoch[1] Time cost=156.337
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0002.params"
+INFO:root:Epoch[1] Validation-accuracy=0.462500
+INFO:root:Epoch[2] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.547619
+INFO:root:Epoch[2] Batch [40]	Speed: 9.08 samples/sec	Train-accuracy=0.459375
+INFO:root:Epoch[2] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.459375
+INFO:root:Epoch[2] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.468750
+INFO:root:Epoch[2] Train-accuracy=0.375000
+INFO:root:Epoch[2] Time cost=156.210
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0003.params"
+INFO:root:Epoch[2] Validation-accuracy=0.609375
+INFO:root:Epoch[3] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.446429
+INFO:root:Epoch[3] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.468750
+INFO:root:Epoch[3] Batch [60]	Speed: 9.07 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[3] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.462500
+INFO:root:Epoch[3] Train-accuracy=0.383929
+INFO:root:Epoch[3] Time cost=156.207
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0004.params"
+INFO:root:Epoch[3] Validation-accuracy=0.487500
+INFO:root:Epoch[4] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.440476
+INFO:root:Epoch[4] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[4] Batch [60]	Speed: 8.89 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[4] Batch [80]	Speed: 9.07 samples/sec	Train-accuracy=0.496875
+INFO:root:Epoch[4] Train-accuracy=0.464286
+INFO:root:Epoch[4] Time cost=156.296
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0005.params"
+INFO:root:Epoch[4] Validation-accuracy=0.512500
+INFO:root:Epoch[5] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.443452
+INFO:root:Epoch[5] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[5] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[5] Batch [80]	Speed: 8.89 samples/sec	Train-accuracy=0.412500
+INFO:root:Epoch[5] Train-accuracy=0.500000
+INFO:root:Epoch[5] Time cost=154.001
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0006.params"
+INFO:root:Epoch[5] Validation-accuracy=0.421875
+INFO:root:Epoch[6] Batch [20]	Speed: 8.89 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[6] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[6] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.521875
+INFO:root:Epoch[6] Batch [80]	Speed: 8.89 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[6] Train-accuracy=0.455357
+INFO:root:Epoch[6] Time cost=156.878
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0007.params"
+INFO:root:Epoch[6] Validation-accuracy=0.525000
+INFO:root:Epoch[7] Batch [20]	Speed: 9.07 samples/sec	Train-accuracy=0.461310
+INFO:root:Epoch[7] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[7] Batch [60]	Speed: 8.89 samples/sec	Train-accuracy=0.443750
+INFO:root:Epoch[7] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.487500
+INFO:root:Epoch[7] Train-accuracy=0.437500
+INFO:root:Epoch[7] Time cost=154.422
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0008.params"
+INFO:root:Epoch[7] Validation-accuracy=0.425000
+INFO:root:Epoch[8] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.494048
+INFO:root:Epoch[8] Batch [40]	Speed: 9.07 samples/sec	Train-accuracy=0.471875
+INFO:root:Epoch[8] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.446875
+INFO:root:Epoch[8] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.465625
+INFO:root:Epoch[8] Train-accuracy=0.410714
+INFO:root:Epoch[8] Time cost=157.956
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0009.params"
+INFO:root:Epoch[8] Validation-accuracy=0.515625
+INFO:root:Epoch[9] Batch [20]	Speed: 8.88 samples/sec	Train-accuracy=0.491071
+INFO:root:Epoch[9] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.487500
+INFO:root:Epoch[9] Batch [60]	Speed: 9.06 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[9] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.421875
+INFO:root:Epoch[9] Train-accuracy=0.482143
+INFO:root:Epoch[9] Time cost=156.363
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0010.params"
+INFO:root:Epoch[9] Validation-accuracy=0.412500
+INFO:root:Epoch[10] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.473214
+INFO:root:Epoch[10] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[10] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.521875
+INFO:root:Epoch[10] Batch [80]	Speed: 9.09 samples/sec	Train-accuracy=0.475000
+INFO:root:Epoch[10] Train-accuracy=0.455357
+INFO:root:Epoch[10] Time cost=156.254
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0011.params"
+INFO:root:Epoch[10] Validation-accuracy=0.450000
+INFO:root:Epoch[11] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.497024
+INFO:root:Epoch[11] Batch [40]	Speed: 8.89 samples/sec	Train-accuracy=0.478125
+INFO:root:Epoch[11] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[11] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[11] Train-accuracy=0.383929
+INFO:root:Epoch[11] Time cost=156.266
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0012.params"
+INFO:root:Epoch[11] Validation-accuracy=0.437500
+INFO:root:Epoch[12] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.479167
+INFO:root:Epoch[12] Batch [40]	Speed: 8.93 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[12] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[12] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.481250
+INFO:root:Epoch[12] Train-accuracy=0.419643
+INFO:root:Epoch[12] Time cost=156.817
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0013.params"
+INFO:root:Epoch[12] Validation-accuracy=0.550000
+INFO:root:Epoch[13] Batch [20]	Speed: 9.06 samples/sec	Train-accuracy=0.526786
+INFO:root:Epoch[13] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[13] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[13] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[13] Train-accuracy=0.419643
+INFO:root:Epoch[13] Time cost=156.211
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0014.params"
+INFO:root:Epoch[13] Validation-accuracy=0.525000
+INFO:root:Epoch[14] Batch [20]	Speed: 8.89 samples/sec	Train-accuracy=0.544643
+INFO:root:Epoch[14] Batch [40]	Speed: 9.07 samples/sec	Train-accuracy=0.478125
+INFO:root:Epoch[14] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[14] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.475000
+INFO:root:Epoch[14] Train-accuracy=0.464286
+INFO:root:Epoch[14] Time cost=156.260
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0015.params"
+INFO:root:Epoch[14] Validation-accuracy=0.500000
+INFO:root:Epoch[15] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.541667
+INFO:root:Epoch[15] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[15] Batch [60]	Speed: 9.62 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[15] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.481250
+INFO:root:Epoch[15] Train-accuracy=0.427083
+INFO:root:Epoch[15] Time cost=152.369
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0016.params"
+INFO:root:Epoch[15] Validation-accuracy=0.500000
+INFO:root:Epoch[16] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.511905
+INFO:root:Epoch[16] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[16] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[16] Batch [80]	Speed: 9.07 samples/sec	Train-accuracy=0.459375
+INFO:root:Epoch[16] Train-accuracy=0.428571
+INFO:root:Epoch[16] Time cost=157.812
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0017.params"
+INFO:root:Epoch[16] Validation-accuracy=0.425000
+INFO:root:Epoch[17] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[17] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[17] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.496875
+INFO:root:Epoch[17] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[17] Train-accuracy=0.366071
+INFO:root:Epoch[17] Time cost=156.207
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0018.params"
+INFO:root:Epoch[17] Validation-accuracy=0.575000
+INFO:root:Epoch[18] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[18] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[18] Batch [60]	Speed: 8.89 samples/sec	Train-accuracy=0.487500
+INFO:root:Epoch[18] Batch [80]	Speed: 8.93 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[18] Train-accuracy=0.500000
+INFO:root:Epoch[18] Time cost=156.905
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0019.params"
+INFO:root:Epoch[18] Validation-accuracy=0.453125
+INFO:root:Epoch[19] Batch [20]	Speed: 9.05 samples/sec	Train-accuracy=0.520833
+INFO:root:Epoch[19] Batch [40]	Speed: 8.88 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[19] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[19] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[19] Train-accuracy=0.473214
+INFO:root:Epoch[19] Time cost=156.460
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0020.params"
+INFO:root:Epoch[19] Validation-accuracy=0.525000
+INFO:root:Epoch[20] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[20] Batch [40]	Speed: 9.05 samples/sec	Train-accuracy=0.468750
+INFO:root:Epoch[20] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[20] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[20] Train-accuracy=0.437500
+INFO:root:Epoch[20] Time cost=156.369
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0021.params"
+INFO:root:Epoch[20] Validation-accuracy=0.550000
+INFO:root:Epoch[21] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.476190
+INFO:root:Epoch[21] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.515625
+INFO:root:Epoch[21] Batch [60]	Speed: 9.07 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[21] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[21] Train-accuracy=0.419643
+INFO:root:Epoch[21] Time cost=156.334
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0022.params"
+INFO:root:Epoch[21] Validation-accuracy=0.562500
+INFO:root:Epoch[22] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.502976
+INFO:root:Epoch[22] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[22] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[22] Batch [80]	Speed: 9.06 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[22] Train-accuracy=0.419643
+INFO:root:Epoch[22] Time cost=156.344
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0023.params"
+INFO:root:Epoch[22] Validation-accuracy=0.500000
+INFO:root:Epoch[23] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.517857
+INFO:root:Epoch[23] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[23] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[23] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[23] Train-accuracy=0.437500
+INFO:root:Epoch[23] Time cost=154.575
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0024.params"
+INFO:root:Epoch[23] Validation-accuracy=0.412500
+INFO:root:Epoch[24] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[24] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.515625
+INFO:root:Epoch[24] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.490625
+INFO:root:Epoch[24] Batch [80]	Speed: 8.89 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[24] Train-accuracy=0.535714
+INFO:root:Epoch[24] Time cost=158.419
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0025.params"
+INFO:root:Epoch[24] Validation-accuracy=0.500000
+INFO:root:Epoch[25] Batch [20]	Speed: 9.73 samples/sec	Train-accuracy=0.523810
+INFO:root:Epoch[25] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[25] Batch [60]	Speed: 8.89 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[25] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[25] Train-accuracy=0.419643
+INFO:root:Epoch[25] Time cost=153.927
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0026.params"
+INFO:root:Epoch[25] Validation-accuracy=0.550000
+INFO:root:Epoch[26] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.550595
+INFO:root:Epoch[26] Batch [40]	Speed: 9.08 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[26] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[26] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.475000
+INFO:root:Epoch[26] Train-accuracy=0.446429
+INFO:root:Epoch[26] Time cost=156.166
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0027.params"
+INFO:root:Epoch[26] Validation-accuracy=0.537500
+INFO:root:Epoch[27] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.508929
+INFO:root:Epoch[27] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[27] Batch [60]	Speed: 9.06 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[27] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[27] Train-accuracy=0.500000
+INFO:root:Epoch[27] Time cost=156.297
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0028.params"
+INFO:root:Epoch[27] Validation-accuracy=0.609375
+INFO:root:Epoch[28] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.508929
+INFO:root:Epoch[28] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[28] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[28] Batch [80]	Speed: 9.08 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[28] Train-accuracy=0.383929
+INFO:root:Epoch[28] Time cost=156.196
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0029.params"
+INFO:root:Epoch[28] Validation-accuracy=0.650000
+INFO:root:Epoch[29] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.550595
+INFO:root:Epoch[29] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[29] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.490625
+INFO:root:Epoch[29] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[29] Train-accuracy=0.491071
+INFO:root:Epoch[29] Time cost=156.320
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0030.params"
+INFO:root:Epoch[29] Validation-accuracy=0.450000
+INFO:root:Epoch[30] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.550595
+INFO:root:Epoch[30] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[30] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[30] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[30] Train-accuracy=0.491071
+INFO:root:Epoch[30] Time cost=156.910
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0031.params"
+INFO:root:Epoch[30] Validation-accuracy=0.531250
+INFO:root:Epoch[31] Batch [20]	Speed: 9.07 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[31] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[31] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[31] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.490625
+INFO:root:Epoch[31] Train-accuracy=0.437500
+INFO:root:Epoch[31] Time cost=154.428
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0032.params"
+INFO:root:Epoch[31] Validation-accuracy=0.537500
+INFO:root:Epoch[32] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.529762
+INFO:root:Epoch[32] Batch [40]	Speed: 9.06 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[32] Batch [60]	Speed: 8.89 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[32] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.496875
+INFO:root:Epoch[32] Train-accuracy=0.473214
+INFO:root:Epoch[32] Time cost=157.821
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0033.params"
+INFO:root:Epoch[32] Validation-accuracy=0.637500
+INFO:root:Epoch[33] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.532738
+INFO:root:Epoch[33] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[33] Batch [60]	Speed: 9.06 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[33] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[33] Train-accuracy=0.473214
+INFO:root:Epoch[33] Time cost=156.245
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0034.params"
+INFO:root:Epoch[33] Validation-accuracy=0.650000
+INFO:root:Epoch[34] Batch [20]	Speed: 8.93 samples/sec	Train-accuracy=0.529762
+INFO:root:Epoch[34] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[34] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[34] Batch [80]	Speed: 9.67 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[34] Train-accuracy=0.446429
+INFO:root:Epoch[34] Time cost=154.043
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0035.params"
+INFO:root:Epoch[34] Validation-accuracy=0.468750
+INFO:root:Epoch[35] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[35] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[35] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[35] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[35] Train-accuracy=0.508929
+INFO:root:Epoch[35] Time cost=156.534
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0036.params"
+INFO:root:Epoch[35] Validation-accuracy=0.525000
+INFO:root:Epoch[36] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.586310
+INFO:root:Epoch[36] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.521875
+INFO:root:Epoch[36] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[36] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[36] Train-accuracy=0.482143
+INFO:root:Epoch[36] Time cost=156.869
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0037.params"
+INFO:root:Epoch[36] Validation-accuracy=0.462500
+INFO:root:Epoch[37] Batch [20]	Speed: 9.09 samples/sec	Train-accuracy=0.538690
+INFO:root:Epoch[37] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[37] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[37] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[37] Train-accuracy=0.562500
+INFO:root:Epoch[37] Time cost=156.194
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0038.params"
+INFO:root:Epoch[37] Validation-accuracy=0.500000
+INFO:root:Epoch[38] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[38] Batch [40]	Speed: 9.09 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[38] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[38] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.468750
+INFO:root:Epoch[38] Train-accuracy=0.473214
+INFO:root:Epoch[38] Time cost=156.235
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0039.params"
+INFO:root:Epoch[38] Validation-accuracy=0.550000
+INFO:root:Epoch[39] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.553571
+INFO:root:Epoch[39] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[39] Batch [60]	Speed: 9.06 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[39] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.478125
+INFO:root:Epoch[39] Train-accuracy=0.510417
+INFO:root:Epoch[39] Time cost=154.424
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0040.params"
+INFO:root:Epoch[39] Validation-accuracy=0.525000
+INFO:root:Epoch[40] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.580357
+INFO:root:Epoch[40] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[40] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[40] Batch [80]	Speed: 9.08 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[40] Train-accuracy=0.491071
+INFO:root:Epoch[40] Time cost=157.794
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0041.params"
+INFO:root:Epoch[40] Validation-accuracy=0.578125
+INFO:root:Epoch[41] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.547619
+INFO:root:Epoch[41] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[41] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[41] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[41] Train-accuracy=0.508929
+INFO:root:Epoch[41] Time cost=156.574
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0042.params"
+INFO:root:Epoch[41] Validation-accuracy=0.587500
+INFO:root:Epoch[42] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.550595
+INFO:root:Epoch[42] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[42] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[42] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[42] Train-accuracy=0.491071
+INFO:root:Epoch[42] Time cost=156.898
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0043.params"
+INFO:root:Epoch[42] Validation-accuracy=0.525000
+INFO:root:Epoch[43] Batch [20]	Speed: 9.08 samples/sec	Train-accuracy=0.553571
+INFO:root:Epoch[43] Batch [40]	Speed: 8.89 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[43] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[43] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[43] Train-accuracy=0.535714
+INFO:root:Epoch[43] Time cost=156.236
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0044.params"
+INFO:root:Epoch[43] Validation-accuracy=0.546875
+INFO:root:Epoch[44] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.571429
+INFO:root:Epoch[44] Batch [40]	Speed: 9.67 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[44] Batch [60]	Speed: 8.93 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[44] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[44] Train-accuracy=0.491071
+INFO:root:Epoch[44] Time cost=154.026
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0045.params"
+INFO:root:Epoch[44] Validation-accuracy=0.525000
+INFO:root:Epoch[45] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[45] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[45] Batch [60]	Speed: 9.08 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[45] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[45] Train-accuracy=0.491071
+INFO:root:Epoch[45] Time cost=156.267
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0046.params"
+INFO:root:Epoch[45] Validation-accuracy=0.575000
+INFO:root:Epoch[46] Batch [20]	Speed: 8.87 samples/sec	Train-accuracy=0.574405
+INFO:root:Epoch[46] Batch [40]	Speed: 8.52 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[46] Batch [60]	Speed: 6.78 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[46] Batch [80]	Speed: 6.67 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[46] Train-accuracy=0.517857
+INFO:root:Epoch[46] Time cost=186.204
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0047.params"
+INFO:root:Epoch[46] Validation-accuracy=0.562500
+INFO:root:Epoch[47] Batch [20]	Speed: 6.73 samples/sec	Train-accuracy=0.565476
+INFO:root:Epoch[47] Batch [40]	Speed: 6.62 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[47] Batch [60]	Speed: 7.43 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[47] Batch [80]	Speed: 6.63 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[47] Train-accuracy=0.500000
+INFO:root:Epoch[47] Time cost=202.394
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0048.params"
+INFO:root:Epoch[47] Validation-accuracy=0.600000
+INFO:root:Epoch[48] Batch [20]	Speed: 6.74 samples/sec	Train-accuracy=0.556548
+INFO:root:Epoch[48] Batch [40]	Speed: 6.75 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[48] Batch [60]	Speed: 7.13 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[48] Batch [80]	Speed: 6.82 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[48] Train-accuracy=0.473214
+INFO:root:Epoch[48] Time cost=205.890
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0049.params"
+INFO:root:Epoch[48] Validation-accuracy=0.600000
+INFO:root:Epoch[49] Batch [20]	Speed: 6.72 samples/sec	Train-accuracy=0.538690
+INFO:root:Epoch[49] Batch [40]	Speed: 6.76 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[49] Batch [60]	Speed: 6.63 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[49] Batch [80]	Speed: 7.32 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[49] Train-accuracy=0.446429
+INFO:root:Epoch[49] Time cost=204.523
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0050.params"
+INFO:root:Epoch[49] Validation-accuracy=0.550000
+INFO:root:Epoch[50] Batch [20]	Speed: 6.66 samples/sec	Train-accuracy=0.544643
+INFO:root:Epoch[50] Batch [40]	Speed: 6.77 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[50] Batch [60]	Speed: 6.64 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[50] Batch [80]	Speed: 6.57 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[50] Train-accuracy=0.562500
+INFO:root:Epoch[50] Time cost=205.890
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0051.params"
+INFO:root:Epoch[50] Validation-accuracy=0.593750
+INFO:root:Epoch[51] Batch [20]	Speed: 6.81 samples/sec	Train-accuracy=0.556548
+INFO:root:Epoch[51] Batch [40]	Speed: 6.73 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[51] Batch [60]	Speed: 6.70 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[51] Batch [80]	Speed: 6.71 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[51] Train-accuracy=0.508929
+INFO:root:Epoch[51] Time cost=208.202
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0052.params"
+INFO:root:Epoch[51] Validation-accuracy=0.487500
+INFO:root:Epoch[52] Batch [20]	Speed: 7.53 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[52] Batch [40]	Speed: 6.47 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[52] Batch [60]	Speed: 6.87 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[52] Batch [80]	Speed: 6.57 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[52] Train-accuracy=0.544643
+INFO:root:Epoch[52] Time cost=204.353
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0053.params"
+INFO:root:Epoch[52] Validation-accuracy=0.600000
+INFO:root:Epoch[53] Batch [20]	Speed: 7.16 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[53] Batch [40]	Speed: 6.87 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[53] Batch [60]	Speed: 6.81 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[53] Batch [80]	Speed: 6.74 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[53] Train-accuracy=0.437500
+INFO:root:Epoch[53] Time cost=203.193
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0054.params"
+INFO:root:Epoch[53] Validation-accuracy=0.562500
+INFO:root:Epoch[54] Batch [20]	Speed: 6.81 samples/sec	Train-accuracy=0.541667
+INFO:root:Epoch[54] Batch [40]	Speed: 7.54 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[54] Batch [60]	Speed: 6.77 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[54] Batch [80]	Speed: 6.81 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[54] Train-accuracy=0.526786
+INFO:root:Epoch[54] Time cost=200.661
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0055.params"
+INFO:root:Epoch[54] Validation-accuracy=0.550000
+INFO:root:Epoch[55] Batch [20]	Speed: 6.78 samples/sec	Train-accuracy=0.556548
+INFO:root:Epoch[55] Batch [40]	Speed: 6.78 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[55] Batch [60]	Speed: 7.34 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[55] Batch [80]	Speed: 6.86 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[55] Train-accuracy=0.552083
+INFO:root:Epoch[55] Time cost=199.632
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0056.params"
+INFO:root:Epoch[55] Validation-accuracy=0.550000
+INFO:root:Epoch[56] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.607143
+INFO:root:Epoch[56] Batch [40]	Speed: 6.72 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[56] Batch [60]	Speed: 7.05 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[56] Batch [80]	Speed: 7.07 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[56] Train-accuracy=0.500000
+INFO:root:Epoch[56] Time cost=203.955
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0057.params"
+INFO:root:Epoch[56] Validation-accuracy=0.656250
+INFO:root:Epoch[57] Batch [20]	Speed: 6.81 samples/sec	Train-accuracy=0.610119
+INFO:root:Epoch[57] Batch [40]	Speed: 6.75 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[57] Batch [60]	Speed: 6.83 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[57] Batch [80]	Speed: 7.43 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[57] Train-accuracy=0.500000
+INFO:root:Epoch[57] Time cost=201.443
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0058.params"
+INFO:root:Epoch[57] Validation-accuracy=0.600000
+INFO:root:Epoch[58] Batch [20]	Speed: 6.84 samples/sec	Train-accuracy=0.571429
+INFO:root:Epoch[58] Batch [40]	Speed: 6.84 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[58] Batch [60]	Speed: 6.66 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[58] Batch [80]	Speed: 6.79 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[58] Train-accuracy=0.375000
+INFO:root:Epoch[58] Time cost=204.301
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0059.params"
+INFO:root:Epoch[58] Validation-accuracy=0.537500
+INFO:root:Epoch[59] Batch [20]	Speed: 6.92 samples/sec	Train-accuracy=0.580357
+INFO:root:Epoch[59] Batch [40]	Speed: 6.84 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[59] Batch [60]	Speed: 6.78 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[59] Batch [80]	Speed: 6.72 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[59] Train-accuracy=0.482143
+INFO:root:Epoch[59] Time cost=205.112
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0060.params"
+INFO:root:Epoch[59] Validation-accuracy=0.640625
+INFO:root:Epoch[60] Batch [20]	Speed: 7.45 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[60] Batch [40]	Speed: 6.71 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[60] Batch [60]	Speed: 6.68 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[60] Batch [80]	Speed: 6.73 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[60] Train-accuracy=0.544643
+INFO:root:Epoch[60] Time cost=203.421
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0061.params"
+INFO:root:Epoch[60] Validation-accuracy=0.525000
+INFO:root:Epoch[61] Batch [20]	Speed: 6.74 samples/sec	Train-accuracy=0.553571
+INFO:root:Epoch[61] Batch [40]	Speed: 7.28 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[61] Batch [60]	Speed: 6.80 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[61] Batch [80]	Speed: 6.74 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[61] Train-accuracy=0.526786
+INFO:root:Epoch[61] Time cost=203.235
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0062.params"
+INFO:root:Epoch[61] Validation-accuracy=0.537500
+INFO:root:Epoch[62] Batch [20]	Speed: 6.61 samples/sec	Train-accuracy=0.589286
+INFO:root:Epoch[62] Batch [40]	Speed: 7.43 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[62] Batch [60]	Speed: 7.03 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[62] Batch [80]	Speed: 6.82 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[62] Train-accuracy=0.544643
+INFO:root:Epoch[62] Time cost=201.103
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0063.params"
+INFO:root:Epoch[62] Validation-accuracy=0.546875
+INFO:root:Epoch[63] Batch [20]	Speed: 6.81 samples/sec	Train-accuracy=0.610119
+INFO:root:Epoch[63] Batch [40]	Speed: 6.61 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[63] Batch [60]	Speed: 7.27 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[63] Batch [80]	Speed: 6.85 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[63] Train-accuracy=0.520833
+INFO:root:Epoch[63] Time cost=200.942
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0064.params"
+INFO:root:Epoch[63] Validation-accuracy=0.525000
+INFO:root:Epoch[64] Batch [20]	Speed: 6.82 samples/sec	Train-accuracy=0.574405
+INFO:root:Epoch[64] Batch [40]	Speed: 6.88 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[64] Batch [60]	Speed: 6.76 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[64] Batch [80]	Speed: 7.72 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[64] Train-accuracy=0.535714
+INFO:root:Epoch[64] Time cost=202.055
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0065.params"
+INFO:root:Epoch[64] Validation-accuracy=0.637500
+INFO:root:Epoch[65] Batch [20]	Speed: 6.68 samples/sec	Train-accuracy=0.529762
+INFO:root:Epoch[65] Batch [40]	Speed: 6.85 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[65] Batch [60]	Speed: 6.82 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[65] Batch [80]	Speed: 7.07 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[65] Train-accuracy=0.562500
+INFO:root:Epoch[65] Time cost=204.712
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0066.params"
+INFO:root:Epoch[65] Validation-accuracy=0.650000
+INFO:root:Epoch[66] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.619048
+INFO:root:Epoch[66] Batch [40]	Speed: 6.80 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[66] Batch [60]	Speed: 6.81 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[66] Batch [80]	Speed: 6.81 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[66] Train-accuracy=0.544643
+INFO:root:Epoch[66] Time cost=205.579
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0067.params"
+INFO:root:Epoch[66] Validation-accuracy=0.515625
+INFO:root:Epoch[67] Batch [20]	Speed: 7.34 samples/sec	Train-accuracy=0.598214
+INFO:root:Epoch[67] Batch [40]	Speed: 6.75 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[67] Batch [60]	Speed: 6.81 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[67] Batch [80]	Speed: 6.74 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[67] Train-accuracy=0.517857
+INFO:root:Epoch[67] Time cost=203.376
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0068.params"
+INFO:root:Epoch[67] Validation-accuracy=0.512500
+INFO:root:Epoch[68] Batch [20]	Speed: 7.48 samples/sec	Train-accuracy=0.550595
+INFO:root:Epoch[68] Batch [40]	Speed: 6.82 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[68] Batch [60]	Speed: 6.82 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[68] Batch [80]	Speed: 6.75 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[68] Train-accuracy=0.562500
+INFO:root:Epoch[68] Time cost=201.288
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0069.params"
+INFO:root:Epoch[68] Validation-accuracy=0.562500
+INFO:root:Epoch[69] Batch [20]	Speed: 6.80 samples/sec	Train-accuracy=0.592262
+INFO:root:Epoch[69] Batch [40]	Speed: 7.48 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[69] Batch [60]	Speed: 6.72 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[69] Batch [80]	Speed: 6.76 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[69] Train-accuracy=0.473214
+INFO:root:Epoch[69] Time cost=202.082
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0070.params"
+INFO:root:Epoch[69] Validation-accuracy=0.562500
+INFO:root:Epoch[70] Batch [20]	Speed: 6.77 samples/sec	Train-accuracy=0.601190
+INFO:root:Epoch[70] Batch [40]	Speed: 6.82 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[70] Batch [60]	Speed: 7.34 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[70] Batch [80]	Speed: 6.67 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[70] Train-accuracy=0.544643
+INFO:root:Epoch[70] Time cost=203.205
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0071.params"
+INFO:root:Epoch[70] Validation-accuracy=0.600000
+INFO:root:Epoch[71] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[71] Batch [40]	Speed: 6.64 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[71] Batch [60]	Speed: 7.29 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[71] Batch [80]	Speed: 6.65 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[71] Train-accuracy=0.562500
+INFO:root:Epoch[71] Time cost=202.341
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0072.params"
+INFO:root:Epoch[71] Validation-accuracy=0.550000
+INFO:root:Epoch[72] Batch [20]	Speed: 6.75 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[72] Batch [40]	Speed: 6.81 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[72] Batch [60]	Speed: 6.67 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[72] Batch [80]	Speed: 7.24 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[72] Train-accuracy=0.508929
+INFO:root:Epoch[72] Time cost=205.566
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0073.params"
+INFO:root:Epoch[72] Validation-accuracy=0.500000
+INFO:root:Epoch[73] Batch [20]	Speed: 6.83 samples/sec	Train-accuracy=0.541667
+INFO:root:Epoch[73] Batch [40]	Speed: 6.77 samples/sec	Train-accuracy=0.484375
+INFO:root:Epoch[73] Batch [60]	Speed: 6.78 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[73] Batch [80]	Speed: 6.89 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[73] Train-accuracy=0.482143
+INFO:root:Epoch[73] Time cost=201.474
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0074.params"
+INFO:root:Epoch[73] Validation-accuracy=0.587500
+INFO:root:Epoch[74] Batch [20]	Speed: 6.78 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[74] Batch [40]	Speed: 6.73 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[74] Batch [60]	Speed: 6.71 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[74] Batch [80]	Speed: 6.53 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[74] Train-accuracy=0.535714
+INFO:root:Epoch[74] Time cost=208.952
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0075.params"
+INFO:root:Epoch[74] Validation-accuracy=0.600000
+INFO:root:Epoch[75] Batch [20]	Speed: 7.48 samples/sec	Train-accuracy=0.532738
+INFO:root:Epoch[75] Batch [40]	Speed: 6.79 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[75] Batch [60]	Speed: 6.63 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[75] Batch [80]	Speed: 6.71 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[75] Train-accuracy=0.446429
+INFO:root:Epoch[75] Time cost=203.820
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0076.params"
+INFO:root:Epoch[75] Validation-accuracy=0.593750
+INFO:root:Epoch[76] Batch [20]	Speed: 7.21 samples/sec	Train-accuracy=0.541667
+INFO:root:Epoch[76] Batch [40]	Speed: 6.92 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[76] Batch [60]	Speed: 6.74 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[76] Batch [80]	Speed: 6.65 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[76] Train-accuracy=0.562500
+INFO:root:Epoch[76] Time cost=203.681
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0077.params"
+INFO:root:Epoch[76] Validation-accuracy=0.562500
+INFO:root:Epoch[77] Batch [20]	Speed: 6.73 samples/sec	Train-accuracy=0.532738
+INFO:root:Epoch[77] Batch [40]	Speed: 7.07 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[77] Batch [60]	Speed: 6.76 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[77] Batch [80]	Speed: 6.73 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[77] Train-accuracy=0.517857
+INFO:root:Epoch[77] Time cost=205.267
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0078.params"
+INFO:root:Epoch[77] Validation-accuracy=0.550000
+INFO:root:Epoch[78] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.574405
+INFO:root:Epoch[78] Batch [40]	Speed: 6.77 samples/sec	Train-accuracy=0.515625
+INFO:root:Epoch[78] Batch [60]	Speed: 7.24 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[78] Batch [80]	Speed: 6.74 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[78] Train-accuracy=0.491071
+INFO:root:Epoch[78] Time cost=203.464
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0079.params"
+INFO:root:Epoch[78] Validation-accuracy=0.625000
+INFO:root:Epoch[79] Batch [20]	Speed: 6.84 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[79] Batch [40]	Speed: 6.78 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[79] Batch [60]	Speed: 7.33 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[79] Batch [80]	Speed: 6.76 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[79] Train-accuracy=0.489583
+INFO:root:Epoch[79] Time cost=199.916
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0080.params"
+INFO:root:Epoch[79] Validation-accuracy=0.525000
+INFO:root:Epoch[80] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[80] Batch [40]	Speed: 6.84 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[80] Batch [60]	Speed: 6.85 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[80] Batch [80]	Speed: 7.37 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[80] Train-accuracy=0.508929
+INFO:root:Epoch[80] Time cost=202.717
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0081.params"
+INFO:root:Epoch[80] Validation-accuracy=0.462500
+INFO:root:Epoch[81] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.598214
+INFO:root:Epoch[81] Batch [40]	Speed: 6.78 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[81] Batch [60]	Speed: 6.81 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[81] Batch [80]	Speed: 6.65 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[81] Train-accuracy=0.571429
+INFO:root:Epoch[81] Time cost=203.414
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0082.params"
+INFO:root:Epoch[81] Validation-accuracy=0.512500
+INFO:root:Epoch[82] Batch [20]	Speed: 6.85 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[82] Batch [40]	Speed: 6.83 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[82] Batch [60]	Speed: 6.77 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[82] Batch [80]	Speed: 6.74 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[82] Train-accuracy=0.562500
+INFO:root:Epoch[82] Time cost=205.913
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0083.params"
+INFO:root:Epoch[82] Validation-accuracy=0.546875
+INFO:root:Epoch[83] Batch [20]	Speed: 7.22 samples/sec	Train-accuracy=0.544643
+INFO:root:Epoch[83] Batch [40]	Speed: 6.70 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[83] Batch [60]	Speed: 6.78 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[83] Batch [80]	Speed: 6.78 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[83] Train-accuracy=0.446429
+INFO:root:Epoch[83] Time cost=203.830
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0084.params"
+INFO:root:Epoch[83] Validation-accuracy=0.575000
+INFO:root:Epoch[84] Batch [20]	Speed: 7.14 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[84] Batch [40]	Speed: 7.03 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[84] Batch [60]	Speed: 6.82 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[84] Batch [80]	Speed: 6.82 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[84] Train-accuracy=0.482143
+INFO:root:Epoch[84] Time cost=201.718
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0085.params"
+INFO:root:Epoch[84] Validation-accuracy=0.525000
+INFO:root:Epoch[85] Batch [20]	Speed: 6.83 samples/sec	Train-accuracy=0.622024
+INFO:root:Epoch[85] Batch [40]	Speed: 7.44 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[85] Batch [60]	Speed: 6.84 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[85] Batch [80]	Speed: 6.78 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[85] Train-accuracy=0.526786
+INFO:root:Epoch[85] Time cost=201.589
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0086.params"
+INFO:root:Epoch[85] Validation-accuracy=0.593750
+INFO:root:Epoch[86] Batch [20]	Speed: 6.83 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[86] Batch [40]	Speed: 6.84 samples/sec	Train-accuracy=0.612500
+INFO:root:Epoch[86] Batch [60]	Speed: 7.51 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[86] Batch [80]	Speed: 6.76 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[86] Train-accuracy=0.535714
+INFO:root:Epoch[86] Time cost=201.098
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0087.params"
+INFO:root:Epoch[86] Validation-accuracy=0.612500
+INFO:root:Epoch[87] Batch [20]	Speed: 6.75 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[87] Batch [40]	Speed: 6.79 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[87] Batch [60]	Speed: 6.96 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[87] Batch [80]	Speed: 7.24 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[87] Train-accuracy=0.510417
+INFO:root:Epoch[87] Time cost=199.773
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0088.params"
+INFO:root:Epoch[87] Validation-accuracy=0.550000
+INFO:root:Epoch[88] Batch [20]	Speed: 6.76 samples/sec	Train-accuracy=0.607143
+INFO:root:Epoch[88] Batch [40]	Speed: 6.77 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[88] Batch [60]	Speed: 6.88 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[88] Batch [80]	Speed: 7.41 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[88] Train-accuracy=0.517857
+INFO:root:Epoch[88] Time cost=203.150
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0089.params"
+INFO:root:Epoch[88] Validation-accuracy=0.484375
+INFO:root:Epoch[89] Batch [20]	Speed: 6.83 samples/sec	Train-accuracy=0.633929
+INFO:root:Epoch[89] Batch [40]	Speed: 6.77 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[89] Batch [60]	Speed: 6.78 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[89] Batch [80]	Speed: 6.75 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[89] Train-accuracy=0.473214
+INFO:root:Epoch[89] Time cost=205.184
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0090.params"
+INFO:root:Epoch[89] Validation-accuracy=0.587500
+INFO:root:Epoch[90] Batch [20]	Speed: 6.96 samples/sec	Train-accuracy=0.574405
+INFO:root:Epoch[90] Batch [40]	Speed: 6.85 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[90] Batch [60]	Speed: 6.71 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[90] Batch [80]	Speed: 6.86 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[90] Train-accuracy=0.446429
+INFO:root:Epoch[90] Time cost=204.295
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0091.params"
+INFO:root:Epoch[90] Validation-accuracy=0.537500
+INFO:root:Epoch[91] Batch [20]	Speed: 7.37 samples/sec	Train-accuracy=0.589286
+INFO:root:Epoch[91] Batch [40]	Speed: 6.75 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[91] Batch [60]	Speed: 6.75 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[91] Batch [80]	Speed: 6.77 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[91] Train-accuracy=0.535714
+INFO:root:Epoch[91] Time cost=202.470
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0092.params"
+INFO:root:Epoch[91] Validation-accuracy=0.609375
+INFO:root:Epoch[92] Batch [20]	Speed: 6.80 samples/sec	Train-accuracy=0.565476
+INFO:root:Epoch[92] Batch [40]	Speed: 7.44 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[92] Batch [60]	Speed: 6.76 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[92] Batch [80]	Speed: 6.85 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[92] Train-accuracy=0.482143
+INFO:root:Epoch[92] Time cost=201.627
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0093.params"
+INFO:root:Epoch[92] Validation-accuracy=0.612500
+INFO:root:Epoch[93] Batch [20]	Speed: 6.83 samples/sec	Train-accuracy=0.556548
+INFO:root:Epoch[93] Batch [40]	Speed: 7.04 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[93] Batch [60]	Speed: 7.03 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[93] Batch [80]	Speed: 6.73 samples/sec	Train-accuracy=0.612500
+INFO:root:Epoch[93] Train-accuracy=0.473214
+INFO:root:Epoch[93] Time cost=202.682
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0094.params"
+INFO:root:Epoch[93] Validation-accuracy=0.587500
+INFO:root:Epoch[94] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.610119
+INFO:root:Epoch[94] Batch [40]	Speed: 6.79 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[94] Batch [60]	Speed: 7.42 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[94] Batch [80]	Speed: 6.78 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[94] Train-accuracy=0.571429
+INFO:root:Epoch[94] Time cost=202.420
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0095.params"
+INFO:root:Epoch[94] Validation-accuracy=0.531250
+INFO:root:Epoch[95] Batch [20]	Speed: 6.79 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[95] Batch [40]	Speed: 6.74 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[95] Batch [60]	Speed: 6.77 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[95] Batch [80]	Speed: 7.37 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[95] Train-accuracy=0.531250
+INFO:root:Epoch[95] Time cost=200.351
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0096.params"
+INFO:root:Epoch[95] Validation-accuracy=0.562500
+INFO:root:Epoch[96] Batch [20]	Speed: 6.80 samples/sec	Train-accuracy=0.642857
+INFO:root:Epoch[96] Batch [40]	Speed: 6.79 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[96] Batch [60]	Speed: 6.83 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[96] Batch [80]	Speed: 7.08 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[96] Train-accuracy=0.544643
+INFO:root:Epoch[96] Time cost=203.146
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0097.params"
+INFO:root:Epoch[96] Validation-accuracy=0.512500
+INFO:root:Epoch[97] Batch [20]	Speed: 6.80 samples/sec	Train-accuracy=0.636905
+INFO:root:Epoch[97] Batch [40]	Speed: 6.72 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[97] Batch [60]	Speed: 6.80 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[97] Batch [80]	Speed: 6.78 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[97] Train-accuracy=0.544643
+INFO:root:Epoch[97] Time cost=206.402
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0098.params"
+INFO:root:Epoch[97] Validation-accuracy=0.612500
+INFO:root:Epoch[98] Batch [20]	Speed: 7.51 samples/sec	Train-accuracy=0.633929
+INFO:root:Epoch[98] Batch [40]	Speed: 6.83 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[98] Batch [60]	Speed: 6.82 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[98] Batch [80]	Speed: 6.78 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[98] Train-accuracy=0.500000
+INFO:root:Epoch[98] Time cost=200.720
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0099.params"
+INFO:root:Epoch[98] Validation-accuracy=0.562500
+INFO:root:Epoch[99] Batch [20]	Speed: 7.20 samples/sec	Train-accuracy=0.607143
+INFO:root:Epoch[99] Batch [40]	Speed: 6.91 samples/sec	Train-accuracy=0.612500
+INFO:root:Epoch[99] Batch [60]	Speed: 6.84 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[99] Batch [80]	Speed: 6.84 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[99] Train-accuracy=0.553571
+INFO:root:Epoch[99] Time cost=201.605
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0100.params"
+INFO:root:Epoch[99] Validation-accuracy=0.637500
+INFO:root:Epoch[100] Batch [20]	Speed: 6.74 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[100] Batch [40]	Speed: 7.49 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[100] Batch [60]	Speed: 6.77 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[100] Batch [80]	Speed: 6.43 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[100] Train-accuracy=0.607143
+INFO:root:Epoch[100] Time cost=205.864
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0101.params"
+INFO:root:Epoch[100] Validation-accuracy=0.650000
+INFO:root:Epoch[101] Batch [20]	Speed: 6.47 samples/sec	Train-accuracy=0.586310
+INFO:root:Epoch[101] Batch [40]	Speed: 6.36 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[101] Batch [60]	Speed: 6.37 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[101] Batch [80]	Speed: 6.00 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[101] Train-accuracy=0.580357
+INFO:root:Epoch[101] Time cost=222.517
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0102.params"
+INFO:root:Epoch[101] Validation-accuracy=0.546875
+INFO:root:Epoch[102] Batch [20]	Speed: 6.29 samples/sec	Train-accuracy=0.580357
+INFO:root:Epoch[102] Batch [40]	Speed: 7.06 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[102] Batch [60]	Speed: 7.69 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[102] Batch [80]	Speed: 7.10 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[102] Train-accuracy=0.562500
+INFO:root:Epoch[102] Time cost=199.412
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0103.params"
+INFO:root:Epoch[102] Validation-accuracy=0.550000
+INFO:root:Epoch[103] Batch [20]	Speed: 7.17 samples/sec	Train-accuracy=0.571429
+INFO:root:Epoch[103] Batch [40]	Speed: 7.11 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[103] Batch [60]	Speed: 6.13 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[103] Batch [80]	Speed: 7.83 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[103] Train-accuracy=0.520833
+INFO:root:Epoch[103] Time cost=196.364
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0104.params"
+INFO:root:Epoch[103] Validation-accuracy=0.525000
+INFO:root:Epoch[104] Batch [20]	Speed: 6.46 samples/sec	Train-accuracy=0.577381
+INFO:root:Epoch[104] Batch [40]	Speed: 6.78 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[104] Batch [60]	Speed: 7.32 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[104] Batch [80]	Speed: 7.52 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[104] Train-accuracy=0.553571
+INFO:root:Epoch[104] Time cost=199.292
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0105.params"
+INFO:root:Epoch[104] Validation-accuracy=0.546875
+INFO:root:Epoch[105] Batch [20]	Speed: 7.30 samples/sec	Train-accuracy=0.604167
+INFO:root:Epoch[105] Batch [40]	Speed: 7.21 samples/sec	Train-accuracy=0.612500
+INFO:root:Epoch[105] Batch [60]	Speed: 7.13 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[105] Batch [80]	Speed: 7.24 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[105] Train-accuracy=0.526786
+INFO:root:Epoch[105] Time cost=192.925
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0106.params"
+INFO:root:Epoch[105] Validation-accuracy=0.625000
+INFO:root:Epoch[106] Batch [20]	Speed: 7.78 samples/sec	Train-accuracy=0.630952
+INFO:root:Epoch[106] Batch [40]	Speed: 7.04 samples/sec	Train-accuracy=0.643750
+INFO:root:Epoch[106] Batch [60]	Speed: 6.53 samples/sec	Train-accuracy=0.615625
+INFO:root:Epoch[106] Batch [80]	Speed: 7.33 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[106] Train-accuracy=0.633929
+INFO:root:Epoch[106] Time cost=195.498
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0107.params"
+INFO:root:Epoch[106] Validation-accuracy=0.587500
+INFO:root:Epoch[107] Batch [20]	Speed: 7.36 samples/sec	Train-accuracy=0.622024
+INFO:root:Epoch[107] Batch [40]	Speed: 7.99 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[107] Batch [60]	Speed: 7.34 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[107] Batch [80]	Speed: 7.22 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[107] Train-accuracy=0.500000
+INFO:root:Epoch[107] Time cost=188.299
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0108.params"
+INFO:root:Epoch[107] Validation-accuracy=0.515625
+INFO:root:Epoch[108] Batch [20]	Speed: 7.03 samples/sec	Train-accuracy=0.639881
+INFO:root:Epoch[108] Batch [40]	Speed: 7.68 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[108] Batch [60]	Speed: 8.02 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[108] Batch [80]	Speed: 7.39 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[108] Train-accuracy=0.517857
+INFO:root:Epoch[108] Time cost=186.959
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0109.params"
+INFO:root:Epoch[108] Validation-accuracy=0.625000
+INFO:root:Epoch[109] Batch [20]	Speed: 7.37 samples/sec	Train-accuracy=0.541667
+INFO:root:Epoch[109] Batch [40]	Speed: 7.26 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[109] Batch [60]	Speed: 7.32 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[109] Batch [80]	Speed: 7.76 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[109] Train-accuracy=0.553571
+INFO:root:Epoch[109] Time cost=187.764
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0110.params"
+INFO:root:Epoch[109] Validation-accuracy=0.612500
+INFO:root:Epoch[110] Batch [20]	Speed: 7.30 samples/sec	Train-accuracy=0.616071
+INFO:root:Epoch[110] Batch [40]	Speed: 7.26 samples/sec	Train-accuracy=0.631250
+INFO:root:Epoch[110] Batch [60]	Speed: 7.14 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[110] Batch [80]	Speed: 6.45 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[110] Train-accuracy=0.508929
+INFO:root:Epoch[110] Time cost=198.572
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0111.params"
+INFO:root:Epoch[110] Validation-accuracy=0.531250
+INFO:root:Epoch[111] Batch [20]	Speed: 7.74 samples/sec	Train-accuracy=0.622024
+INFO:root:Epoch[111] Batch [40]	Speed: 7.21 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[111] Batch [60]	Speed: 7.49 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[111] Batch [80]	Speed: 7.39 samples/sec	Train-accuracy=0.665625
+INFO:root:Epoch[111] Train-accuracy=0.500000
+INFO:root:Epoch[111] Time cost=185.335
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0112.params"
+INFO:root:Epoch[111] Validation-accuracy=0.550000
+INFO:root:Epoch[112] Batch [20]	Speed: 7.41 samples/sec	Train-accuracy=0.642857
+INFO:root:Epoch[112] Batch [40]	Speed: 7.74 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[112] Batch [60]	Speed: 7.43 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[112] Batch [80]	Speed: 7.39 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[112] Train-accuracy=0.598214
+INFO:root:Epoch[112] Time cost=188.521
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0113.params"
+INFO:root:Epoch[112] Validation-accuracy=0.625000
+INFO:root:Epoch[113] Batch [20]	Speed: 7.36 samples/sec	Train-accuracy=0.622024
+INFO:root:Epoch[113] Batch [40]	Speed: 7.08 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[113] Batch [60]	Speed: 7.94 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[113] Batch [80]	Speed: 7.34 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[113] Train-accuracy=0.562500
+INFO:root:Epoch[113] Time cost=188.402
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0114.params"
+INFO:root:Epoch[113] Validation-accuracy=0.562500
+INFO:root:Epoch[114] Batch [20]	Speed: 7.15 samples/sec	Train-accuracy=0.642857
+INFO:root:Epoch[114] Batch [40]	Speed: 7.18 samples/sec	Train-accuracy=0.631250
+INFO:root:Epoch[114] Batch [60]	Speed: 7.11 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[114] Batch [80]	Speed: 7.88 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[114] Train-accuracy=0.544643
+INFO:root:Epoch[114] Time cost=191.332
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0115.params"
+INFO:root:Epoch[114] Validation-accuracy=0.593750
+INFO:root:Epoch[115] Batch [20]	Speed: 7.39 samples/sec	Train-accuracy=0.622024
+INFO:root:Epoch[115] Batch [40]	Speed: 7.02 samples/sec	Train-accuracy=0.650000
+INFO:root:Epoch[115] Batch [60]	Speed: 7.30 samples/sec	Train-accuracy=0.628125
+INFO:root:Epoch[115] Batch [80]	Speed: 7.31 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[115] Train-accuracy=0.580357
+INFO:root:Epoch[115] Time cost=190.258
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0116.params"
+INFO:root:Epoch[115] Validation-accuracy=0.575000
+INFO:root:Epoch[116] Batch [20]	Speed: 7.28 samples/sec	Train-accuracy=0.651786
+INFO:root:Epoch[116] Batch [40]	Speed: 7.31 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[116] Batch [60]	Speed: 7.38 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[116] Batch [80]	Speed: 7.52 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[116] Train-accuracy=0.651786
+INFO:root:Epoch[116] Time cost=189.854
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0117.params"
+INFO:root:Epoch[116] Validation-accuracy=0.587500
+INFO:root:Epoch[117] Batch [20]	Speed: 7.93 samples/sec	Train-accuracy=0.651786
+INFO:root:Epoch[117] Batch [40]	Speed: 7.35 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[117] Batch [60]	Speed: 7.46 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[117] Batch [80]	Speed: 7.22 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[117] Train-accuracy=0.651786
+INFO:root:Epoch[117] Time cost=186.652
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0118.params"
+INFO:root:Epoch[117] Validation-accuracy=0.531250
+INFO:root:Epoch[118] Batch [20]	Speed: 7.23 samples/sec	Train-accuracy=0.636905
+INFO:root:Epoch[118] Batch [40]	Speed: 7.65 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[118] Batch [60]	Speed: 7.31 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[118] Batch [80]	Speed: 7.46 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[118] Train-accuracy=0.571429
+INFO:root:Epoch[118] Time cost=188.633
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0119.params"
+INFO:root:Epoch[118] Validation-accuracy=0.600000
+INFO:root:Epoch[119] Batch [20]	Speed: 7.41 samples/sec	Train-accuracy=0.636905
+INFO:root:Epoch[119] Batch [40]	Speed: 7.34 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[119] Batch [60]	Speed: 7.46 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[119] Batch [80]	Speed: 7.84 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[119] Train-accuracy=0.572917
+INFO:root:Epoch[119] Time cost=184.936
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0120.params"
+INFO:root:Epoch[119] Validation-accuracy=0.587500
+INFO:root:Epoch[120] Batch [20]	Speed: 7.27 samples/sec	Train-accuracy=0.633929
+INFO:root:Epoch[120] Batch [40]	Speed: 7.27 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[120] Batch [60]	Speed: 7.45 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[120] Batch [80]	Speed: 7.80 samples/sec	Train-accuracy=0.615625
+INFO:root:Epoch[120] Train-accuracy=0.589286
+INFO:root:Epoch[120] Time cost=187.613
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0121.params"
+INFO:root:Epoch[120] Validation-accuracy=0.531250
+INFO:root:Epoch[121] Batch [20]	Speed: 7.36 samples/sec	Train-accuracy=0.645833
+INFO:root:Epoch[121] Batch [40]	Speed: 7.29 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[121] Batch [60]	Speed: 7.29 samples/sec	Train-accuracy=0.687500
+INFO:root:Epoch[121] Batch [80]	Speed: 7.52 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[121] Train-accuracy=0.553571
+INFO:root:Epoch[121] Time cost=189.821
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0122.params"
+INFO:root:Epoch[121] Validation-accuracy=0.587500
+INFO:root:Epoch[122] Batch [20]	Speed: 7.65 samples/sec	Train-accuracy=0.654762
+INFO:root:Epoch[122] Batch [40]	Speed: 7.32 samples/sec	Train-accuracy=0.653125
+INFO:root:Epoch[122] Batch [60]	Speed: 7.27 samples/sec	Train-accuracy=0.665625
+INFO:root:Epoch[122] Batch [80]	Speed: 7.32 samples/sec	Train-accuracy=0.653125
+INFO:root:Epoch[122] Train-accuracy=0.535714
+INFO:root:Epoch[122] Time cost=189.617
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0123.params"
+INFO:root:Epoch[122] Validation-accuracy=0.587500
+INFO:root:Epoch[123] Batch [20]	Speed: 7.26 samples/sec	Train-accuracy=0.672619
+INFO:root:Epoch[123] Batch [40]	Speed: 7.77 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[123] Batch [60]	Speed: 7.34 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[123] Batch [80]	Speed: 7.03 samples/sec	Train-accuracy=0.628125
+INFO:root:Epoch[123] Train-accuracy=0.589286
+INFO:root:Epoch[123] Time cost=190.912
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0124.params"
+INFO:root:Epoch[123] Validation-accuracy=0.562500
+INFO:root:Epoch[124] Batch [20]	Speed: 7.40 samples/sec	Train-accuracy=0.699405
+INFO:root:Epoch[124] Batch [40]	Speed: 7.21 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[124] Batch [60]	Speed: 7.82 samples/sec	Train-accuracy=0.681250
+INFO:root:Epoch[124] Batch [80]	Speed: 7.21 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[124] Train-accuracy=0.598214
+INFO:root:Epoch[124] Time cost=189.082
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0125.params"
+INFO:root:Epoch[124] Validation-accuracy=0.550000
+INFO:root:Epoch[125] Batch [20]	Speed: 7.47 samples/sec	Train-accuracy=0.681548
+INFO:root:Epoch[125] Batch [40]	Speed: 7.21 samples/sec	Train-accuracy=0.696875
+INFO:root:Epoch[125] Batch [60]	Speed: 7.31 samples/sec	Train-accuracy=0.650000
+INFO:root:Epoch[125] Batch [80]	Speed: 7.85 samples/sec	Train-accuracy=0.631250
+INFO:root:Epoch[125] Train-accuracy=0.642857
+INFO:root:Epoch[125] Time cost=187.751
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0126.params"
+INFO:root:Epoch[125] Validation-accuracy=0.512500
+INFO:root:Epoch[126] Batch [20]	Speed: 7.27 samples/sec	Train-accuracy=0.684524
+INFO:root:Epoch[126] Batch [40]	Speed: 7.39 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[126] Batch [60]	Speed: 7.53 samples/sec	Train-accuracy=0.643750
+INFO:root:Epoch[126] Batch [80]	Speed: 7.24 samples/sec	Train-accuracy=0.696875
+INFO:root:Epoch[126] Train-accuracy=0.571429
+INFO:root:Epoch[126] Time cost=190.034
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0127.params"
+INFO:root:Epoch[126] Validation-accuracy=0.562500
+INFO:root:Epoch[127] Batch [20]	Speed: 8.05 samples/sec	Train-accuracy=0.651786
+INFO:root:Epoch[127] Batch [40]	Speed: 7.59 samples/sec	Train-accuracy=0.637500
+INFO:root:Epoch[127] Batch [60]	Speed: 7.32 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[127] Batch [80]	Speed: 7.37 samples/sec	Train-accuracy=0.690625
+INFO:root:Epoch[127] Train-accuracy=0.593750
+INFO:root:Epoch[127] Time cost=182.688
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0128.params"
+INFO:root:Epoch[127] Validation-accuracy=0.562500
+INFO:root:Epoch[128] Batch [20]	Speed: 7.30 samples/sec	Train-accuracy=0.657738
+INFO:root:Epoch[128] Batch [40]	Speed: 7.86 samples/sec	Train-accuracy=0.693750
+INFO:root:Epoch[128] Batch [60]	Speed: 7.26 samples/sec	Train-accuracy=0.668750
+INFO:root:Epoch[128] Batch [80]	Speed: 7.66 samples/sec	Train-accuracy=0.662500
+INFO:root:Epoch[128] Train-accuracy=0.642857
+INFO:root:Epoch[128] Time cost=188.172
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0129.params"
+INFO:root:Epoch[128] Validation-accuracy=0.562500
+INFO:root:Epoch[129] Batch [20]	Speed: 7.34 samples/sec	Train-accuracy=0.663690
+INFO:root:Epoch[129] Batch [40]	Speed: 7.23 samples/sec	Train-accuracy=0.662500
+INFO:root:Epoch[129] Batch [60]	Speed: 7.69 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[129] Batch [80]	Speed: 7.33 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[129] Train-accuracy=0.625000
+INFO:root:Epoch[129] Time cost=189.291
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0130.params"
+INFO:root:Epoch[129] Validation-accuracy=0.612500
+INFO:root:Epoch[130] Batch [20]	Speed: 7.50 samples/sec	Train-accuracy=0.678571
+INFO:root:Epoch[130] Batch [40]	Speed: 7.47 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[130] Batch [60]	Speed: 7.22 samples/sec	Train-accuracy=0.643750
+INFO:root:Epoch[130] Batch [80]	Speed: 8.16 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[130] Train-accuracy=0.723214
+INFO:root:Epoch[130] Time cost=184.699
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0131.params"
+INFO:root:Epoch[130] Validation-accuracy=0.609375
+INFO:root:Epoch[131] Batch [20]	Speed: 7.48 samples/sec	Train-accuracy=0.666667
+INFO:root:Epoch[131] Batch [40]	Speed: 7.45 samples/sec	Train-accuracy=0.728125
+INFO:root:Epoch[131] Batch [60]	Speed: 7.22 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[131] Batch [80]	Speed: 7.33 samples/sec	Train-accuracy=0.709375
+INFO:root:Epoch[131] Train-accuracy=0.651786
+INFO:root:Epoch[131] Time cost=189.568
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0132.params"
+INFO:root:Epoch[131] Validation-accuracy=0.587500
+INFO:root:Epoch[132] Batch [20]	Speed: 8.02 samples/sec	Train-accuracy=0.639881
+INFO:root:Epoch[132] Batch [40]	Speed: 7.46 samples/sec	Train-accuracy=0.659375
+INFO:root:Epoch[132] Batch [60]	Speed: 7.42 samples/sec	Train-accuracy=0.662500
+INFO:root:Epoch[132] Batch [80]	Speed: 7.20 samples/sec	Train-accuracy=0.668750
+INFO:root:Epoch[132] Train-accuracy=0.651786
+INFO:root:Epoch[132] Time cost=186.289
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0133.params"
+INFO:root:Epoch[132] Validation-accuracy=0.612500
+INFO:root:Epoch[133] Batch [20]	Speed: 7.58 samples/sec	Train-accuracy=0.693452
+INFO:root:Epoch[133] Batch [40]	Speed: 7.84 samples/sec	Train-accuracy=0.709375
+INFO:root:Epoch[133] Batch [60]	Speed: 7.69 samples/sec	Train-accuracy=0.715625
+INFO:root:Epoch[133] Batch [80]	Speed: 7.24 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[133] Train-accuracy=0.607143
+INFO:root:Epoch[133] Time cost=185.345
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0134.params"
+INFO:root:Epoch[133] Validation-accuracy=0.562500
+INFO:root:Epoch[134] Batch [20]	Speed: 7.41 samples/sec	Train-accuracy=0.744048
+INFO:root:Epoch[134] Batch [40]	Speed: 7.43 samples/sec	Train-accuracy=0.665625
+INFO:root:Epoch[134] Batch [60]	Speed: 7.85 samples/sec	Train-accuracy=0.668750
+INFO:root:Epoch[134] Batch [80]	Speed: 7.25 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[134] Train-accuracy=0.598214
+INFO:root:Epoch[134] Time cost=187.667
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0135.params"
+INFO:root:Epoch[134] Validation-accuracy=0.587500
+INFO:root:Epoch[135] Batch [20]	Speed: 7.26 samples/sec	Train-accuracy=0.761905
+INFO:root:Epoch[135] Batch [40]	Speed: 6.95 samples/sec	Train-accuracy=0.706250
+INFO:root:Epoch[135] Batch [60]	Speed: 7.53 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[135] Batch [80]	Speed: 7.89 samples/sec	Train-accuracy=0.684375
+INFO:root:Epoch[135] Train-accuracy=0.604167
+INFO:root:Epoch[135] Time cost=187.201
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0136.params"
+INFO:root:Epoch[135] Validation-accuracy=0.575000
+INFO:root:Epoch[136] Batch [20]	Speed: 7.19 samples/sec	Train-accuracy=0.693452
+INFO:root:Epoch[136] Batch [40]	Speed: 7.27 samples/sec	Train-accuracy=0.662500
+INFO:root:Epoch[136] Batch [60]	Speed: 7.64 samples/sec	Train-accuracy=0.740625
+INFO:root:Epoch[136] Batch [80]	Speed: 7.33 samples/sec	Train-accuracy=0.700000
+INFO:root:Epoch[136] Train-accuracy=0.669643
+INFO:root:Epoch[136] Time cost=191.904
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0137.params"
+INFO:root:Epoch[136] Validation-accuracy=0.578125
+INFO:root:Epoch[137] Batch [20]	Speed: 7.98 samples/sec	Train-accuracy=0.690476
+INFO:root:Epoch[137] Batch [40]	Speed: 7.38 samples/sec	Train-accuracy=0.715625
+INFO:root:Epoch[137] Batch [60]	Speed: 7.15 samples/sec	Train-accuracy=0.737500
+INFO:root:Epoch[137] Batch [80]	Speed: 7.37 samples/sec	Train-accuracy=0.690625
+INFO:root:Epoch[137] Train-accuracy=0.696429
+INFO:root:Epoch[137] Time cost=187.653
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0138.params"
+INFO:root:Epoch[137] Validation-accuracy=0.587500
+INFO:root:Epoch[138] Batch [20]	Speed: 7.17 samples/sec	Train-accuracy=0.711310
+INFO:root:Epoch[138] Batch [40]	Speed: 7.71 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[138] Batch [60]	Speed: 7.44 samples/sec	Train-accuracy=0.693750
+INFO:root:Epoch[138] Batch [80]	Speed: 7.30 samples/sec	Train-accuracy=0.678125
+INFO:root:Epoch[138] Train-accuracy=0.625000
+INFO:root:Epoch[138] Time cost=188.662
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0139.params"
+INFO:root:Epoch[138] Validation-accuracy=0.550000
+INFO:root:Epoch[139] Batch [20]	Speed: 7.36 samples/sec	Train-accuracy=0.714286
+INFO:root:Epoch[139] Batch [40]	Speed: 7.29 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[139] Batch [60]	Speed: 8.06 samples/sec	Train-accuracy=0.709375
+INFO:root:Epoch[139] Batch [80]	Speed: 7.34 samples/sec	Train-accuracy=0.725000
+INFO:root:Epoch[139] Train-accuracy=0.696429
+INFO:root:Epoch[139] Time cost=186.291
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0140.params"
+INFO:root:Epoch[139] Validation-accuracy=0.546875
+INFO:root:Epoch[140] Batch [20]	Speed: 7.18 samples/sec	Train-accuracy=0.720238
+INFO:root:Epoch[140] Batch [40]	Speed: 7.34 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[140] Batch [60]	Speed: 7.30 samples/sec	Train-accuracy=0.743750
+INFO:root:Epoch[140] Batch [80]	Speed: 7.74 samples/sec	Train-accuracy=0.690625
+INFO:root:Epoch[140] Train-accuracy=0.669643
+INFO:root:Epoch[140] Time cost=189.886
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0141.params"
+INFO:root:Epoch[140] Validation-accuracy=0.575000
+INFO:root:Epoch[141] Batch [20]	Speed: 7.45 samples/sec	Train-accuracy=0.729167
+INFO:root:Epoch[141] Batch [40]	Speed: 7.28 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[141] Batch [60]	Speed: 6.96 samples/sec	Train-accuracy=0.715625
+INFO:root:Epoch[141] Batch [80]	Speed: 7.41 samples/sec	Train-accuracy=0.687500
+INFO:root:Epoch[141] Train-accuracy=0.696429
+INFO:root:Epoch[141] Time cost=191.363
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0142.params"
+INFO:root:Epoch[141] Validation-accuracy=0.475000
+INFO:root:Epoch[142] Batch [20]	Speed: 6.27 samples/sec	Train-accuracy=0.699405
+INFO:root:Epoch[142] Batch [40]	Speed: 7.75 samples/sec	Train-accuracy=0.743750
+INFO:root:Epoch[142] Batch [60]	Speed: 7.24 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[142] Batch [80]	Speed: 7.18 samples/sec	Train-accuracy=0.728125
+INFO:root:Epoch[142] Train-accuracy=0.660714
+INFO:root:Epoch[142] Time cost=196.654
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0143.params"
+INFO:root:Epoch[142] Validation-accuracy=0.546875
+INFO:root:Epoch[143] Batch [20]	Speed: 7.97 samples/sec	Train-accuracy=0.729167
+INFO:root:Epoch[143] Batch [40]	Speed: 7.23 samples/sec	Train-accuracy=0.743750
+INFO:root:Epoch[143] Batch [60]	Speed: 7.13 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[143] Batch [80]	Speed: 7.66 samples/sec	Train-accuracy=0.703125
+INFO:root:Epoch[143] Train-accuracy=0.750000
+INFO:root:Epoch[143] Time cost=183.754
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0144.params"
+INFO:root:Epoch[143] Validation-accuracy=0.600000
+INFO:root:Epoch[144] Batch [20]	Speed: 7.45 samples/sec	Train-accuracy=0.732143
+INFO:root:Epoch[144] Batch [40]	Speed: 7.79 samples/sec	Train-accuracy=0.771875
+INFO:root:Epoch[144] Batch [60]	Speed: 7.55 samples/sec	Train-accuracy=0.759375
+INFO:root:Epoch[144] Batch [80]	Speed: 7.46 samples/sec	Train-accuracy=0.709375
+INFO:root:Epoch[144] Train-accuracy=0.723214
+INFO:root:Epoch[144] Time cost=187.653
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0145.params"
+INFO:root:Epoch[144] Validation-accuracy=0.587500
+INFO:root:Epoch[145] Batch [20]	Speed: 7.29 samples/sec	Train-accuracy=0.788690
+INFO:root:Epoch[145] Batch [40]	Speed: 7.27 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[145] Batch [60]	Speed: 7.42 samples/sec	Train-accuracy=0.725000
+INFO:root:Epoch[145] Batch [80]	Speed: 7.33 samples/sec	Train-accuracy=0.759375
+INFO:root:Epoch[145] Train-accuracy=0.678571
+INFO:root:Epoch[145] Time cost=191.214
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0146.params"
+INFO:root:Epoch[145] Validation-accuracy=0.550000
+INFO:root:Epoch[146] Batch [20]	Speed: 7.37 samples/sec	Train-accuracy=0.758929
+INFO:root:Epoch[146] Batch [40]	Speed: 7.18 samples/sec	Train-accuracy=0.734375
+INFO:root:Epoch[146] Batch [60]	Speed: 7.43 samples/sec	Train-accuracy=0.740625
+INFO:root:Epoch[146] Batch [80]	Speed: 7.63 samples/sec	Train-accuracy=0.728125
+INFO:root:Epoch[146] Train-accuracy=0.750000
+INFO:root:Epoch[146] Time cost=188.302
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0147.params"
+INFO:root:Epoch[146] Validation-accuracy=0.546875
+INFO:root:Epoch[147] Batch [20]	Speed: 7.36 samples/sec	Train-accuracy=0.738095
+INFO:root:Epoch[147] Batch [40]	Speed: 7.30 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[147] Batch [60]	Speed: 7.69 samples/sec	Train-accuracy=0.787500
+INFO:root:Epoch[147] Batch [80]	Speed: 7.31 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[147] Train-accuracy=0.767857
+INFO:root:Epoch[147] Time cost=188.509
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0148.params"
+INFO:root:Epoch[147] Validation-accuracy=0.550000
+INFO:root:Epoch[148] Batch [20]	Speed: 7.94 samples/sec	Train-accuracy=0.770833
+INFO:root:Epoch[148] Batch [40]	Speed: 7.28 samples/sec	Train-accuracy=0.746875
+INFO:root:Epoch[148] Batch [60]	Speed: 7.35 samples/sec	Train-accuracy=0.731250
+INFO:root:Epoch[148] Batch [80]	Speed: 7.50 samples/sec	Train-accuracy=0.771875
+INFO:root:Epoch[148] Train-accuracy=0.750000
+INFO:root:Epoch[148] Time cost=186.100
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0149.params"
+INFO:root:Epoch[148] Validation-accuracy=0.525000
+INFO:root:Epoch[149] Batch [20]	Speed: 7.17 samples/sec	Train-accuracy=0.788690
+INFO:root:Epoch[149] Batch [40]	Speed: 7.77 samples/sec	Train-accuracy=0.737500
+INFO:root:Epoch[149] Batch [60]	Speed: 7.50 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[149] Batch [80]	Speed: 7.52 samples/sec	Train-accuracy=0.778125
+INFO:root:Epoch[149] Train-accuracy=0.696429
+INFO:root:Epoch[149] Time cost=187.654
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0150.params"
+INFO:root:Epoch[149] Validation-accuracy=0.578125
+INFO:root:Epoch[150] Batch [20]	Speed: 7.26 samples/sec	Train-accuracy=0.750000
+INFO:root:Epoch[150] Batch [40]	Speed: 7.21 samples/sec	Train-accuracy=0.790625
+INFO:root:Epoch[150] Batch [60]	Speed: 7.82 samples/sec	Train-accuracy=0.759375
+INFO:root:Epoch[150] Batch [80]	Speed: 7.32 samples/sec	Train-accuracy=0.762500
+INFO:root:Epoch[150] Train-accuracy=0.785714
+INFO:root:Epoch[150] Time cost=190.066
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0151.params"
+INFO:root:Epoch[150] Validation-accuracy=0.637500
+INFO:root:Epoch[151] Batch [20]	Speed: 7.34 samples/sec	Train-accuracy=0.776786
+INFO:root:Epoch[151] Batch [40]	Speed: 7.29 samples/sec	Train-accuracy=0.787500
+INFO:root:Epoch[151] Batch [60]	Speed: 7.51 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[151] Batch [80]	Speed: 7.87 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[151] Train-accuracy=0.739583
+INFO:root:Epoch[151] Time cost=184.014
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0152.params"
+INFO:root:Epoch[151] Validation-accuracy=0.562500
+INFO:root:Epoch[152] Batch [20]	Speed: 7.31 samples/sec	Train-accuracy=0.800595
+INFO:root:Epoch[152] Batch [40]	Speed: 7.33 samples/sec	Train-accuracy=0.825000
+INFO:root:Epoch[152] Batch [60]	Speed: 7.38 samples/sec	Train-accuracy=0.828125
+INFO:root:Epoch[152] Batch [80]	Speed: 7.29 samples/sec	Train-accuracy=0.775000
+INFO:root:Epoch[152] Train-accuracy=0.794643
+INFO:root:Epoch[152] Time cost=192.611
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0153.params"
+INFO:root:Epoch[152] Validation-accuracy=0.562500
+INFO:root:Epoch[153] Batch [20]	Speed: 7.96 samples/sec	Train-accuracy=0.758929
+INFO:root:Epoch[153] Batch [40]	Speed: 7.34 samples/sec	Train-accuracy=0.800000
+INFO:root:Epoch[153] Batch [60]	Speed: 7.44 samples/sec	Train-accuracy=0.800000
+INFO:root:Epoch[153] Batch [80]	Speed: 7.39 samples/sec	Train-accuracy=0.828125
+INFO:root:Epoch[153] Train-accuracy=0.776786
+INFO:root:Epoch[153] Time cost=186.366
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0154.params"
+INFO:root:Epoch[153] Validation-accuracy=0.600000
+INFO:root:Epoch[154] Batch [20]	Speed: 7.46 samples/sec	Train-accuracy=0.815476
+INFO:root:Epoch[154] Batch [40]	Speed: 7.72 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[154] Batch [60]	Speed: 7.22 samples/sec	Train-accuracy=0.843750
+INFO:root:Epoch[154] Batch [80]	Speed: 7.51 samples/sec	Train-accuracy=0.756250
+INFO:root:Epoch[154] Train-accuracy=0.723214
+INFO:root:Epoch[154] Time cost=187.155
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0155.params"
+INFO:root:Epoch[154] Validation-accuracy=0.587500
+INFO:root:Epoch[155] Batch [20]	Speed: 7.35 samples/sec	Train-accuracy=0.821429
+INFO:root:Epoch[155] Batch [40]	Speed: 7.28 samples/sec	Train-accuracy=0.843750
+INFO:root:Epoch[155] Batch [60]	Speed: 7.92 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[155] Batch [80]	Speed: 7.46 samples/sec	Train-accuracy=0.793750
+INFO:root:Epoch[155] Train-accuracy=0.785714
+INFO:root:Epoch[155] Time cost=186.232
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0156.params"
+INFO:root:Epoch[155] Validation-accuracy=0.531250
+INFO:root:Epoch[156] Batch [20]	Speed: 7.44 samples/sec	Train-accuracy=0.842262
+INFO:root:Epoch[156] Batch [40]	Speed: 7.13 samples/sec	Train-accuracy=0.809375
+INFO:root:Epoch[156] Batch [60]	Speed: 7.17 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[156] Batch [80]	Speed: 7.74 samples/sec	Train-accuracy=0.803125
+INFO:root:Epoch[156] Train-accuracy=0.821429
+INFO:root:Epoch[156] Time cost=190.465
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0157.params"
+INFO:root:Epoch[156] Validation-accuracy=0.575000
+INFO:root:Epoch[157] Batch [20]	Speed: 7.07 samples/sec	Train-accuracy=0.794643
+INFO:root:Epoch[157] Batch [40]	Speed: 7.27 samples/sec	Train-accuracy=0.828125
+INFO:root:Epoch[157] Batch [60]	Speed: 7.56 samples/sec	Train-accuracy=0.762500
+INFO:root:Epoch[157] Batch [80]	Speed: 7.31 samples/sec	Train-accuracy=0.812500
+INFO:root:Epoch[157] Train-accuracy=0.732143
+INFO:root:Epoch[157] Time cost=191.220
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0158.params"
+INFO:root:Epoch[157] Validation-accuracy=0.475000
+INFO:root:Epoch[158] Batch [20]	Speed: 8.08 samples/sec	Train-accuracy=0.785714
+INFO:root:Epoch[158] Batch [40]	Speed: 7.20 samples/sec	Train-accuracy=0.812500
+INFO:root:Epoch[158] Batch [60]	Speed: 7.22 samples/sec	Train-accuracy=0.837500
+INFO:root:Epoch[158] Batch [80]	Speed: 7.17 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[158] Train-accuracy=0.750000
+INFO:root:Epoch[158] Time cost=189.108
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0159.params"
+INFO:root:Epoch[158] Validation-accuracy=0.515625
+INFO:root:Epoch[159] Batch [20]	Speed: 7.37 samples/sec	Train-accuracy=0.827381
+INFO:root:Epoch[159] Batch [40]	Speed: 7.85 samples/sec	Train-accuracy=0.878125
+INFO:root:Epoch[159] Batch [60]	Speed: 7.26 samples/sec	Train-accuracy=0.840625
+INFO:root:Epoch[159] Batch [80]	Speed: 7.21 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[159] Train-accuracy=0.812500
+INFO:root:Epoch[159] Time cost=187.016
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0160.params"
+INFO:root:Epoch[159] Validation-accuracy=0.550000
+INFO:root:Epoch[160] Batch [20]	Speed: 7.41 samples/sec	Train-accuracy=0.857143
+INFO:root:Epoch[160] Batch [40]	Speed: 7.29 samples/sec	Train-accuracy=0.818750
+INFO:root:Epoch[160] Batch [60]	Speed: 8.30 samples/sec	Train-accuracy=0.831250
+INFO:root:Epoch[160] Batch [80]	Speed: 7.32 samples/sec	Train-accuracy=0.812500
+INFO:root:Epoch[160] Train-accuracy=0.803571
+INFO:root:Epoch[160] Time cost=188.059
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0161.params"
+INFO:root:Epoch[160] Validation-accuracy=0.625000
+INFO:root:Epoch[161] Batch [20]	Speed: 7.25 samples/sec	Train-accuracy=0.866071
+INFO:root:Epoch[161] Batch [40]	Speed: 7.11 samples/sec	Train-accuracy=0.846875
+INFO:root:Epoch[161] Batch [60]	Speed: 7.23 samples/sec	Train-accuracy=0.837500
+INFO:root:Epoch[161] Batch [80]	Speed: 7.93 samples/sec	Train-accuracy=0.831250
+INFO:root:Epoch[161] Train-accuracy=0.839286
+INFO:root:Epoch[161] Time cost=190.015
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0162.params"
+INFO:root:Epoch[161] Validation-accuracy=0.537500
+INFO:root:Epoch[162] Batch [20]	Speed: 7.31 samples/sec	Train-accuracy=0.836310
+INFO:root:Epoch[162] Batch [40]	Speed: 7.32 samples/sec	Train-accuracy=0.868750
+INFO:root:Epoch[162] Batch [60]	Speed: 7.17 samples/sec	Train-accuracy=0.865625
+INFO:root:Epoch[162] Batch [80]	Speed: 7.22 samples/sec	Train-accuracy=0.856250
+INFO:root:Epoch[162] Train-accuracy=0.901786
+INFO:root:Epoch[162] Time cost=190.339
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0163.params"
+INFO:root:Epoch[162] Validation-accuracy=0.625000
+INFO:root:Epoch[163] Batch [20]	Speed: 7.43 samples/sec	Train-accuracy=0.922619
+INFO:root:Epoch[163] Batch [40]	Speed: 7.41 samples/sec	Train-accuracy=0.856250
+INFO:root:Epoch[163] Batch [60]	Speed: 7.40 samples/sec	Train-accuracy=0.868750
+INFO:root:Epoch[163] Batch [80]	Speed: 7.14 samples/sec	Train-accuracy=0.821875
+INFO:root:Epoch[163] Train-accuracy=0.821429
+INFO:root:Epoch[163] Time cost=190.797
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0164.params"
+INFO:root:Epoch[163] Validation-accuracy=0.650000
+INFO:root:Epoch[164] Batch [20]	Speed: 7.70 samples/sec	Train-accuracy=0.857143
+INFO:root:Epoch[164] Batch [40]	Speed: 7.46 samples/sec	Train-accuracy=0.859375
+INFO:root:Epoch[164] Batch [60]	Speed: 7.18 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[164] Batch [80]	Speed: 7.19 samples/sec	Train-accuracy=0.868750
+INFO:root:Epoch[164] Train-accuracy=0.857143
+INFO:root:Epoch[164] Time cost=189.346
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0165.params"
+INFO:root:Epoch[164] Validation-accuracy=0.562500
+INFO:root:Epoch[165] Batch [20]	Speed: 7.46 samples/sec	Train-accuracy=0.869048
+INFO:root:Epoch[165] Batch [40]	Speed: 7.56 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[165] Batch [60]	Speed: 7.42 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[165] Batch [80]	Speed: 7.46 samples/sec	Train-accuracy=0.840625
+INFO:root:Epoch[165] Train-accuracy=0.848214
+INFO:root:Epoch[165] Time cost=187.840
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0166.params"
+INFO:root:Epoch[165] Validation-accuracy=0.531250
+INFO:root:Epoch[166] Batch [20]	Speed: 7.41 samples/sec	Train-accuracy=0.901786
+INFO:root:Epoch[166] Batch [40]	Speed: 7.38 samples/sec	Train-accuracy=0.878125
+INFO:root:Epoch[166] Batch [60]	Speed: 7.80 samples/sec	Train-accuracy=0.878125
+INFO:root:Epoch[166] Batch [80]	Speed: 7.57 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[166] Train-accuracy=0.866071
+INFO:root:Epoch[166] Time cost=185.805
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0167.params"
+INFO:root:Epoch[166] Validation-accuracy=0.575000
+INFO:root:Epoch[167] Batch [20]	Speed: 7.39 samples/sec	Train-accuracy=0.898810
+INFO:root:Epoch[167] Batch [40]	Speed: 7.57 samples/sec	Train-accuracy=0.890625
+INFO:root:Epoch[167] Batch [60]	Speed: 7.23 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[167] Batch [80]	Speed: 7.61 samples/sec	Train-accuracy=0.862500
+INFO:root:Epoch[167] Train-accuracy=0.812500
+INFO:root:Epoch[167] Time cost=184.184
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0168.params"
+INFO:root:Epoch[167] Validation-accuracy=0.562500
+INFO:root:Epoch[168] Batch [20]	Speed: 7.16 samples/sec	Train-accuracy=0.901786
+INFO:root:Epoch[168] Batch [40]	Speed: 7.17 samples/sec	Train-accuracy=0.903125
+INFO:root:Epoch[168] Batch [60]	Speed: 7.12 samples/sec	Train-accuracy=0.890625
+INFO:root:Epoch[168] Batch [80]	Speed: 7.27 samples/sec	Train-accuracy=0.865625
+INFO:root:Epoch[168] Train-accuracy=0.875000
+INFO:root:Epoch[168] Time cost=195.390
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0169.params"
+INFO:root:Epoch[168] Validation-accuracy=0.578125
+INFO:root:Epoch[169] Batch [20]	Speed: 7.92 samples/sec	Train-accuracy=0.892857
+INFO:root:Epoch[169] Batch [40]	Speed: 7.52 samples/sec	Train-accuracy=0.859375
+INFO:root:Epoch[169] Batch [60]	Speed: 7.32 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[169] Batch [80]	Speed: 7.12 samples/sec	Train-accuracy=0.893750
+INFO:root:Epoch[169] Train-accuracy=0.875000
+INFO:root:Epoch[169] Time cost=187.640
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0170.params"
+INFO:root:Epoch[169] Validation-accuracy=0.525000
+INFO:root:Epoch[170] Batch [20]	Speed: 7.01 samples/sec	Train-accuracy=0.907738
+INFO:root:Epoch[170] Batch [40]	Speed: 7.95 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[170] Batch [60]	Speed: 7.03 samples/sec	Train-accuracy=0.906250
+INFO:root:Epoch[170] Batch [80]	Speed: 7.42 samples/sec	Train-accuracy=0.887500
+INFO:root:Epoch[170] Train-accuracy=0.892857
+INFO:root:Epoch[170] Time cost=190.549
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0171.params"
+INFO:root:Epoch[170] Validation-accuracy=0.487500
+INFO:root:Epoch[171] Batch [20]	Speed: 7.24 samples/sec	Train-accuracy=0.886905
+INFO:root:Epoch[171] Batch [40]	Speed: 7.43 samples/sec	Train-accuracy=0.828125
+INFO:root:Epoch[171] Batch [60]	Speed: 7.94 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[171] Batch [80]	Speed: 7.07 samples/sec	Train-accuracy=0.850000
+INFO:root:Epoch[171] Train-accuracy=0.937500
+INFO:root:Epoch[171] Time cost=188.935
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0172.params"
+INFO:root:Epoch[171] Validation-accuracy=0.484375
+INFO:root:Epoch[172] Batch [20]	Speed: 7.35 samples/sec	Train-accuracy=0.880952
+INFO:root:Epoch[172] Batch [40]	Speed: 7.45 samples/sec	Train-accuracy=0.878125
+INFO:root:Epoch[172] Batch [60]	Speed: 7.47 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[172] Batch [80]	Speed: 9.15 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[172] Train-accuracy=0.875000
+INFO:root:Epoch[172] Time cost=179.173
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0173.params"
+INFO:root:Epoch[172] Validation-accuracy=0.500000
+INFO:root:Epoch[173] Batch [20]	Speed: 7.34 samples/sec	Train-accuracy=0.922619
+INFO:root:Epoch[173] Batch [40]	Speed: 7.79 samples/sec	Train-accuracy=0.906250
+INFO:root:Epoch[173] Batch [60]	Speed: 7.22 samples/sec	Train-accuracy=0.903125
+INFO:root:Epoch[173] Batch [80]	Speed: 7.38 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[173] Train-accuracy=0.928571
+INFO:root:Epoch[173] Time cost=188.031
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0174.params"
+INFO:root:Epoch[173] Validation-accuracy=0.525000
+INFO:root:Epoch[174] Batch [20]	Speed: 7.89 samples/sec	Train-accuracy=0.940476
+INFO:root:Epoch[174] Batch [40]	Speed: 8.64 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[174] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.909375
+INFO:root:Epoch[174] Batch [80]	Speed: 9.09 samples/sec	Train-accuracy=0.890625
+INFO:root:Epoch[174] Train-accuracy=0.955357
+INFO:root:Epoch[174] Time cost=162.022
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0175.params"
+INFO:root:Epoch[174] Validation-accuracy=0.546875
+INFO:root:Epoch[175] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.922619
+INFO:root:Epoch[175] Batch [40]	Speed: 8.89 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[175] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[175] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[175] Train-accuracy=0.864583
+INFO:root:Epoch[175] Time cost=155.078
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0176.params"
+INFO:root:Epoch[175] Validation-accuracy=0.562500
+INFO:root:Epoch[176] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.934524
+INFO:root:Epoch[176] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.900000
+INFO:root:Epoch[176] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.909375
+INFO:root:Epoch[176] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.912500
+INFO:root:Epoch[176] Train-accuracy=0.901786
+INFO:root:Epoch[176] Time cost=158.518
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0177.params"
+INFO:root:Epoch[176] Validation-accuracy=0.600000
+INFO:root:Epoch[177] Batch [20]	Speed: 9.07 samples/sec	Train-accuracy=0.913690
+INFO:root:Epoch[177] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.934375
+INFO:root:Epoch[177] Batch [60]	Speed: 8.92 samples/sec	Train-accuracy=0.893750
+INFO:root:Epoch[177] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.896875
+INFO:root:Epoch[177] Train-accuracy=0.919643
+INFO:root:Epoch[177] Time cost=156.189
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0178.params"
+INFO:root:Epoch[177] Validation-accuracy=0.537500
+INFO:root:Epoch[178] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.901786
+INFO:root:Epoch[178] Batch [40]	Speed: 9.07 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[178] Batch [60]	Speed: 8.93 samples/sec	Train-accuracy=0.946875
+INFO:root:Epoch[178] Batch [80]	Speed: 8.94 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[178] Train-accuracy=0.937500
+INFO:root:Epoch[178] Time cost=156.053
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0179.params"
+INFO:root:Epoch[178] Validation-accuracy=0.484375
+INFO:root:Epoch[179] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.931548
+INFO:root:Epoch[179] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[179] Batch [60]	Speed: 9.06 samples/sec	Train-accuracy=0.896875
+INFO:root:Epoch[179] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[179] Train-accuracy=0.946429
+INFO:root:Epoch[179] Time cost=156.270
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0180.params"
+INFO:root:Epoch[179] Validation-accuracy=0.625000
+INFO:root:Epoch[180] Batch [20]	Speed: 8.88 samples/sec	Train-accuracy=0.931548
+INFO:root:Epoch[180] Batch [40]	Speed: 8.92 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[180] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.934375
+INFO:root:Epoch[180] Batch [80]	Speed: 9.68 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[180] Train-accuracy=0.892857
+INFO:root:Epoch[180] Time cost=154.031
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0181.params"
+INFO:root:Epoch[180] Validation-accuracy=0.562500
+INFO:root:Epoch[181] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.904762
+INFO:root:Epoch[181] Batch [40]	Speed: 8.94 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[181] Batch [60]	Speed: 8.88 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[181] Batch [80]	Speed: 8.98 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[181] Train-accuracy=0.910714
+INFO:root:Epoch[181] Time cost=156.518
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0182.params"
+INFO:root:Epoch[181] Validation-accuracy=0.562500
+INFO:root:Epoch[182] Batch [20]	Speed: 8.97 samples/sec	Train-accuracy=0.925595
+INFO:root:Epoch[182] Batch [40]	Speed: 8.89 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[182] Batch [60]	Speed: 8.95 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[182] Batch [80]	Speed: 8.88 samples/sec	Train-accuracy=0.906250
+INFO:root:Epoch[182] Train-accuracy=0.901786
+INFO:root:Epoch[182] Time cost=156.667
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0183.params"
+INFO:root:Epoch[182] Validation-accuracy=0.625000
+INFO:root:Epoch[183] Batch [20]	Speed: 9.06 samples/sec	Train-accuracy=0.952381
+INFO:root:Epoch[183] Batch [40]	Speed: 8.88 samples/sec	Train-accuracy=0.956250
+INFO:root:Epoch[183] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.956250
+INFO:root:Epoch[183] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[183] Train-accuracy=0.968750
+INFO:root:Epoch[183] Time cost=154.521
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0184.params"
+INFO:root:Epoch[183] Validation-accuracy=0.537500
+INFO:root:Epoch[184] Batch [20]	Speed: 8.93 samples/sec	Train-accuracy=0.949405
+INFO:root:Epoch[184] Batch [40]	Speed: 9.07 samples/sec	Train-accuracy=0.937500
+INFO:root:Epoch[184] Batch [60]	Speed: 8.90 samples/sec	Train-accuracy=0.934375
+INFO:root:Epoch[184] Batch [80]	Speed: 8.91 samples/sec	Train-accuracy=0.943750
+INFO:root:Epoch[184] Train-accuracy=0.919643
+INFO:root:Epoch[184] Time cost=157.865
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0185.params"
+INFO:root:Epoch[184] Validation-accuracy=0.468750
+INFO:root:Epoch[185] Batch [20]	Speed: 8.92 samples/sec	Train-accuracy=0.955357
+INFO:root:Epoch[185] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.953125
+INFO:root:Epoch[185] Batch [60]	Speed: 9.08 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[185] Batch [80]	Speed: 8.92 samples/sec	Train-accuracy=0.943750
+INFO:root:Epoch[185] Train-accuracy=0.910714
+INFO:root:Epoch[185] Time cost=156.212
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0186.params"
+INFO:root:Epoch[185] Validation-accuracy=0.537500
+INFO:root:Epoch[186] Batch [20]	Speed: 8.91 samples/sec	Train-accuracy=0.952381
+INFO:root:Epoch[186] Batch [40]	Speed: 8.90 samples/sec	Train-accuracy=0.968750
+INFO:root:Epoch[186] Batch [60]	Speed: 8.93 samples/sec	Train-accuracy=0.959375
+INFO:root:Epoch[186] Batch [80]	Speed: 9.07 samples/sec	Train-accuracy=0.968750
+INFO:root:Epoch[186] Train-accuracy=0.937500
+INFO:root:Epoch[186] Time cost=156.229
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0187.params"
+INFO:root:Epoch[186] Validation-accuracy=0.487500
+INFO:root:Epoch[187] Batch [20]	Speed: 8.90 samples/sec	Train-accuracy=0.961310
+INFO:root:Epoch[187] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[187] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.946875
+INFO:root:Epoch[187] Batch [80]	Speed: 8.89 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[187] Train-accuracy=0.955357
+INFO:root:Epoch[187] Time cost=156.916
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0188.params"
+INFO:root:Epoch[187] Validation-accuracy=0.562500
+INFO:root:Epoch[188] Batch [20]	Speed: 8.98 samples/sec	Train-accuracy=0.940476
+INFO:root:Epoch[188] Batch [40]	Speed: 8.91 samples/sec	Train-accuracy=0.934375
+INFO:root:Epoch[188] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[188] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[188] Train-accuracy=0.910714
+INFO:root:Epoch[188] Time cost=156.473
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0189.params"
+INFO:root:Epoch[188] Validation-accuracy=0.550000
+INFO:root:Epoch[189] Batch [20]	Speed: 9.05 samples/sec	Train-accuracy=0.946429
+INFO:root:Epoch[189] Batch [40]	Speed: 8.88 samples/sec	Train-accuracy=0.950000
+INFO:root:Epoch[189] Batch [60]	Speed: 8.91 samples/sec	Train-accuracy=0.950000
+INFO:root:Epoch[189] Batch [80]	Speed: 8.90 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[189] Train-accuracy=0.910714
+INFO:root:Epoch[189] Time cost=156.406
+INFO:root:Saved checkpoint to "./models/inception-resnet-v2-50-train-add-seg-224-lr-0.01-0190.params"
+INFO:root:Epoch[189] Validation-accuracy=0.537500
+INFO:root:Epoch[190] Batch [20]	Speed: 17.10 samples/sec	Train-accuracy=0.967262

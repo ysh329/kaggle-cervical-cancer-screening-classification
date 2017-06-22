@@ -1,0 +1,2410 @@
+[resnet]
+INFO:root:start with arguments Namespace(batch_size=16, benchmark=0, data_nthreads=4, data_train='./data/ccs-train-seg-224_train.rec', data_val='./data/ccs-train-seg-224_val.rec', disp_batches=20, dtype='float32', gpus='0,1,2', image_shape='3,224,224', kv_store='device', load_epoch=None, lr=0.05, lr_factor=0.1, lr_step_epochs='200,250', max_random_aspect_ratio=0, max_random_h=36, max_random_l=50, max_random_rotate_angle=0, max_random_s=50, max_random_scale=1, max_random_shear_ratio=0, min_random_scale=1, model_prefix='./models/resnet-50-train-seg-224', mom=0.9, monitor=0, network='resnet', num_classes=3, num_epochs=300, num_examples=1406, num_layers=50, optimizer='sgd', pad_size=4, random_crop=1, random_mirror=1, rgb_mean='123.68,116.779,103.939', test_io=0, top_k=0, wd=0.0001)
+[17:18:28] src/io/iter_image_recordio_2.cc:135: ImageRecordIOParser2: ./data/ccs-train-seg-224_train.rec, use 4 threads for decoding..
+[17:18:29] src/io/iter_image_recordio_2.cc:135: ImageRecordIOParser2: ./data/ccs-train-seg-224_val.rec, use 4 threads for decoding..
+[17:18:33] src/kvstore/././comm.h:304: only 2 out of 6 GPU pairs are enabled direct access. It may affect the performance. You can set MXNET_ENABLE_GPU_P2P=0 to turn it off
+[17:18:33] src/kvstore/././comm.h:313: ...
+[17:18:33] src/kvstore/././comm.h:313: ..v
+[17:18:33] src/kvstore/././comm.h:313: .v.
+INFO:root:Epoch[0] Batch [20]	Speed: 43.54 samples/sec	Train-accuracy=0.422619
+INFO:root:Epoch[0] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.418750
+INFO:root:Epoch[0] Batch [60]	Speed: 43.52 samples/sec	Train-accuracy=0.450000
+INFO:root:Epoch[0] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.450000
+INFO:root:Epoch[0] Train-accuracy=0.303571
+INFO:root:Epoch[0] Time cost=33.275
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0001.params"
+INFO:root:Epoch[0] Validation-accuracy=0.500000
+INFO:root:Epoch[1] Batch [20]	Speed: 43.56 samples/sec	Train-accuracy=0.479167
+INFO:root:Epoch[1] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.453125
+INFO:root:Epoch[1] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[1] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.450000
+INFO:root:Epoch[1] Train-accuracy=0.508929
+INFO:root:Epoch[1] Time cost=32.036
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0002.params"
+INFO:root:Epoch[1] Validation-accuracy=0.462500
+INFO:root:Epoch[2] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[2] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.481250
+INFO:root:Epoch[2] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.478125
+INFO:root:Epoch[2] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[2] Train-accuracy=0.482143
+INFO:root:Epoch[2] Time cost=32.010
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0003.params"
+INFO:root:Epoch[2] Validation-accuracy=0.500000
+INFO:root:Epoch[3] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.476190
+INFO:root:Epoch[3] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.496875
+INFO:root:Epoch[3] Batch [60]	Speed: 43.60 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[3] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.468750
+INFO:root:Epoch[3] Train-accuracy=0.464286
+INFO:root:Epoch[3] Time cost=32.022
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0004.params"
+INFO:root:Epoch[3] Validation-accuracy=0.475000
+INFO:root:Epoch[4] Batch [20]	Speed: 43.56 samples/sec	Train-accuracy=0.505952
+INFO:root:Epoch[4] Batch [40]	Speed: 43.43 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[4] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[4] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[4] Train-accuracy=0.482143
+INFO:root:Epoch[4] Time cost=32.079
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0005.params"
+INFO:root:Epoch[4] Validation-accuracy=0.487500
+INFO:root:Epoch[5] Batch [20]	Speed: 43.54 samples/sec	Train-accuracy=0.553571
+INFO:root:Epoch[5] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[5] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[5] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.459375
+INFO:root:Epoch[5] Train-accuracy=0.482143
+INFO:root:Epoch[5] Time cost=32.066
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0006.params"
+INFO:root:Epoch[5] Validation-accuracy=0.546875
+INFO:root:Epoch[6] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.532738
+INFO:root:Epoch[6] Batch [40]	Speed: 43.57 samples/sec	Train-accuracy=0.478125
+INFO:root:Epoch[6] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[6] Batch [80]	Speed: 43.57 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[6] Train-accuracy=0.544643
+INFO:root:Epoch[6] Time cost=32.050
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0007.params"
+INFO:root:Epoch[6] Validation-accuracy=0.437500
+INFO:root:Epoch[7] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.526786
+INFO:root:Epoch[7] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[7] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.468750
+INFO:root:Epoch[7] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[7] Train-accuracy=0.458333
+INFO:root:Epoch[7] Time cost=31.641
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0008.params"
+INFO:root:Epoch[7] Validation-accuracy=0.512500
+INFO:root:Epoch[8] Batch [20]	Speed: 43.59 samples/sec	Train-accuracy=0.520833
+INFO:root:Epoch[8] Batch [40]	Speed: 43.56 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[8] Batch [60]	Speed: 43.55 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[8] Batch [80]	Speed: 43.53 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[8] Train-accuracy=0.491071
+INFO:root:Epoch[8] Time cost=33.545
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0009.params"
+INFO:root:Epoch[8] Validation-accuracy=0.484375
+INFO:root:Epoch[9] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.547619
+INFO:root:Epoch[9] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[9] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[9] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.471875
+INFO:root:Epoch[9] Train-accuracy=0.517857
+INFO:root:Epoch[9] Time cost=32.029
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0010.params"
+INFO:root:Epoch[9] Validation-accuracy=0.475000
+INFO:root:Epoch[10] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=0.529762
+INFO:root:Epoch[10] Batch [40]	Speed: 43.54 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[10] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[10] Batch [80]	Speed: 43.58 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[10] Train-accuracy=0.517857
+INFO:root:Epoch[10] Time cost=32.057
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0011.params"
+INFO:root:Epoch[10] Validation-accuracy=0.450000
+INFO:root:Epoch[11] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.514881
+INFO:root:Epoch[11] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[11] Batch [60]	Speed: 43.50 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[11] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[11] Train-accuracy=0.544643
+INFO:root:Epoch[11] Time cost=32.062
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0012.params"
+INFO:root:Epoch[11] Validation-accuracy=0.437500
+INFO:root:Epoch[12] Batch [20]	Speed: 43.54 samples/sec	Train-accuracy=0.497024
+INFO:root:Epoch[12] Batch [40]	Speed: 43.52 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[12] Batch [60]	Speed: 43.50 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[12] Batch [80]	Speed: 43.48 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[12] Train-accuracy=0.473214
+INFO:root:Epoch[12] Time cost=32.106
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0013.params"
+INFO:root:Epoch[12] Validation-accuracy=0.437500
+INFO:root:Epoch[13] Batch [20]	Speed: 43.56 samples/sec	Train-accuracy=0.547619
+INFO:root:Epoch[13] Batch [40]	Speed: 43.42 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[13] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[13] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[13] Train-accuracy=0.437500
+INFO:root:Epoch[13] Time cost=32.082
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0014.params"
+INFO:root:Epoch[13] Validation-accuracy=0.462500
+INFO:root:Epoch[14] Batch [20]	Speed: 43.53 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[14] Batch [40]	Speed: 43.49 samples/sec	Train-accuracy=0.496875
+INFO:root:Epoch[14] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[14] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.521875
+INFO:root:Epoch[14] Train-accuracy=0.491071
+INFO:root:Epoch[14] Time cost=32.053
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0015.params"
+INFO:root:Epoch[14] Validation-accuracy=0.500000
+INFO:root:Epoch[15] Batch [20]	Speed: 43.54 samples/sec	Train-accuracy=0.580357
+INFO:root:Epoch[15] Batch [40]	Speed: 43.54 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[15] Batch [60]	Speed: 43.55 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[15] Batch [80]	Speed: 43.57 samples/sec	Train-accuracy=0.496875
+INFO:root:Epoch[15] Train-accuracy=0.520833
+INFO:root:Epoch[15] Time cost=31.709
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0016.params"
+INFO:root:Epoch[15] Validation-accuracy=0.412500
+INFO:root:Epoch[16] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.547619
+INFO:root:Epoch[16] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[16] Batch [60]	Speed: 43.76 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[16] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.518750
+INFO:root:Epoch[16] Train-accuracy=0.508929
+INFO:root:Epoch[16] Time cost=33.511
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0017.params"
+INFO:root:Epoch[16] Validation-accuracy=0.487500
+INFO:root:Epoch[17] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.565476
+INFO:root:Epoch[17] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[17] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.500000
+INFO:root:Epoch[17] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[17] Train-accuracy=0.491071
+INFO:root:Epoch[17] Time cost=32.005
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0018.params"
+INFO:root:Epoch[17] Validation-accuracy=0.475000
+INFO:root:Epoch[18] Batch [20]	Speed: 43.41 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[18] Batch [40]	Speed: 43.50 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[18] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[18] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[18] Train-accuracy=0.473214
+INFO:root:Epoch[18] Time cost=32.084
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0019.params"
+INFO:root:Epoch[18] Validation-accuracy=0.515625
+INFO:root:Epoch[19] Batch [20]	Speed: 43.43 samples/sec	Train-accuracy=0.535714
+INFO:root:Epoch[19] Batch [40]	Speed: 43.54 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[19] Batch [60]	Speed: 43.55 samples/sec	Train-accuracy=0.521875
+INFO:root:Epoch[19] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[19] Train-accuracy=0.508929
+INFO:root:Epoch[19] Time cost=32.077
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0020.params"
+INFO:root:Epoch[19] Validation-accuracy=0.475000
+INFO:root:Epoch[20] Batch [20]	Speed: 43.75 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[20] Batch [40]	Speed: 43.47 samples/sec	Train-accuracy=0.465625
+INFO:root:Epoch[20] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.515625
+INFO:root:Epoch[20] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[20] Train-accuracy=0.491071
+INFO:root:Epoch[20] Time cost=32.042
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0021.params"
+INFO:root:Epoch[20] Validation-accuracy=0.500000
+INFO:root:Epoch[21] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.491071
+INFO:root:Epoch[21] Batch [40]	Speed: 43.45 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[21] Batch [60]	Speed: 43.60 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[21] Batch [80]	Speed: 43.49 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[21] Train-accuracy=0.464286
+INFO:root:Epoch[21] Time cost=32.084
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0022.params"
+INFO:root:Epoch[21] Validation-accuracy=0.500000
+INFO:root:Epoch[22] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.508929
+INFO:root:Epoch[22] Batch [40]	Speed: 43.51 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[22] Batch [60]	Speed: 43.46 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[22] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[22] Train-accuracy=0.464286
+INFO:root:Epoch[22] Time cost=32.074
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0023.params"
+INFO:root:Epoch[22] Validation-accuracy=0.475000
+INFO:root:Epoch[23] Batch [20]	Speed: 43.52 samples/sec	Train-accuracy=0.535714
+INFO:root:Epoch[23] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[23] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.515625
+INFO:root:Epoch[23] Batch [80]	Speed: 43.72 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[23] Train-accuracy=0.416667
+INFO:root:Epoch[23] Time cost=31.666
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0024.params"
+INFO:root:Epoch[23] Validation-accuracy=0.475000
+INFO:root:Epoch[24] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.544643
+INFO:root:Epoch[24] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[24] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[24] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[24] Train-accuracy=0.553571
+INFO:root:Epoch[24] Time cost=33.485
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0025.params"
+INFO:root:Epoch[24] Validation-accuracy=0.500000
+INFO:root:Epoch[25] Batch [20]	Speed: 43.54 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[25] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[25] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[25] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[25] Train-accuracy=0.517857
+INFO:root:Epoch[25] Time cost=32.035
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0026.params"
+INFO:root:Epoch[25] Validation-accuracy=0.512500
+INFO:root:Epoch[26] Batch [20]	Speed: 43.56 samples/sec	Train-accuracy=0.532738
+INFO:root:Epoch[26] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[26] Batch [60]	Speed: 43.77 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[26] Batch [80]	Speed: 43.50 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[26] Train-accuracy=0.517857
+INFO:root:Epoch[26] Time cost=32.022
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0027.params"
+INFO:root:Epoch[26] Validation-accuracy=0.500000
+INFO:root:Epoch[27] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=0.520833
+INFO:root:Epoch[27] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[27] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[27] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[27] Train-accuracy=0.482143
+INFO:root:Epoch[27] Time cost=32.014
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0028.params"
+INFO:root:Epoch[27] Validation-accuracy=0.515625
+INFO:root:Epoch[28] Batch [20]	Speed: 42.94 samples/sec	Train-accuracy=0.505952
+INFO:root:Epoch[28] Batch [40]	Speed: 40.10 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[28] Batch [60]	Speed: 41.30 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[28] Batch [80]	Speed: 40.65 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[28] Train-accuracy=0.508929
+INFO:root:Epoch[28] Time cost=34.005
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0029.params"
+INFO:root:Epoch[28] Validation-accuracy=0.500000
+INFO:root:Epoch[29] Batch [20]	Speed: 41.39 samples/sec	Train-accuracy=0.571429
+INFO:root:Epoch[29] Batch [40]	Speed: 40.90 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[29] Batch [60]	Speed: 40.73 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[29] Batch [80]	Speed: 41.50 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[29] Train-accuracy=0.473214
+INFO:root:Epoch[29] Time cost=33.826
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0030.params"
+INFO:root:Epoch[29] Validation-accuracy=0.537500
+INFO:root:Epoch[30] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.601190
+INFO:root:Epoch[30] Batch [40]	Speed: 43.53 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[30] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[30] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[30] Train-accuracy=0.508929
+INFO:root:Epoch[30] Time cost=32.205
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0031.params"
+INFO:root:Epoch[30] Validation-accuracy=0.546875
+INFO:root:Epoch[31] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.547619
+INFO:root:Epoch[31] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.515625
+INFO:root:Epoch[31] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.531250
+INFO:root:Epoch[31] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[31] Train-accuracy=0.468750
+INFO:root:Epoch[31] Time cost=31.615
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0032.params"
+INFO:root:Epoch[31] Validation-accuracy=0.475000
+INFO:root:Epoch[32] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.526786
+INFO:root:Epoch[32] Batch [40]	Speed: 43.77 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[32] Batch [60]	Speed: 42.72 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[32] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.487500
+INFO:root:Epoch[32] Train-accuracy=0.482143
+INFO:root:Epoch[32] Time cost=33.635
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0033.params"
+INFO:root:Epoch[32] Validation-accuracy=0.550000
+INFO:root:Epoch[33] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.526786
+INFO:root:Epoch[33] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[33] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[33] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.521875
+INFO:root:Epoch[33] Train-accuracy=0.491071
+INFO:root:Epoch[33] Time cost=32.002
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0034.params"
+INFO:root:Epoch[33] Validation-accuracy=0.550000
+INFO:root:Epoch[34] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.529762
+INFO:root:Epoch[34] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[34] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[34] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[34] Train-accuracy=0.491071
+INFO:root:Epoch[34] Time cost=32.027
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0035.params"
+INFO:root:Epoch[34] Validation-accuracy=0.546875
+INFO:root:Epoch[35] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.538690
+INFO:root:Epoch[35] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[35] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[35] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[35] Train-accuracy=0.491071
+INFO:root:Epoch[35] Time cost=32.017
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0036.params"
+INFO:root:Epoch[35] Validation-accuracy=0.537500
+INFO:root:Epoch[36] Batch [20]	Speed: 43.55 samples/sec	Train-accuracy=0.565476
+INFO:root:Epoch[36] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.493750
+INFO:root:Epoch[36] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[36] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.465625
+INFO:root:Epoch[36] Train-accuracy=0.517857
+INFO:root:Epoch[36] Time cost=32.034
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0037.params"
+INFO:root:Epoch[36] Validation-accuracy=0.487500
+INFO:root:Epoch[37] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.523810
+INFO:root:Epoch[37] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[37] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.521875
+INFO:root:Epoch[37] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[37] Train-accuracy=0.589286
+INFO:root:Epoch[37] Time cost=31.996
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0038.params"
+INFO:root:Epoch[37] Validation-accuracy=0.562500
+INFO:root:Epoch[38] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.550595
+INFO:root:Epoch[38] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[38] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[38] Batch [80]	Speed: 43.58 samples/sec	Train-accuracy=0.496875
+INFO:root:Epoch[38] Train-accuracy=0.508929
+INFO:root:Epoch[38] Time cost=32.006
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0039.params"
+INFO:root:Epoch[38] Validation-accuracy=0.525000
+INFO:root:Epoch[39] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.556548
+INFO:root:Epoch[39] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[39] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.512500
+INFO:root:Epoch[39] Batch [80]	Speed: 43.58 samples/sec	Train-accuracy=0.468750
+INFO:root:Epoch[39] Train-accuracy=0.531250
+INFO:root:Epoch[39] Time cost=31.640
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0040.params"
+INFO:root:Epoch[39] Validation-accuracy=0.450000
+INFO:root:Epoch[40] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.586310
+INFO:root:Epoch[40] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[40] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[40] Batch [80]	Speed: 43.73 samples/sec	Train-accuracy=0.478125
+INFO:root:Epoch[40] Train-accuracy=0.428571
+INFO:root:Epoch[40] Time cost=33.525
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0041.params"
+INFO:root:Epoch[40] Validation-accuracy=0.484375
+INFO:root:Epoch[41] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.523810
+INFO:root:Epoch[41] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[41] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[41] Batch [80]	Speed: 43.58 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[41] Train-accuracy=0.491071
+INFO:root:Epoch[41] Time cost=32.009
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0042.params"
+INFO:root:Epoch[41] Validation-accuracy=0.512500
+INFO:root:Epoch[42] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.538690
+INFO:root:Epoch[42] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[42] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[42] Batch [80]	Speed: 43.71 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[42] Train-accuracy=0.508929
+INFO:root:Epoch[42] Time cost=32.000
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0043.params"
+INFO:root:Epoch[42] Validation-accuracy=0.525000
+INFO:root:Epoch[43] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.544643
+INFO:root:Epoch[43] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[43] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[43] Batch [80]	Speed: 43.72 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[43] Train-accuracy=0.598214
+INFO:root:Epoch[43] Time cost=31.990
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0044.params"
+INFO:root:Epoch[43] Validation-accuracy=0.546875
+INFO:root:Epoch[44] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[44] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[44] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[44] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[44] Train-accuracy=0.482143
+INFO:root:Epoch[44] Time cost=31.974
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0045.params"
+INFO:root:Epoch[44] Validation-accuracy=0.600000
+INFO:root:Epoch[45] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[45] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[45] Batch [60]	Speed: 43.60 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[45] Batch [80]	Speed: 42.66 samples/sec	Train-accuracy=0.503125
+INFO:root:Epoch[45] Train-accuracy=0.535714
+INFO:root:Epoch[45] Time cost=32.245
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0046.params"
+INFO:root:Epoch[45] Validation-accuracy=0.537500
+INFO:root:Epoch[46] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.589286
+INFO:root:Epoch[46] Batch [40]	Speed: 43.74 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[46] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[46] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[46] Train-accuracy=0.491071
+INFO:root:Epoch[46] Time cost=31.962
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0047.params"
+INFO:root:Epoch[46] Validation-accuracy=0.640625
+INFO:root:Epoch[47] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.574405
+INFO:root:Epoch[47] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[47] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[47] Batch [80]	Speed: 43.71 samples/sec	Train-accuracy=0.528125
+INFO:root:Epoch[47] Train-accuracy=0.479167
+INFO:root:Epoch[47] Time cost=31.610
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0048.params"
+INFO:root:Epoch[47] Validation-accuracy=0.550000
+INFO:root:Epoch[48] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.553571
+INFO:root:Epoch[48] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[48] Batch [60]	Speed: 43.18 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[48] Batch [80]	Speed: 42.42 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[48] Train-accuracy=0.535714
+INFO:root:Epoch[48] Time cost=34.014
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0049.params"
+INFO:root:Epoch[48] Validation-accuracy=0.650000
+INFO:root:Epoch[49] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.589286
+INFO:root:Epoch[49] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[49] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[49] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[49] Train-accuracy=0.482143
+INFO:root:Epoch[49] Time cost=31.988
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0050.params"
+INFO:root:Epoch[49] Validation-accuracy=0.575000
+INFO:root:Epoch[50] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.580357
+INFO:root:Epoch[50] Batch [40]	Speed: 43.75 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[50] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[50] Batch [80]	Speed: 43.71 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[50] Train-accuracy=0.571429
+INFO:root:Epoch[50] Time cost=31.966
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0051.params"
+INFO:root:Epoch[50] Validation-accuracy=0.546875
+INFO:root:Epoch[51] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.598214
+INFO:root:Epoch[51] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[51] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[51] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[51] Train-accuracy=0.473214
+INFO:root:Epoch[51] Time cost=31.967
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0052.params"
+INFO:root:Epoch[51] Validation-accuracy=0.562500
+INFO:root:Epoch[52] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.535714
+INFO:root:Epoch[52] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[52] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[52] Batch [80]	Speed: 43.50 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[52] Train-accuracy=0.500000
+INFO:root:Epoch[52] Time cost=32.005
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0053.params"
+INFO:root:Epoch[52] Validation-accuracy=0.600000
+INFO:root:Epoch[53] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[53] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[53] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[53] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[53] Train-accuracy=0.482143
+INFO:root:Epoch[53] Time cost=31.989
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0054.params"
+INFO:root:Epoch[53] Validation-accuracy=0.546875
+INFO:root:Epoch[54] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.526786
+INFO:root:Epoch[54] Batch [40]	Speed: 42.67 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[54] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[54] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.506250
+INFO:root:Epoch[54] Train-accuracy=0.482143
+INFO:root:Epoch[54] Time cost=32.157
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0055.params"
+INFO:root:Epoch[54] Validation-accuracy=0.537500
+INFO:root:Epoch[55] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.592262
+INFO:root:Epoch[55] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[55] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[55] Batch [80]	Speed: 43.76 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[55] Train-accuracy=0.604167
+INFO:root:Epoch[55] Time cost=31.594
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0056.params"
+INFO:root:Epoch[55] Validation-accuracy=0.575000
+INFO:root:Epoch[56] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.586310
+INFO:root:Epoch[56] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[56] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[56] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[56] Train-accuracy=0.500000
+INFO:root:Epoch[56] Time cost=33.526
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0057.params"
+INFO:root:Epoch[56] Validation-accuracy=0.656250
+INFO:root:Epoch[57] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.613095
+INFO:root:Epoch[57] Batch [40]	Speed: 43.77 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[57] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[57] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[57] Train-accuracy=0.482143
+INFO:root:Epoch[57] Time cost=31.995
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0058.params"
+INFO:root:Epoch[57] Validation-accuracy=0.575000
+INFO:root:Epoch[58] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.580357
+INFO:root:Epoch[58] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.525000
+INFO:root:Epoch[58] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[58] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[58] Train-accuracy=0.428571
+INFO:root:Epoch[58] Time cost=31.973
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0059.params"
+INFO:root:Epoch[58] Validation-accuracy=0.562500
+INFO:root:Epoch[59] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.604167
+INFO:root:Epoch[59] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[59] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[59] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[59] Train-accuracy=0.508929
+INFO:root:Epoch[59] Time cost=31.989
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0060.params"
+INFO:root:Epoch[59] Validation-accuracy=0.500000
+INFO:root:Epoch[60] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.589286
+INFO:root:Epoch[60] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[60] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[60] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[60] Train-accuracy=0.598214
+INFO:root:Epoch[60] Time cost=31.984
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0061.params"
+INFO:root:Epoch[60] Validation-accuracy=0.550000
+INFO:root:Epoch[61] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.544643
+INFO:root:Epoch[61] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[61] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[61] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[61] Train-accuracy=0.553571
+INFO:root:Epoch[61] Time cost=31.990
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0062.params"
+INFO:root:Epoch[61] Validation-accuracy=0.575000
+INFO:root:Epoch[62] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[62] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[62] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[62] Batch [80]	Speed: 43.73 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[62] Train-accuracy=0.500000
+INFO:root:Epoch[62] Time cost=31.970
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0063.params"
+INFO:root:Epoch[62] Validation-accuracy=0.578125
+INFO:root:Epoch[63] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.627976
+INFO:root:Epoch[63] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[63] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.540625
+INFO:root:Epoch[63] Batch [80]	Speed: 43.74 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[63] Train-accuracy=0.520833
+INFO:root:Epoch[63] Time cost=31.593
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0064.params"
+INFO:root:Epoch[63] Validation-accuracy=0.525000
+INFO:root:Epoch[64] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[64] Batch [40]	Speed: 43.75 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[64] Batch [60]	Speed: 43.74 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[64] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[64] Train-accuracy=0.535714
+INFO:root:Epoch[64] Time cost=33.444
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0065.params"
+INFO:root:Epoch[64] Validation-accuracy=0.575000
+INFO:root:Epoch[65] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.553571
+INFO:root:Epoch[65] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[65] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[65] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[65] Train-accuracy=0.553571
+INFO:root:Epoch[65] Time cost=31.961
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0066.params"
+INFO:root:Epoch[65] Validation-accuracy=0.562500
+INFO:root:Epoch[66] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[66] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[66] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[66] Batch [80]	Speed: 43.74 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[66] Train-accuracy=0.535714
+INFO:root:Epoch[66] Time cost=31.951
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0067.params"
+INFO:root:Epoch[66] Validation-accuracy=0.578125
+INFO:root:Epoch[67] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.607143
+INFO:root:Epoch[67] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[67] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[67] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[67] Train-accuracy=0.571429
+INFO:root:Epoch[67] Time cost=31.983
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0068.params"
+INFO:root:Epoch[67] Validation-accuracy=0.562500
+INFO:root:Epoch[68] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.577381
+INFO:root:Epoch[68] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[68] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[68] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[68] Train-accuracy=0.625000
+INFO:root:Epoch[68] Time cost=31.975
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0069.params"
+INFO:root:Epoch[68] Validation-accuracy=0.525000
+INFO:root:Epoch[69] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[69] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[69] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[69] Batch [80]	Speed: 43.55 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[69] Train-accuracy=0.517857
+INFO:root:Epoch[69] Time cost=32.010
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0070.params"
+INFO:root:Epoch[69] Validation-accuracy=0.593750
+INFO:root:Epoch[70] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.607143
+INFO:root:Epoch[70] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[70] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.534375
+INFO:root:Epoch[70] Batch [80]	Speed: 43.71 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[70] Train-accuracy=0.589286
+INFO:root:Epoch[70] Time cost=31.998
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0071.params"
+INFO:root:Epoch[70] Validation-accuracy=0.600000
+INFO:root:Epoch[71] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.583333
+INFO:root:Epoch[71] Batch [40]	Speed: 43.74 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[71] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[71] Batch [80]	Speed: 43.73 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[71] Train-accuracy=0.625000
+INFO:root:Epoch[71] Time cost=31.584
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0072.params"
+INFO:root:Epoch[71] Validation-accuracy=0.525000
+INFO:root:Epoch[72] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.544643
+INFO:root:Epoch[72] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[72] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[72] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[72] Train-accuracy=0.607143
+INFO:root:Epoch[72] Time cost=33.473
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0073.params"
+INFO:root:Epoch[72] Validation-accuracy=0.484375
+INFO:root:Epoch[73] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.559524
+INFO:root:Epoch[73] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.509375
+INFO:root:Epoch[73] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[73] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[73] Train-accuracy=0.580357
+INFO:root:Epoch[73] Time cost=31.998
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0074.params"
+INFO:root:Epoch[73] Validation-accuracy=0.537500
+INFO:root:Epoch[74] Batch [20]	Speed: 43.74 samples/sec	Train-accuracy=0.592262
+INFO:root:Epoch[74] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[74] Batch [60]	Speed: 43.75 samples/sec	Train-accuracy=0.612500
+INFO:root:Epoch[74] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[74] Train-accuracy=0.535714
+INFO:root:Epoch[74] Time cost=31.964
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0075.params"
+INFO:root:Epoch[74] Validation-accuracy=0.500000
+INFO:root:Epoch[75] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.604167
+INFO:root:Epoch[75] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[75] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[75] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.537500
+INFO:root:Epoch[75] Train-accuracy=0.517857
+INFO:root:Epoch[75] Time cost=32.000
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0076.params"
+INFO:root:Epoch[75] Validation-accuracy=0.593750
+INFO:root:Epoch[76] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.571429
+INFO:root:Epoch[76] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[76] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[76] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[76] Train-accuracy=0.598214
+INFO:root:Epoch[76] Time cost=31.998
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0077.params"
+INFO:root:Epoch[76] Validation-accuracy=0.537500
+INFO:root:Epoch[77] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.562500
+INFO:root:Epoch[77] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.556250
+INFO:root:Epoch[77] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[77] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.571875
+INFO:root:Epoch[77] Train-accuracy=0.526786
+INFO:root:Epoch[77] Time cost=31.987
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0078.params"
+INFO:root:Epoch[77] Validation-accuracy=0.562500
+INFO:root:Epoch[78] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.604167
+INFO:root:Epoch[78] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[78] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[78] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[78] Train-accuracy=0.580357
+INFO:root:Epoch[78] Time cost=32.006
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0079.params"
+INFO:root:Epoch[78] Validation-accuracy=0.562500
+INFO:root:Epoch[79] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.619048
+INFO:root:Epoch[79] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[79] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[79] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.543750
+INFO:root:Epoch[79] Train-accuracy=0.593750
+INFO:root:Epoch[79] Time cost=31.625
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0080.params"
+INFO:root:Epoch[79] Validation-accuracy=0.562500
+INFO:root:Epoch[80] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.610119
+INFO:root:Epoch[80] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[80] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.612500
+INFO:root:Epoch[80] Batch [80]	Speed: 43.72 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[80] Train-accuracy=0.535714
+INFO:root:Epoch[80] Time cost=33.463
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0081.params"
+INFO:root:Epoch[80] Validation-accuracy=0.575000
+INFO:root:Epoch[81] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.657738
+INFO:root:Epoch[81] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[81] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[81] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[81] Train-accuracy=0.598214
+INFO:root:Epoch[81] Time cost=31.974
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0082.params"
+INFO:root:Epoch[81] Validation-accuracy=0.550000
+INFO:root:Epoch[82] Batch [20]	Speed: 43.75 samples/sec	Train-accuracy=0.577381
+INFO:root:Epoch[82] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[82] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[82] Batch [80]	Speed: 43.77 samples/sec	Train-accuracy=0.596875
+INFO:root:Epoch[82] Train-accuracy=0.571429
+INFO:root:Epoch[82] Time cost=31.947
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0083.params"
+INFO:root:Epoch[82] Validation-accuracy=0.531250
+INFO:root:Epoch[83] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[83] Batch [40]	Speed: 43.74 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[83] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[83] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[83] Train-accuracy=0.464286
+INFO:root:Epoch[83] Time cost=31.987
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0084.params"
+INFO:root:Epoch[83] Validation-accuracy=0.462500
+INFO:root:Epoch[84] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.604167
+INFO:root:Epoch[84] Batch [40]	Speed: 43.55 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[84] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.584375
+INFO:root:Epoch[84] Batch [80]	Speed: 43.56 samples/sec	Train-accuracy=0.631250
+INFO:root:Epoch[84] Train-accuracy=0.464286
+INFO:root:Epoch[84] Time cost=32.039
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0085.params"
+INFO:root:Epoch[84] Validation-accuracy=0.512500
+INFO:root:Epoch[85] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.604167
+INFO:root:Epoch[85] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[85] Batch [60]	Speed: 43.54 samples/sec	Train-accuracy=0.628125
+INFO:root:Epoch[85] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[85] Train-accuracy=0.544643
+INFO:root:Epoch[85] Time cost=32.010
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0086.params"
+INFO:root:Epoch[85] Validation-accuracy=0.531250
+INFO:root:Epoch[86] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.565476
+INFO:root:Epoch[86] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[86] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[86] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[86] Train-accuracy=0.517857
+INFO:root:Epoch[86] Time cost=31.981
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0087.params"
+INFO:root:Epoch[86] Validation-accuracy=0.637500
+INFO:root:Epoch[87] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.622024
+INFO:root:Epoch[87] Batch [40]	Speed: 43.74 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[87] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.593750
+INFO:root:Epoch[87] Batch [80]	Speed: 43.76 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[87] Train-accuracy=0.572917
+INFO:root:Epoch[87] Time cost=31.582
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0088.params"
+INFO:root:Epoch[87] Validation-accuracy=0.550000
+INFO:root:Epoch[88] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.619048
+INFO:root:Epoch[88] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[88] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[88] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[88] Train-accuracy=0.598214
+INFO:root:Epoch[88] Time cost=33.526
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0089.params"
+INFO:root:Epoch[88] Validation-accuracy=0.546875
+INFO:root:Epoch[89] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.627976
+INFO:root:Epoch[89] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.631250
+INFO:root:Epoch[89] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.578125
+INFO:root:Epoch[89] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[89] Train-accuracy=0.562500
+INFO:root:Epoch[89] Time cost=31.977
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0090.params"
+INFO:root:Epoch[89] Validation-accuracy=0.512500
+INFO:root:Epoch[90] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.571429
+INFO:root:Epoch[90] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[90] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.600000
+INFO:root:Epoch[90] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.615625
+INFO:root:Epoch[90] Train-accuracy=0.571429
+INFO:root:Epoch[90] Time cost=31.989
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0091.params"
+INFO:root:Epoch[90] Validation-accuracy=0.612500
+INFO:root:Epoch[91] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.616071
+INFO:root:Epoch[91] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.615625
+INFO:root:Epoch[91] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[91] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[91] Train-accuracy=0.544643
+INFO:root:Epoch[91] Time cost=31.976
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0092.params"
+INFO:root:Epoch[91] Validation-accuracy=0.609375
+INFO:root:Epoch[92] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.580357
+INFO:root:Epoch[92] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[92] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.587500
+INFO:root:Epoch[92] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[92] Train-accuracy=0.571429
+INFO:root:Epoch[92] Time cost=31.985
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0093.params"
+INFO:root:Epoch[92] Validation-accuracy=0.562500
+INFO:root:Epoch[93] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.568452
+INFO:root:Epoch[93] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.615625
+INFO:root:Epoch[93] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[93] Batch [80]	Speed: 43.77 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[93] Train-accuracy=0.553571
+INFO:root:Epoch[93] Time cost=31.956
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0094.params"
+INFO:root:Epoch[93] Validation-accuracy=0.562500
+INFO:root:Epoch[94] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.619048
+INFO:root:Epoch[94] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[94] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.575000
+INFO:root:Epoch[94] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.553125
+INFO:root:Epoch[94] Train-accuracy=0.571429
+INFO:root:Epoch[94] Time cost=32.004
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0095.params"
+INFO:root:Epoch[94] Validation-accuracy=0.484375
+INFO:root:Epoch[95] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.595238
+INFO:root:Epoch[95] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.603125
+INFO:root:Epoch[95] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.581250
+INFO:root:Epoch[95] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.637500
+INFO:root:Epoch[95] Train-accuracy=0.531250
+INFO:root:Epoch[95] Time cost=31.614
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0096.params"
+INFO:root:Epoch[95] Validation-accuracy=0.562500
+INFO:root:Epoch[96] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.648810
+INFO:root:Epoch[96] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.550000
+INFO:root:Epoch[96] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.612500
+INFO:root:Epoch[96] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[96] Train-accuracy=0.571429
+INFO:root:Epoch[96] Time cost=33.480
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0097.params"
+INFO:root:Epoch[96] Validation-accuracy=0.600000
+INFO:root:Epoch[97] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[97] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[97] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.565625
+INFO:root:Epoch[97] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[97] Train-accuracy=0.517857
+INFO:root:Epoch[97] Time cost=31.967
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0098.params"
+INFO:root:Epoch[97] Validation-accuracy=0.612500
+INFO:root:Epoch[98] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.681548
+INFO:root:Epoch[98] Batch [40]	Speed: 43.76 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[98] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[98] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.559375
+INFO:root:Epoch[98] Train-accuracy=0.526786
+INFO:root:Epoch[98] Time cost=31.983
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0099.params"
+INFO:root:Epoch[98] Validation-accuracy=0.625000
+INFO:root:Epoch[99] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=0.622024
+INFO:root:Epoch[99] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.650000
+INFO:root:Epoch[99] Batch [60]	Speed: 43.55 samples/sec	Train-accuracy=0.628125
+INFO:root:Epoch[99] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.625000
+INFO:root:Epoch[99] Train-accuracy=0.580357
+INFO:root:Epoch[99] Time cost=32.031
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0100.params"
+INFO:root:Epoch[99] Validation-accuracy=0.550000
+INFO:root:Epoch[100] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.654762
+INFO:root:Epoch[100] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.687500
+INFO:root:Epoch[100] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.609375
+INFO:root:Epoch[100] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.546875
+INFO:root:Epoch[100] Train-accuracy=0.526786
+INFO:root:Epoch[100] Time cost=31.991
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0101.params"
+INFO:root:Epoch[100] Validation-accuracy=0.587500
+INFO:root:Epoch[101] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.645833
+INFO:root:Epoch[101] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.637500
+INFO:root:Epoch[101] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.637500
+INFO:root:Epoch[101] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.650000
+INFO:root:Epoch[101] Train-accuracy=0.580357
+INFO:root:Epoch[101] Time cost=31.969
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0102.params"
+INFO:root:Epoch[101] Validation-accuracy=0.562500
+INFO:root:Epoch[102] Batch [20]	Speed: 43.74 samples/sec	Train-accuracy=0.675595
+INFO:root:Epoch[102] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.653125
+INFO:root:Epoch[102] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[102] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.590625
+INFO:root:Epoch[102] Train-accuracy=0.553571
+INFO:root:Epoch[102] Time cost=31.974
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0103.params"
+INFO:root:Epoch[102] Validation-accuracy=0.600000
+INFO:root:Epoch[103] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.633929
+INFO:root:Epoch[103] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.659375
+INFO:root:Epoch[103] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.568750
+INFO:root:Epoch[103] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.681250
+INFO:root:Epoch[103] Train-accuracy=0.479167
+INFO:root:Epoch[103] Time cost=31.617
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0104.params"
+INFO:root:Epoch[103] Validation-accuracy=0.525000
+INFO:root:Epoch[104] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.627976
+INFO:root:Epoch[104] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.665625
+INFO:root:Epoch[104] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.631250
+INFO:root:Epoch[104] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.637500
+INFO:root:Epoch[104] Train-accuracy=0.571429
+INFO:root:Epoch[104] Time cost=33.496
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0105.params"
+INFO:root:Epoch[104] Validation-accuracy=0.546875
+INFO:root:Epoch[105] Batch [20]	Speed: 43.74 samples/sec	Train-accuracy=0.648810
+INFO:root:Epoch[105] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.665625
+INFO:root:Epoch[105] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.628125
+INFO:root:Epoch[105] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.618750
+INFO:root:Epoch[105] Train-accuracy=0.553571
+INFO:root:Epoch[105] Time cost=31.975
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0106.params"
+INFO:root:Epoch[105] Validation-accuracy=0.662500
+INFO:root:Epoch[106] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.642857
+INFO:root:Epoch[106] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[106] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.637500
+INFO:root:Epoch[106] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.650000
+INFO:root:Epoch[106] Train-accuracy=0.607143
+INFO:root:Epoch[106] Time cost=31.990
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0107.params"
+INFO:root:Epoch[106] Validation-accuracy=0.512500
+INFO:root:Epoch[107] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.639881
+INFO:root:Epoch[107] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.631250
+INFO:root:Epoch[107] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[107] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.615625
+INFO:root:Epoch[107] Train-accuracy=0.598214
+INFO:root:Epoch[107] Time cost=31.988
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0108.params"
+INFO:root:Epoch[107] Validation-accuracy=0.562500
+INFO:root:Epoch[108] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.729167
+INFO:root:Epoch[108] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.628125
+INFO:root:Epoch[108] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[108] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.606250
+INFO:root:Epoch[108] Train-accuracy=0.607143
+INFO:root:Epoch[108] Time cost=32.000
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0109.params"
+INFO:root:Epoch[108] Validation-accuracy=0.625000
+INFO:root:Epoch[109] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.639881
+INFO:root:Epoch[109] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.637500
+INFO:root:Epoch[109] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[109] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[109] Train-accuracy=0.642857
+INFO:root:Epoch[109] Time cost=31.987
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0110.params"
+INFO:root:Epoch[109] Validation-accuracy=0.600000
+INFO:root:Epoch[110] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.669643
+INFO:root:Epoch[110] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.678125
+INFO:root:Epoch[110] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.643750
+INFO:root:Epoch[110] Batch [80]	Speed: 43.57 samples/sec	Train-accuracy=0.653125
+INFO:root:Epoch[110] Train-accuracy=0.562500
+INFO:root:Epoch[110] Time cost=32.020
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0111.params"
+INFO:root:Epoch[110] Validation-accuracy=0.609375
+INFO:root:Epoch[111] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.630952
+INFO:root:Epoch[111] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.665625
+INFO:root:Epoch[111] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[111] Batch [80]	Speed: 43.73 samples/sec	Train-accuracy=0.659375
+INFO:root:Epoch[111] Train-accuracy=0.572917
+INFO:root:Epoch[111] Time cost=31.618
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0112.params"
+INFO:root:Epoch[111] Validation-accuracy=0.562500
+INFO:root:Epoch[112] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.693452
+INFO:root:Epoch[112] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.671875
+INFO:root:Epoch[112] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[112] Batch [80]	Speed: 43.72 samples/sec	Train-accuracy=0.671875
+INFO:root:Epoch[112] Train-accuracy=0.651786
+INFO:root:Epoch[112] Time cost=33.491
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0113.params"
+INFO:root:Epoch[112] Validation-accuracy=0.562500
+INFO:root:Epoch[113] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.672619
+INFO:root:Epoch[113] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.690625
+INFO:root:Epoch[113] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.646875
+INFO:root:Epoch[113] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.640625
+INFO:root:Epoch[113] Train-accuracy=0.553571
+INFO:root:Epoch[113] Time cost=32.018
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0114.params"
+INFO:root:Epoch[113] Validation-accuracy=0.587500
+INFO:root:Epoch[114] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.642857
+INFO:root:Epoch[114] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.684375
+INFO:root:Epoch[114] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.693750
+INFO:root:Epoch[114] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.634375
+INFO:root:Epoch[114] Train-accuracy=0.598214
+INFO:root:Epoch[114] Time cost=31.977
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0115.params"
+INFO:root:Epoch[114] Validation-accuracy=0.593750
+INFO:root:Epoch[115] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.619048
+INFO:root:Epoch[115] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.693750
+INFO:root:Epoch[115] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.709375
+INFO:root:Epoch[115] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.693750
+INFO:root:Epoch[115] Train-accuracy=0.687500
+INFO:root:Epoch[115] Time cost=32.002
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0116.params"
+INFO:root:Epoch[115] Validation-accuracy=0.487500
+INFO:root:Epoch[116] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.747024
+INFO:root:Epoch[116] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.646875
+INFO:root:Epoch[116] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.662500
+INFO:root:Epoch[116] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.671875
+INFO:root:Epoch[116] Train-accuracy=0.660714
+INFO:root:Epoch[116] Time cost=31.967
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0117.params"
+INFO:root:Epoch[116] Validation-accuracy=0.587500
+INFO:root:Epoch[117] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.690476
+INFO:root:Epoch[117] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.656250
+INFO:root:Epoch[117] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.646875
+INFO:root:Epoch[117] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.659375
+INFO:root:Epoch[117] Train-accuracy=0.687500
+INFO:root:Epoch[117] Time cost=31.990
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0118.params"
+INFO:root:Epoch[117] Validation-accuracy=0.578125
+INFO:root:Epoch[118] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.708333
+INFO:root:Epoch[118] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.696875
+INFO:root:Epoch[118] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.696875
+INFO:root:Epoch[118] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[118] Train-accuracy=0.669643
+INFO:root:Epoch[118] Time cost=32.005
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0119.params"
+INFO:root:Epoch[118] Validation-accuracy=0.587500
+INFO:root:Epoch[119] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.696429
+INFO:root:Epoch[119] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.659375
+INFO:root:Epoch[119] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[119] Batch [80]	Speed: 43.72 samples/sec	Train-accuracy=0.646875
+INFO:root:Epoch[119] Train-accuracy=0.520833
+INFO:root:Epoch[119] Time cost=31.604
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0120.params"
+INFO:root:Epoch[119] Validation-accuracy=0.350000
+INFO:root:Epoch[120] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.699405
+INFO:root:Epoch[120] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.728125
+INFO:root:Epoch[120] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.671875
+INFO:root:Epoch[120] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.659375
+INFO:root:Epoch[120] Train-accuracy=0.696429
+INFO:root:Epoch[120] Time cost=33.503
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0121.params"
+INFO:root:Epoch[120] Validation-accuracy=0.437500
+INFO:root:Epoch[121] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.705357
+INFO:root:Epoch[121] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.653125
+INFO:root:Epoch[121] Batch [60]	Speed: 43.75 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[121] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.687500
+INFO:root:Epoch[121] Train-accuracy=0.642857
+INFO:root:Epoch[121] Time cost=31.983
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0122.params"
+INFO:root:Epoch[121] Validation-accuracy=0.637500
+INFO:root:Epoch[122] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.735119
+INFO:root:Epoch[122] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.700000
+INFO:root:Epoch[122] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[122] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.621875
+INFO:root:Epoch[122] Train-accuracy=0.642857
+INFO:root:Epoch[122] Time cost=31.999
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0123.params"
+INFO:root:Epoch[122] Validation-accuracy=0.537500
+INFO:root:Epoch[123] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.741071
+INFO:root:Epoch[123] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[123] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.746875
+INFO:root:Epoch[123] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.662500
+INFO:root:Epoch[123] Train-accuracy=0.651786
+INFO:root:Epoch[123] Time cost=32.004
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0124.params"
+INFO:root:Epoch[123] Validation-accuracy=0.593750
+INFO:root:Epoch[124] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.696429
+INFO:root:Epoch[124] Batch [40]	Speed: 43.74 samples/sec	Train-accuracy=0.721875
+INFO:root:Epoch[124] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.734375
+INFO:root:Epoch[124] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.650000
+INFO:root:Epoch[124] Train-accuracy=0.651786
+INFO:root:Epoch[124] Time cost=31.979
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0125.params"
+INFO:root:Epoch[124] Validation-accuracy=0.537500
+INFO:root:Epoch[125] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.741071
+INFO:root:Epoch[125] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.750000
+INFO:root:Epoch[125] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.628125
+INFO:root:Epoch[125] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[125] Train-accuracy=0.732143
+INFO:root:Epoch[125] Time cost=31.979
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0126.params"
+INFO:root:Epoch[125] Validation-accuracy=0.575000
+INFO:root:Epoch[126] Batch [20]	Speed: 43.72 samples/sec	Train-accuracy=0.717262
+INFO:root:Epoch[126] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.706250
+INFO:root:Epoch[126] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.709375
+INFO:root:Epoch[126] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.703125
+INFO:root:Epoch[126] Train-accuracy=0.651786
+INFO:root:Epoch[126] Time cost=31.978
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0127.params"
+INFO:root:Epoch[126] Validation-accuracy=0.296875
+INFO:root:Epoch[127] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.648810
+INFO:root:Epoch[127] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.725000
+INFO:root:Epoch[127] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.746875
+INFO:root:Epoch[127] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.668750
+INFO:root:Epoch[127] Train-accuracy=0.729167
+INFO:root:Epoch[127] Time cost=31.623
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0128.params"
+INFO:root:Epoch[127] Validation-accuracy=0.587500
+INFO:root:Epoch[128] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.708333
+INFO:root:Epoch[128] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.715625
+INFO:root:Epoch[128] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.715625
+INFO:root:Epoch[128] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.693750
+INFO:root:Epoch[128] Train-accuracy=0.580357
+INFO:root:Epoch[128] Time cost=33.521
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0129.params"
+INFO:root:Epoch[128] Validation-accuracy=0.537500
+INFO:root:Epoch[129] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.720238
+INFO:root:Epoch[129] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.762500
+INFO:root:Epoch[129] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.721875
+INFO:root:Epoch[129] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.725000
+INFO:root:Epoch[129] Train-accuracy=0.687500
+INFO:root:Epoch[129] Time cost=31.972
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0130.params"
+INFO:root:Epoch[129] Validation-accuracy=0.550000
+INFO:root:Epoch[130] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.714286
+INFO:root:Epoch[130] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.703125
+INFO:root:Epoch[130] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.721875
+INFO:root:Epoch[130] Batch [80]	Speed: 43.71 samples/sec	Train-accuracy=0.743750
+INFO:root:Epoch[130] Train-accuracy=0.732143
+INFO:root:Epoch[130] Time cost=31.999
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0131.params"
+INFO:root:Epoch[130] Validation-accuracy=0.578125
+INFO:root:Epoch[131] Batch [20]	Speed: 43.75 samples/sec	Train-accuracy=0.773810
+INFO:root:Epoch[131] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.812500
+INFO:root:Epoch[131] Batch [60]	Speed: 43.76 samples/sec	Train-accuracy=0.712500
+INFO:root:Epoch[131] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.690625
+INFO:root:Epoch[131] Train-accuracy=0.758929
+INFO:root:Epoch[131] Time cost=31.954
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0132.params"
+INFO:root:Epoch[131] Validation-accuracy=0.550000
+INFO:root:Epoch[132] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.747024
+INFO:root:Epoch[132] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.734375
+INFO:root:Epoch[132] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.709375
+INFO:root:Epoch[132] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.706250
+INFO:root:Epoch[132] Train-accuracy=0.732143
+INFO:root:Epoch[132] Time cost=31.980
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0133.params"
+INFO:root:Epoch[132] Validation-accuracy=0.600000
+INFO:root:Epoch[133] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.806548
+INFO:root:Epoch[133] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.750000
+INFO:root:Epoch[133] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.721875
+INFO:root:Epoch[133] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.696875
+INFO:root:Epoch[133] Train-accuracy=0.616071
+INFO:root:Epoch[133] Time cost=31.965
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0134.params"
+INFO:root:Epoch[133] Validation-accuracy=0.578125
+INFO:root:Epoch[134] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.750000
+INFO:root:Epoch[134] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.759375
+INFO:root:Epoch[134] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.750000
+INFO:root:Epoch[134] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.743750
+INFO:root:Epoch[134] Train-accuracy=0.678571
+INFO:root:Epoch[134] Time cost=31.975
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0135.params"
+INFO:root:Epoch[134] Validation-accuracy=0.537500
+INFO:root:Epoch[135] Batch [20]	Speed: 43.56 samples/sec	Train-accuracy=0.794643
+INFO:root:Epoch[135] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.718750
+INFO:root:Epoch[135] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.715625
+INFO:root:Epoch[135] Batch [80]	Speed: 43.74 samples/sec	Train-accuracy=0.737500
+INFO:root:Epoch[135] Train-accuracy=0.770833
+INFO:root:Epoch[135] Time cost=31.619
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0136.params"
+INFO:root:Epoch[135] Validation-accuracy=0.475000
+INFO:root:Epoch[136] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.800595
+INFO:root:Epoch[136] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[136] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.775000
+INFO:root:Epoch[136] Batch [80]	Speed: 43.71 samples/sec	Train-accuracy=0.731250
+INFO:root:Epoch[136] Train-accuracy=0.696429
+INFO:root:Epoch[136] Time cost=33.465
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0137.params"
+INFO:root:Epoch[136] Validation-accuracy=0.437500
+INFO:root:Epoch[137] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.741071
+INFO:root:Epoch[137] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[137] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.753125
+INFO:root:Epoch[137] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.675000
+INFO:root:Epoch[137] Train-accuracy=0.714286
+INFO:root:Epoch[137] Time cost=31.999
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0138.params"
+INFO:root:Epoch[137] Validation-accuracy=0.450000
+INFO:root:Epoch[138] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.764881
+INFO:root:Epoch[138] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[138] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.800000
+INFO:root:Epoch[138] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.725000
+INFO:root:Epoch[138] Train-accuracy=0.687500
+INFO:root:Epoch[138] Time cost=31.973
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0139.params"
+INFO:root:Epoch[138] Validation-accuracy=0.475000
+INFO:root:Epoch[139] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.761905
+INFO:root:Epoch[139] Batch [40]	Speed: 43.75 samples/sec	Train-accuracy=0.790625
+INFO:root:Epoch[139] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.728125
+INFO:root:Epoch[139] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.762500
+INFO:root:Epoch[139] Train-accuracy=0.651786
+INFO:root:Epoch[139] Time cost=31.958
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0140.params"
+INFO:root:Epoch[139] Validation-accuracy=0.406250
+INFO:root:Epoch[140] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.747024
+INFO:root:Epoch[140] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.812500
+INFO:root:Epoch[140] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.784375
+INFO:root:Epoch[140] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.737500
+INFO:root:Epoch[140] Train-accuracy=0.750000
+INFO:root:Epoch[140] Time cost=31.979
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0141.params"
+INFO:root:Epoch[140] Validation-accuracy=0.637500
+INFO:root:Epoch[141] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.815476
+INFO:root:Epoch[141] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.793750
+INFO:root:Epoch[141] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.750000
+INFO:root:Epoch[141] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.768750
+INFO:root:Epoch[141] Train-accuracy=0.767857
+INFO:root:Epoch[141] Time cost=31.990
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0142.params"
+INFO:root:Epoch[141] Validation-accuracy=0.562500
+INFO:root:Epoch[142] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.755952
+INFO:root:Epoch[142] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.778125
+INFO:root:Epoch[142] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[142] Batch [80]	Speed: 43.74 samples/sec	Train-accuracy=0.756250
+INFO:root:Epoch[142] Train-accuracy=0.741071
+INFO:root:Epoch[142] Time cost=31.975
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0143.params"
+INFO:root:Epoch[142] Validation-accuracy=0.625000
+INFO:root:Epoch[143] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.809524
+INFO:root:Epoch[143] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[143] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.787500
+INFO:root:Epoch[143] Batch [80]	Speed: 43.74 samples/sec	Train-accuracy=0.753125
+INFO:root:Epoch[143] Train-accuracy=0.843750
+INFO:root:Epoch[143] Time cost=31.628
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0144.params"
+INFO:root:Epoch[143] Validation-accuracy=0.550000
+INFO:root:Epoch[144] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.803571
+INFO:root:Epoch[144] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[144] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[144] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.750000
+INFO:root:Epoch[144] Train-accuracy=0.776786
+INFO:root:Epoch[144] Time cost=33.492
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0145.params"
+INFO:root:Epoch[144] Validation-accuracy=0.525000
+INFO:root:Epoch[145] Batch [20]	Speed: 43.74 samples/sec	Train-accuracy=0.824405
+INFO:root:Epoch[145] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.778125
+INFO:root:Epoch[145] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[145] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.812500
+INFO:root:Epoch[145] Train-accuracy=0.741071
+INFO:root:Epoch[145] Time cost=31.958
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0146.params"
+INFO:root:Epoch[145] Validation-accuracy=0.387500
+INFO:root:Epoch[146] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.836310
+INFO:root:Epoch[146] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.809375
+INFO:root:Epoch[146] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.793750
+INFO:root:Epoch[146] Batch [80]	Speed: 43.50 samples/sec	Train-accuracy=0.778125
+INFO:root:Epoch[146] Train-accuracy=0.901786
+INFO:root:Epoch[146] Time cost=32.016
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0147.params"
+INFO:root:Epoch[146] Validation-accuracy=0.437500
+INFO:root:Epoch[147] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.791667
+INFO:root:Epoch[147] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.812500
+INFO:root:Epoch[147] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.793750
+INFO:root:Epoch[147] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.775000
+INFO:root:Epoch[147] Train-accuracy=0.812500
+INFO:root:Epoch[147] Time cost=32.001
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0148.params"
+INFO:root:Epoch[147] Validation-accuracy=0.550000
+INFO:root:Epoch[148] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.845238
+INFO:root:Epoch[148] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.837500
+INFO:root:Epoch[148] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.796875
+INFO:root:Epoch[148] Batch [80]	Speed: 43.71 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[148] Train-accuracy=0.732143
+INFO:root:Epoch[148] Time cost=31.982
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0149.params"
+INFO:root:Epoch[148] Validation-accuracy=0.512500
+INFO:root:Epoch[149] Batch [20]	Speed: 43.73 samples/sec	Train-accuracy=0.809524
+INFO:root:Epoch[149] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.825000
+INFO:root:Epoch[149] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.796875
+INFO:root:Epoch[149] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[149] Train-accuracy=0.803571
+INFO:root:Epoch[149] Time cost=31.970
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0150.params"
+INFO:root:Epoch[149] Validation-accuracy=0.500000
+INFO:root:Epoch[150] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.845238
+INFO:root:Epoch[150] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.809375
+INFO:root:Epoch[150] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.815625
+INFO:root:Epoch[150] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.821875
+INFO:root:Epoch[150] Train-accuracy=0.830357
+INFO:root:Epoch[150] Time cost=31.982
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0151.params"
+INFO:root:Epoch[150] Validation-accuracy=0.450000
+INFO:root:Epoch[151] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[151] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.831250
+INFO:root:Epoch[151] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.800000
+INFO:root:Epoch[151] Batch [80]	Speed: 43.73 samples/sec	Train-accuracy=0.850000
+INFO:root:Epoch[151] Train-accuracy=0.875000
+INFO:root:Epoch[151] Time cost=31.596
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0152.params"
+INFO:root:Epoch[151] Validation-accuracy=0.450000
+INFO:root:Epoch[152] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.880952
+INFO:root:Epoch[152] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.821875
+INFO:root:Epoch[152] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.850000
+INFO:root:Epoch[152] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.781250
+INFO:root:Epoch[152] Train-accuracy=0.821429
+INFO:root:Epoch[152] Time cost=33.526
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0153.params"
+INFO:root:Epoch[152] Validation-accuracy=0.531250
+INFO:root:Epoch[153] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.827381
+INFO:root:Epoch[153] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.837500
+INFO:root:Epoch[153] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.821875
+INFO:root:Epoch[153] Batch [80]	Speed: 43.75 samples/sec	Train-accuracy=0.859375
+INFO:root:Epoch[153] Train-accuracy=0.803571
+INFO:root:Epoch[153] Time cost=31.968
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0154.params"
+INFO:root:Epoch[153] Validation-accuracy=0.512500
+INFO:root:Epoch[154] Batch [20]	Speed: 43.73 samples/sec	Train-accuracy=0.869048
+INFO:root:Epoch[154] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.850000
+INFO:root:Epoch[154] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.843750
+INFO:root:Epoch[154] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.831250
+INFO:root:Epoch[154] Train-accuracy=0.883929
+INFO:root:Epoch[154] Time cost=31.973
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0155.params"
+INFO:root:Epoch[154] Validation-accuracy=0.525000
+INFO:root:Epoch[155] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.872024
+INFO:root:Epoch[155] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.846875
+INFO:root:Epoch[155] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.856250
+INFO:root:Epoch[155] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[155] Train-accuracy=0.794643
+INFO:root:Epoch[155] Time cost=31.993
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0156.params"
+INFO:root:Epoch[155] Validation-accuracy=0.578125
+INFO:root:Epoch[156] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[156] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.856250
+INFO:root:Epoch[156] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.815625
+INFO:root:Epoch[156] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.818750
+INFO:root:Epoch[156] Train-accuracy=0.794643
+INFO:root:Epoch[156] Time cost=31.969
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0157.params"
+INFO:root:Epoch[156] Validation-accuracy=0.412500
+INFO:root:Epoch[157] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.836310
+INFO:root:Epoch[157] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.853125
+INFO:root:Epoch[157] Batch [60]	Speed: 43.74 samples/sec	Train-accuracy=0.831250
+INFO:root:Epoch[157] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.834375
+INFO:root:Epoch[157] Train-accuracy=0.776786
+INFO:root:Epoch[157] Time cost=31.976
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0158.params"
+INFO:root:Epoch[157] Validation-accuracy=0.512500
+INFO:root:Epoch[158] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.836310
+INFO:root:Epoch[158] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.831250
+INFO:root:Epoch[158] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.806250
+INFO:root:Epoch[158] Batch [80]	Speed: 43.76 samples/sec	Train-accuracy=0.878125
+INFO:root:Epoch[158] Train-accuracy=0.830357
+INFO:root:Epoch[158] Time cost=31.964
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0159.params"
+INFO:root:Epoch[158] Validation-accuracy=0.468750
+INFO:root:Epoch[159] Batch [20]	Speed: 43.73 samples/sec	Train-accuracy=0.866071
+INFO:root:Epoch[159] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.856250
+INFO:root:Epoch[159] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.834375
+INFO:root:Epoch[159] Batch [80]	Speed: 43.74 samples/sec	Train-accuracy=0.850000
+INFO:root:Epoch[159] Train-accuracy=0.854167
+INFO:root:Epoch[159] Time cost=31.584
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0160.params"
+INFO:root:Epoch[159] Validation-accuracy=0.625000
+INFO:root:Epoch[160] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.886905
+INFO:root:Epoch[160] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.884375
+INFO:root:Epoch[160] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.893750
+INFO:root:Epoch[160] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.834375
+INFO:root:Epoch[160] Train-accuracy=0.812500
+INFO:root:Epoch[160] Time cost=33.474
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0161.params"
+INFO:root:Epoch[160] Validation-accuracy=0.550000
+INFO:root:Epoch[161] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.886905
+INFO:root:Epoch[161] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.887500
+INFO:root:Epoch[161] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.865625
+INFO:root:Epoch[161] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.868750
+INFO:root:Epoch[161] Train-accuracy=0.812500
+INFO:root:Epoch[161] Time cost=31.974
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0162.params"
+INFO:root:Epoch[161] Validation-accuracy=0.487500
+INFO:root:Epoch[162] Batch [20]	Speed: 43.77 samples/sec	Train-accuracy=0.848214
+INFO:root:Epoch[162] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.837500
+INFO:root:Epoch[162] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.862500
+INFO:root:Epoch[162] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.887500
+INFO:root:Epoch[162] Train-accuracy=0.875000
+INFO:root:Epoch[162] Time cost=31.967
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0163.params"
+INFO:root:Epoch[162] Validation-accuracy=0.500000
+INFO:root:Epoch[163] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.892857
+INFO:root:Epoch[163] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[163] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.850000
+INFO:root:Epoch[163] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.834375
+INFO:root:Epoch[163] Train-accuracy=0.839286
+INFO:root:Epoch[163] Time cost=31.977
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0164.params"
+INFO:root:Epoch[163] Validation-accuracy=0.512500
+INFO:root:Epoch[164] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.821429
+INFO:root:Epoch[164] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.837500
+INFO:root:Epoch[164] Batch [60]	Speed: 43.76 samples/sec	Train-accuracy=0.890625
+INFO:root:Epoch[164] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[164] Train-accuracy=0.919643
+INFO:root:Epoch[164] Time cost=31.963
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0165.params"
+INFO:root:Epoch[164] Validation-accuracy=0.525000
+INFO:root:Epoch[165] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.913690
+INFO:root:Epoch[165] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.906250
+INFO:root:Epoch[165] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.893750
+INFO:root:Epoch[165] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[165] Train-accuracy=0.892857
+INFO:root:Epoch[165] Time cost=31.978
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0166.params"
+INFO:root:Epoch[165] Validation-accuracy=0.453125
+INFO:root:Epoch[166] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.931548
+INFO:root:Epoch[166] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.903125
+INFO:root:Epoch[166] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[166] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.884375
+INFO:root:Epoch[166] Train-accuracy=0.892857
+INFO:root:Epoch[166] Time cost=31.977
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0167.params"
+INFO:root:Epoch[166] Validation-accuracy=0.487500
+INFO:root:Epoch[167] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.892857
+INFO:root:Epoch[167] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.887500
+INFO:root:Epoch[167] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[167] Batch [80]	Speed: 43.74 samples/sec	Train-accuracy=0.900000
+INFO:root:Epoch[167] Train-accuracy=0.927083
+INFO:root:Epoch[167] Time cost=31.629
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0168.params"
+INFO:root:Epoch[167] Validation-accuracy=0.525000
+INFO:root:Epoch[168] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=0.907738
+INFO:root:Epoch[168] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.878125
+INFO:root:Epoch[168] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[168] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.859375
+INFO:root:Epoch[168] Train-accuracy=0.866071
+INFO:root:Epoch[168] Time cost=33.556
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0169.params"
+INFO:root:Epoch[168] Validation-accuracy=0.515625
+INFO:root:Epoch[169] Batch [20]	Speed: 43.54 samples/sec	Train-accuracy=0.907738
+INFO:root:Epoch[169] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[169] Batch [60]	Speed: 43.60 samples/sec	Train-accuracy=0.896875
+INFO:root:Epoch[169] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.865625
+INFO:root:Epoch[169] Train-accuracy=0.910714
+INFO:root:Epoch[169] Time cost=32.045
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0170.params"
+INFO:root:Epoch[169] Validation-accuracy=0.450000
+INFO:root:Epoch[170] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.901786
+INFO:root:Epoch[170] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[170] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.900000
+INFO:root:Epoch[170] Batch [80]	Speed: 43.58 samples/sec	Train-accuracy=0.856250
+INFO:root:Epoch[170] Train-accuracy=0.821429
+INFO:root:Epoch[170] Time cost=32.042
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0171.params"
+INFO:root:Epoch[170] Validation-accuracy=0.487500
+INFO:root:Epoch[171] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[171] Batch [40]	Speed: 43.56 samples/sec	Train-accuracy=0.868750
+INFO:root:Epoch[171] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.881250
+INFO:root:Epoch[171] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[171] Train-accuracy=0.892857
+INFO:root:Epoch[171] Time cost=32.036
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0172.params"
+INFO:root:Epoch[171] Validation-accuracy=0.453125
+INFO:root:Epoch[172] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.901786
+INFO:root:Epoch[172] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.909375
+INFO:root:Epoch[172] Batch [60]	Speed: 43.68 samples/sec	Train-accuracy=0.871875
+INFO:root:Epoch[172] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.896875
+INFO:root:Epoch[172] Train-accuracy=0.857143
+INFO:root:Epoch[172] Time cost=32.001
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0173.params"
+INFO:root:Epoch[172] Validation-accuracy=0.450000
+INFO:root:Epoch[173] Batch [20]	Speed: 43.55 samples/sec	Train-accuracy=0.904762
+INFO:root:Epoch[173] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.903125
+INFO:root:Epoch[173] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.881250
+INFO:root:Epoch[173] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.884375
+INFO:root:Epoch[173] Train-accuracy=0.821429
+INFO:root:Epoch[173] Time cost=32.041
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0174.params"
+INFO:root:Epoch[173] Validation-accuracy=0.550000
+INFO:root:Epoch[174] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.895833
+INFO:root:Epoch[174] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.906250
+INFO:root:Epoch[174] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[174] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.878125
+INFO:root:Epoch[174] Train-accuracy=0.875000
+INFO:root:Epoch[174] Time cost=32.000
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0175.params"
+INFO:root:Epoch[174] Validation-accuracy=0.546875
+INFO:root:Epoch[175] Batch [20]	Speed: 43.59 samples/sec	Train-accuracy=0.904762
+INFO:root:Epoch[175] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.896875
+INFO:root:Epoch[175] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[175] Batch [80]	Speed: 43.70 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[175] Train-accuracy=0.927083
+INFO:root:Epoch[175] Time cost=31.626
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0176.params"
+INFO:root:Epoch[175] Validation-accuracy=0.462500
+INFO:root:Epoch[176] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.904762
+INFO:root:Epoch[176] Batch [40]	Speed: 43.53 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[176] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.881250
+INFO:root:Epoch[176] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.900000
+INFO:root:Epoch[176] Train-accuracy=0.875000
+INFO:root:Epoch[176] Time cost=33.662
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0177.params"
+INFO:root:Epoch[176] Validation-accuracy=0.550000
+INFO:root:Epoch[177] Batch [20]	Speed: 43.59 samples/sec	Train-accuracy=0.937500
+INFO:root:Epoch[177] Batch [40]	Speed: 43.50 samples/sec	Train-accuracy=0.890625
+INFO:root:Epoch[177] Batch [60]	Speed: 43.55 samples/sec	Train-accuracy=0.906250
+INFO:root:Epoch[177] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.875000
+INFO:root:Epoch[177] Train-accuracy=0.901786
+INFO:root:Epoch[177] Time cost=32.063
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0178.params"
+INFO:root:Epoch[177] Validation-accuracy=0.462500
+INFO:root:Epoch[178] Batch [20]	Speed: 43.52 samples/sec	Train-accuracy=0.925595
+INFO:root:Epoch[178] Batch [40]	Speed: 43.55 samples/sec	Train-accuracy=0.906250
+INFO:root:Epoch[178] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[178] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.912500
+INFO:root:Epoch[178] Train-accuracy=0.919643
+INFO:root:Epoch[178] Time cost=32.070
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0179.params"
+INFO:root:Epoch[178] Validation-accuracy=0.500000
+INFO:root:Epoch[179] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.943452
+INFO:root:Epoch[179] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[179] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.893750
+INFO:root:Epoch[179] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.900000
+INFO:root:Epoch[179] Train-accuracy=0.928571
+INFO:root:Epoch[179] Time cost=32.033
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0180.params"
+INFO:root:Epoch[179] Validation-accuracy=0.425000
+INFO:root:Epoch[180] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.919643
+INFO:root:Epoch[180] Batch [40]	Speed: 43.54 samples/sec	Train-accuracy=0.950000
+INFO:root:Epoch[180] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.953125
+INFO:root:Epoch[180] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.893750
+INFO:root:Epoch[180] Train-accuracy=0.937500
+INFO:root:Epoch[180] Time cost=32.056
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0181.params"
+INFO:root:Epoch[180] Validation-accuracy=0.562500
+INFO:root:Epoch[181] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.928571
+INFO:root:Epoch[181] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[181] Batch [60]	Speed: 43.72 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[181] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[181] Train-accuracy=0.955357
+INFO:root:Epoch[181] Time cost=32.012
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0182.params"
+INFO:root:Epoch[181] Validation-accuracy=0.562500
+INFO:root:Epoch[182] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.949405
+INFO:root:Epoch[182] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[182] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[182] Batch [80]	Speed: 43.58 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[182] Train-accuracy=0.928571
+INFO:root:Epoch[182] Time cost=32.024
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0183.params"
+INFO:root:Epoch[182] Validation-accuracy=0.500000
+INFO:root:Epoch[183] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.940476
+INFO:root:Epoch[183] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.943750
+INFO:root:Epoch[183] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.943750
+INFO:root:Epoch[183] Batch [80]	Speed: 43.69 samples/sec	Train-accuracy=0.943750
+INFO:root:Epoch[183] Train-accuracy=0.906250
+INFO:root:Epoch[183] Time cost=31.641
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0184.params"
+INFO:root:Epoch[183] Validation-accuracy=0.487500
+INFO:root:Epoch[184] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.964286
+INFO:root:Epoch[184] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.934375
+INFO:root:Epoch[184] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[184] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[184] Train-accuracy=0.937500
+INFO:root:Epoch[184] Time cost=33.524
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0185.params"
+INFO:root:Epoch[184] Validation-accuracy=0.468750
+INFO:root:Epoch[185] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.931548
+INFO:root:Epoch[185] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[185] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[185] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.934375
+INFO:root:Epoch[185] Train-accuracy=0.892857
+INFO:root:Epoch[185] Time cost=32.006
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0186.params"
+INFO:root:Epoch[185] Validation-accuracy=0.525000
+INFO:root:Epoch[186] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.895833
+INFO:root:Epoch[186] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.900000
+INFO:root:Epoch[186] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[186] Batch [80]	Speed: 43.57 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[186] Train-accuracy=0.955357
+INFO:root:Epoch[186] Time cost=32.007
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0187.params"
+INFO:root:Epoch[186] Validation-accuracy=0.500000
+INFO:root:Epoch[187] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.907738
+INFO:root:Epoch[187] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[187] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[187] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[187] Train-accuracy=0.955357
+INFO:root:Epoch[187] Time cost=32.014
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0188.params"
+INFO:root:Epoch[187] Validation-accuracy=0.578125
+INFO:root:Epoch[188] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.931548
+INFO:root:Epoch[188] Batch [40]	Speed: 43.56 samples/sec	Train-accuracy=0.918750
+INFO:root:Epoch[188] Batch [60]	Speed: 43.60 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[188] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[188] Train-accuracy=0.910714
+INFO:root:Epoch[188] Time cost=32.036
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0189.params"
+INFO:root:Epoch[188] Validation-accuracy=0.525000
+INFO:root:Epoch[189] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.961310
+INFO:root:Epoch[189] Batch [40]	Speed: 43.57 samples/sec	Train-accuracy=0.937500
+INFO:root:Epoch[189] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.968750
+INFO:root:Epoch[189] Batch [80]	Speed: 43.56 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[189] Train-accuracy=0.928571
+INFO:root:Epoch[189] Time cost=32.042
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0190.params"
+INFO:root:Epoch[189] Validation-accuracy=0.425000
+INFO:root:Epoch[190] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.937500
+INFO:root:Epoch[190] Batch [40]	Speed: 43.55 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[190] Batch [60]	Speed: 43.60 samples/sec	Train-accuracy=0.950000
+INFO:root:Epoch[190] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.896875
+INFO:root:Epoch[190] Train-accuracy=0.919643
+INFO:root:Epoch[190] Time cost=32.045
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0191.params"
+INFO:root:Epoch[190] Validation-accuracy=0.531250
+INFO:root:Epoch[191] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.925595
+INFO:root:Epoch[191] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.953125
+INFO:root:Epoch[191] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.965625
+INFO:root:Epoch[191] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[191] Train-accuracy=0.906250
+INFO:root:Epoch[191] Time cost=31.662
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0192.params"
+INFO:root:Epoch[191] Validation-accuracy=0.537500
+INFO:root:Epoch[192] Batch [20]	Speed: 43.59 samples/sec	Train-accuracy=0.943452
+INFO:root:Epoch[192] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.943750
+INFO:root:Epoch[192] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.943750
+INFO:root:Epoch[192] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.928125
+INFO:root:Epoch[192] Train-accuracy=0.919643
+INFO:root:Epoch[192] Time cost=33.535
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0193.params"
+INFO:root:Epoch[192] Validation-accuracy=0.525000
+INFO:root:Epoch[193] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.931548
+INFO:root:Epoch[193] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=0.937500
+INFO:root:Epoch[193] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.959375
+INFO:root:Epoch[193] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.946875
+INFO:root:Epoch[193] Train-accuracy=0.964286
+INFO:root:Epoch[193] Time cost=31.996
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0194.params"
+INFO:root:Epoch[193] Validation-accuracy=0.512500
+INFO:root:Epoch[194] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.949405
+INFO:root:Epoch[194] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[194] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[194] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.921875
+INFO:root:Epoch[194] Train-accuracy=0.937500
+INFO:root:Epoch[194] Time cost=31.998
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0195.params"
+INFO:root:Epoch[194] Validation-accuracy=0.484375
+INFO:root:Epoch[195] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.922619
+INFO:root:Epoch[195] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[195] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[195] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.925000
+INFO:root:Epoch[195] Train-accuracy=0.928571
+INFO:root:Epoch[195] Time cost=31.993
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0196.params"
+INFO:root:Epoch[195] Validation-accuracy=0.400000
+INFO:root:Epoch[196] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=0.958333
+INFO:root:Epoch[196] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.959375
+INFO:root:Epoch[196] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.959375
+INFO:root:Epoch[196] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.915625
+INFO:root:Epoch[196] Train-accuracy=0.928571
+INFO:root:Epoch[196] Time cost=32.028
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0197.params"
+INFO:root:Epoch[196] Validation-accuracy=0.500000
+INFO:root:Epoch[197] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.931548
+INFO:root:Epoch[197] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.962500
+INFO:root:Epoch[197] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.940625
+INFO:root:Epoch[197] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.950000
+INFO:root:Epoch[197] Train-accuracy=0.937500
+INFO:root:Epoch[197] Time cost=32.022
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0198.params"
+INFO:root:Epoch[197] Validation-accuracy=0.500000
+INFO:root:Update[17401]: Change learning rate to 5.00000e-03
+INFO:root:Epoch[198] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.907738
+INFO:root:Epoch[198] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.900000
+INFO:root:Epoch[198] Batch [60]	Speed: 43.77 samples/sec	Train-accuracy=0.950000
+INFO:root:Epoch[198] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.931250
+INFO:root:Epoch[198] Train-accuracy=0.964286
+INFO:root:Epoch[198] Time cost=31.971
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0199.params"
+INFO:root:Epoch[198] Validation-accuracy=0.525000
+INFO:root:Epoch[199] Batch [20]	Speed: 43.44 samples/sec	Train-accuracy=0.964286
+INFO:root:Epoch[199] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.981250
+INFO:root:Epoch[199] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.971875
+INFO:root:Epoch[199] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=0.975000
+INFO:root:Epoch[199] Train-accuracy=1.000000
+INFO:root:Epoch[199] Time cost=31.699
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0200.params"
+INFO:root:Epoch[199] Validation-accuracy=0.537500
+INFO:root:Epoch[200] Batch [20]	Speed: 43.56 samples/sec	Train-accuracy=0.976190
+INFO:root:Epoch[200] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.971875
+INFO:root:Epoch[200] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.981250
+INFO:root:Epoch[200] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[200] Train-accuracy=0.991071
+INFO:root:Epoch[200] Time cost=33.616
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0201.params"
+INFO:root:Epoch[200] Validation-accuracy=0.593750
+INFO:root:Epoch[201] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.979167
+INFO:root:Epoch[201] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.975000
+INFO:root:Epoch[201] Batch [60]	Speed: 43.60 samples/sec	Train-accuracy=0.981250
+INFO:root:Epoch[201] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.981250
+INFO:root:Epoch[201] Train-accuracy=0.946429
+INFO:root:Epoch[201] Time cost=32.013
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0202.params"
+INFO:root:Epoch[201] Validation-accuracy=0.575000
+INFO:root:Epoch[202] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[202] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.978125
+INFO:root:Epoch[202] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.965625
+INFO:root:Epoch[202] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[202] Train-accuracy=0.955357
+INFO:root:Epoch[202] Time cost=32.013
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0203.params"
+INFO:root:Epoch[202] Validation-accuracy=0.550000
+INFO:root:Epoch[203] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.988095
+INFO:root:Epoch[203] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[203] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[203] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.971875
+INFO:root:Epoch[203] Train-accuracy=0.991071
+INFO:root:Epoch[203] Time cost=32.026
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0204.params"
+INFO:root:Epoch[203] Validation-accuracy=0.578125
+INFO:root:Epoch[204] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[204] Batch [40]	Speed: 43.78 samples/sec	Train-accuracy=0.968750
+INFO:root:Epoch[204] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.984375
+INFO:root:Epoch[204] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.984375
+INFO:root:Epoch[204] Train-accuracy=0.973214
+INFO:root:Epoch[204] Time cost=31.973
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0205.params"
+INFO:root:Epoch[204] Validation-accuracy=0.512500
+INFO:root:Epoch[205] Batch [20]	Speed: 43.57 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[205] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[205] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.981250
+INFO:root:Epoch[205] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.984375
+INFO:root:Epoch[205] Train-accuracy=1.000000
+INFO:root:Epoch[205] Time cost=32.048
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0206.params"
+INFO:root:Epoch[205] Validation-accuracy=0.537500
+INFO:root:Epoch[206] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.988095
+INFO:root:Epoch[206] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[206] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[206] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[206] Train-accuracy=0.973214
+INFO:root:Epoch[206] Time cost=32.025
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0207.params"
+INFO:root:Epoch[206] Validation-accuracy=0.578125
+INFO:root:Epoch[207] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.979167
+INFO:root:Epoch[207] Batch [40]	Speed: 43.55 samples/sec	Train-accuracy=0.984375
+INFO:root:Epoch[207] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[207] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[207] Train-accuracy=0.989583
+INFO:root:Epoch[207] Time cost=31.675
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0208.params"
+INFO:root:Epoch[207] Validation-accuracy=0.550000
+INFO:root:Epoch[208] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[208] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[208] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[208] Batch [80]	Speed: 43.54 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[208] Train-accuracy=1.000000
+INFO:root:Epoch[208] Time cost=33.583
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0209.params"
+INFO:root:Epoch[208] Validation-accuracy=0.562500
+INFO:root:Epoch[209] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[209] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[209] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[209] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[209] Train-accuracy=0.991071
+INFO:root:Epoch[209] Time cost=32.022
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0210.params"
+INFO:root:Epoch[209] Validation-accuracy=0.575000
+INFO:root:Epoch[210] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[210] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[210] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[210] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[210] Train-accuracy=0.991071
+INFO:root:Epoch[210] Time cost=32.005
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0211.params"
+INFO:root:Epoch[210] Validation-accuracy=0.593750
+INFO:root:Epoch[211] Batch [20]	Speed: 43.54 samples/sec	Train-accuracy=0.988095
+INFO:root:Epoch[211] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[211] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[211] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[211] Train-accuracy=0.991071
+INFO:root:Epoch[211] Time cost=32.043
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0212.params"
+INFO:root:Epoch[211] Validation-accuracy=0.550000
+INFO:root:Epoch[212] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[212] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.984375
+INFO:root:Epoch[212] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[212] Batch [80]	Speed: 43.60 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[212] Train-accuracy=0.982143
+INFO:root:Epoch[212] Time cost=32.030
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0213.params"
+INFO:root:Epoch[212] Validation-accuracy=0.537500
+INFO:root:Epoch[213] Batch [20]	Speed: 43.57 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[213] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[213] Batch [60]	Speed: 43.57 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[213] Batch [80]	Speed: 43.53 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[213] Train-accuracy=0.991071
+INFO:root:Epoch[213] Time cost=32.045
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0214.params"
+INFO:root:Epoch[213] Validation-accuracy=0.578125
+INFO:root:Epoch[214] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[214] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[214] Batch [60]	Speed: 43.56 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[214] Batch [80]	Speed: 43.56 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[214] Train-accuracy=0.991071
+INFO:root:Epoch[214] Time cost=32.059
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0215.params"
+INFO:root:Epoch[214] Validation-accuracy=0.562500
+INFO:root:Epoch[215] Batch [20]	Speed: 43.52 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[215] Batch [40]	Speed: 43.57 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[215] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[215] Batch [80]	Speed: 43.57 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[215] Train-accuracy=1.000000
+INFO:root:Epoch[215] Time cost=31.688
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0216.params"
+INFO:root:Epoch[215] Validation-accuracy=0.512500
+INFO:root:Epoch[216] Batch [20]	Speed: 43.57 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[216] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[216] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[216] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[216] Train-accuracy=1.000000
+INFO:root:Epoch[216] Time cost=33.513
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0217.params"
+INFO:root:Epoch[216] Validation-accuracy=0.578125
+INFO:root:Epoch[217] Batch [20]	Speed: 43.74 samples/sec	Train-accuracy=0.982143
+INFO:root:Epoch[217] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[217] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.984375
+INFO:root:Epoch[217] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[217] Train-accuracy=1.000000
+INFO:root:Epoch[217] Time cost=32.005
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0218.params"
+INFO:root:Epoch[217] Validation-accuracy=0.525000
+INFO:root:Epoch[218] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[218] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[218] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[218] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[218] Train-accuracy=0.991071
+INFO:root:Epoch[218] Time cost=32.009
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0219.params"
+INFO:root:Epoch[218] Validation-accuracy=0.525000
+INFO:root:Epoch[219] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[219] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[219] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[219] Batch [80]	Speed: 43.57 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[219] Train-accuracy=0.991071
+INFO:root:Epoch[219] Time cost=32.013
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0220.params"
+INFO:root:Epoch[219] Validation-accuracy=0.562500
+INFO:root:Epoch[220] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[220] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[220] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[220] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[220] Train-accuracy=1.000000
+INFO:root:Epoch[220] Time cost=32.013
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0221.params"
+INFO:root:Epoch[220] Validation-accuracy=0.562500
+INFO:root:Epoch[221] Batch [20]	Speed: 43.75 samples/sec	Train-accuracy=0.985119
+INFO:root:Epoch[221] Batch [40]	Speed: 43.72 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[221] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[221] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[221] Train-accuracy=1.000000
+INFO:root:Epoch[221] Time cost=31.965
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0222.params"
+INFO:root:Epoch[221] Validation-accuracy=0.537500
+INFO:root:Epoch[222] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[222] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[222] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[222] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[222] Train-accuracy=1.000000
+INFO:root:Epoch[222] Time cost=32.000
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0223.params"
+INFO:root:Epoch[222] Validation-accuracy=0.562500
+INFO:root:Epoch[223] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[223] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[223] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[223] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[223] Train-accuracy=1.000000
+INFO:root:Epoch[223] Time cost=31.665
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0224.params"
+INFO:root:Epoch[223] Validation-accuracy=0.562500
+INFO:root:Epoch[224] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.988095
+INFO:root:Epoch[224] Batch [40]	Speed: 43.56 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[224] Batch [60]	Speed: 43.56 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[224] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.981250
+INFO:root:Epoch[224] Train-accuracy=0.991071
+INFO:root:Epoch[224] Time cost=33.570
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0225.params"
+INFO:root:Epoch[224] Validation-accuracy=0.575000
+INFO:root:Epoch[225] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[225] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[225] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[225] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[225] Train-accuracy=0.991071
+INFO:root:Epoch[225] Time cost=32.015
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0226.params"
+INFO:root:Epoch[225] Validation-accuracy=0.562500
+INFO:root:Epoch[226] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[226] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[226] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[226] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[226] Train-accuracy=1.000000
+INFO:root:Epoch[226] Time cost=32.019
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0227.params"
+INFO:root:Epoch[226] Validation-accuracy=0.593750
+INFO:root:Epoch[227] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[227] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[227] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[227] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[227] Train-accuracy=0.982143
+INFO:root:Epoch[227] Time cost=32.005
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0228.params"
+INFO:root:Epoch[227] Validation-accuracy=0.575000
+INFO:root:Epoch[228] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[228] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[228] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[228] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[228] Train-accuracy=1.000000
+INFO:root:Epoch[228] Time cost=32.000
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0229.params"
+INFO:root:Epoch[228] Validation-accuracy=0.575000
+INFO:root:Epoch[229] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[229] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[229] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[229] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[229] Train-accuracy=0.982143
+INFO:root:Epoch[229] Time cost=32.019
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0230.params"
+INFO:root:Epoch[229] Validation-accuracy=0.578125
+INFO:root:Epoch[230] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[230] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[230] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[230] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[230] Train-accuracy=0.991071
+INFO:root:Epoch[230] Time cost=32.008
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0231.params"
+INFO:root:Epoch[230] Validation-accuracy=0.537500
+INFO:root:Epoch[231] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[231] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[231] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[231] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[231] Train-accuracy=1.000000
+INFO:root:Epoch[231] Time cost=31.663
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0232.params"
+INFO:root:Epoch[231] Validation-accuracy=0.550000
+INFO:root:Epoch[232] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[232] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[232] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[232] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[232] Train-accuracy=1.000000
+INFO:root:Epoch[232] Time cost=33.541
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0233.params"
+INFO:root:Epoch[232] Validation-accuracy=0.578125
+INFO:root:Epoch[233] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[233] Batch [40]	Speed: 43.58 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[233] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[233] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[233] Train-accuracy=1.000000
+INFO:root:Epoch[233] Time cost=32.038
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0234.params"
+INFO:root:Epoch[233] Validation-accuracy=0.575000
+INFO:root:Epoch[234] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[234] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[234] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[234] Batch [80]	Speed: 43.59 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[234] Train-accuracy=1.000000
+INFO:root:Epoch[234] Time cost=32.031
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0235.params"
+INFO:root:Epoch[234] Validation-accuracy=0.587500
+INFO:root:Epoch[235] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[235] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[235] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[235] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[235] Train-accuracy=1.000000
+INFO:root:Epoch[235] Time cost=32.021
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0236.params"
+INFO:root:Epoch[235] Validation-accuracy=0.593750
+INFO:root:Epoch[236] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.988095
+INFO:root:Epoch[236] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[236] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[236] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[236] Train-accuracy=1.000000
+INFO:root:Epoch[236] Time cost=32.030
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0237.params"
+INFO:root:Epoch[236] Validation-accuracy=0.587500
+INFO:root:Epoch[237] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[237] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[237] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[237] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[237] Train-accuracy=1.000000
+INFO:root:Epoch[237] Time cost=32.028
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0238.params"
+INFO:root:Epoch[237] Validation-accuracy=0.562500
+INFO:root:Epoch[238] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[238] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[238] Batch [60]	Speed: 43.67 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[238] Batch [80]	Speed: 43.56 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[238] Train-accuracy=1.000000
+INFO:root:Epoch[238] Time cost=32.041
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0239.params"
+INFO:root:Epoch[238] Validation-accuracy=0.546875
+INFO:root:Epoch[239] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[239] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[239] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[239] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[239] Train-accuracy=1.000000
+INFO:root:Epoch[239] Time cost=31.658
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0240.params"
+INFO:root:Epoch[239] Validation-accuracy=0.550000
+INFO:root:Epoch[240] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[240] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[240] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[240] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[240] Train-accuracy=1.000000
+INFO:root:Epoch[240] Time cost=33.526
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0241.params"
+INFO:root:Epoch[240] Validation-accuracy=0.587500
+INFO:root:Epoch[241] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[241] Batch [40]	Speed: 43.71 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[241] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[241] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[241] Train-accuracy=0.991071
+INFO:root:Epoch[241] Time cost=31.979
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0242.params"
+INFO:root:Epoch[241] Validation-accuracy=0.562500
+INFO:root:Epoch[242] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[242] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.984375
+INFO:root:Epoch[242] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[242] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[242] Train-accuracy=1.000000
+INFO:root:Epoch[242] Time cost=32.004
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0243.params"
+INFO:root:Epoch[242] Validation-accuracy=0.593750
+INFO:root:Epoch[243] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[243] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[243] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[243] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[243] Train-accuracy=0.991071
+INFO:root:Epoch[243] Time cost=32.003
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0244.params"
+INFO:root:Epoch[243] Validation-accuracy=0.587500
+INFO:root:Epoch[244] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[244] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[244] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[244] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[244] Train-accuracy=1.000000
+INFO:root:Epoch[244] Time cost=31.999
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0245.params"
+INFO:root:Epoch[244] Validation-accuracy=0.537500
+INFO:root:Epoch[245] Batch [20]	Speed: 43.60 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[245] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[245] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[245] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[245] Train-accuracy=0.991071
+INFO:root:Epoch[245] Time cost=32.036
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0246.params"
+INFO:root:Epoch[245] Validation-accuracy=0.609375
+INFO:root:Epoch[246] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[246] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[246] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[246] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[246] Train-accuracy=1.000000
+INFO:root:Epoch[246] Time cost=32.026
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0247.params"
+INFO:root:Epoch[246] Validation-accuracy=0.562500
+INFO:root:Epoch[247] Batch [20]	Speed: 43.59 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[247] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=0.996875
+INFO:root:Update[21751]: Change learning rate to 5.00000e-04
+INFO:root:Epoch[247] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[247] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[247] Train-accuracy=0.989583
+INFO:root:Epoch[247] Time cost=31.647
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0248.params"
+INFO:root:Epoch[247] Validation-accuracy=0.562500
+INFO:root:Epoch[248] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[248] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[248] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[248] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[248] Train-accuracy=1.000000
+INFO:root:Epoch[248] Time cost=33.504
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0249.params"
+INFO:root:Epoch[248] Validation-accuracy=0.593750
+INFO:root:Epoch[249] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[249] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[249] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[249] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[249] Train-accuracy=0.991071
+INFO:root:Epoch[249] Time cost=32.009
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0250.params"
+INFO:root:Epoch[249] Validation-accuracy=0.575000
+INFO:root:Epoch[250] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[250] Batch [40]	Speed: 43.69 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[250] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[250] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[250] Train-accuracy=1.000000
+INFO:root:Epoch[250] Time cost=32.001
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0251.params"
+INFO:root:Epoch[250] Validation-accuracy=0.562500
+INFO:root:Epoch[251] Batch [20]	Speed: 43.70 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[251] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[251] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[251] Batch [80]	Speed: 43.73 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[251] Train-accuracy=0.991071
+INFO:root:Epoch[251] Time cost=31.977
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0252.params"
+INFO:root:Epoch[251] Validation-accuracy=0.593750
+INFO:root:Epoch[252] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[252] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[252] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[252] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[252] Train-accuracy=1.000000
+INFO:root:Epoch[252] Time cost=32.023
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0253.params"
+INFO:root:Epoch[252] Validation-accuracy=0.575000
+INFO:root:Epoch[253] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[253] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[253] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[253] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[253] Train-accuracy=0.991071
+INFO:root:Epoch[253] Time cost=32.014
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0254.params"
+INFO:root:Epoch[253] Validation-accuracy=0.575000
+INFO:root:Epoch[254] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[254] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[254] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[254] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[254] Train-accuracy=1.000000
+INFO:root:Epoch[254] Time cost=32.017
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0255.params"
+INFO:root:Epoch[254] Validation-accuracy=0.578125
+INFO:root:Epoch[255] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.991071
+INFO:root:Epoch[255] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[255] Batch [60]	Speed: 43.58 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[255] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[255] Train-accuracy=1.000000
+INFO:root:Epoch[255] Time cost=31.654
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0256.params"
+INFO:root:Epoch[255] Validation-accuracy=0.562500
+INFO:root:Epoch[256] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[256] Batch [40]	Speed: 43.59 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[256] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[256] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[256] Train-accuracy=0.991071
+INFO:root:Epoch[256] Time cost=33.525
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0257.params"
+INFO:root:Epoch[256] Validation-accuracy=0.575000
+INFO:root:Epoch[257] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[257] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[257] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[257] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[257] Train-accuracy=0.982143
+INFO:root:Epoch[257] Time cost=32.015
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0258.params"
+INFO:root:Epoch[257] Validation-accuracy=0.575000
+INFO:root:Epoch[258] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[258] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[258] Batch [60]	Speed: 43.69 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[258] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[258] Train-accuracy=0.991071
+INFO:root:Epoch[258] Time cost=32.010
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0259.params"
+INFO:root:Epoch[258] Validation-accuracy=0.578125
+INFO:root:Epoch[259] Batch [20]	Speed: 43.59 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[259] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[259] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[259] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[259] Train-accuracy=1.000000
+INFO:root:Epoch[259] Time cost=32.021
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0260.params"
+INFO:root:Epoch[259] Validation-accuracy=0.575000
+INFO:root:Epoch[260] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[260] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[260] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[260] Batch [80]	Speed: 43.61 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[260] Train-accuracy=0.991071
+INFO:root:Epoch[260] Time cost=32.025
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0261.params"
+INFO:root:Epoch[260] Validation-accuracy=0.550000
+INFO:root:Epoch[261] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[261] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[261] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[261] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[261] Train-accuracy=0.991071
+INFO:root:Epoch[261] Time cost=32.022
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0262.params"
+INFO:root:Epoch[261] Validation-accuracy=0.578125
+INFO:root:Epoch[262] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[262] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[262] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[262] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[262] Train-accuracy=0.991071
+INFO:root:Epoch[262] Time cost=32.008
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0263.params"
+INFO:root:Epoch[262] Validation-accuracy=0.550000
+INFO:root:Epoch[263] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[263] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[263] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[263] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[263] Train-accuracy=1.000000
+INFO:root:Epoch[263] Time cost=31.618
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0264.params"
+INFO:root:Epoch[263] Validation-accuracy=0.562500
+INFO:root:Epoch[264] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[264] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[264] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[264] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[264] Train-accuracy=0.991071
+INFO:root:Epoch[264] Time cost=33.497
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0265.params"
+INFO:root:Epoch[264] Validation-accuracy=0.593750
+INFO:root:Epoch[265] Batch [20]	Speed: 43.66 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[265] Batch [40]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[265] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[265] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[265] Train-accuracy=1.000000
+INFO:root:Epoch[265] Time cost=32.006
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0266.params"
+INFO:root:Epoch[265] Validation-accuracy=0.575000
+INFO:root:Epoch[266] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[266] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[266] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[266] Batch [80]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[266] Train-accuracy=0.991071
+INFO:root:Epoch[266] Time cost=32.023
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0267.params"
+INFO:root:Epoch[266] Validation-accuracy=0.562500
+INFO:root:Epoch[267] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[267] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[267] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[267] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[267] Train-accuracy=1.000000
+INFO:root:Epoch[267] Time cost=32.022
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0268.params"
+INFO:root:Epoch[267] Validation-accuracy=0.578125
+INFO:root:Epoch[268] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[268] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[268] Batch [60]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[268] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[268] Train-accuracy=1.000000
+INFO:root:Epoch[268] Time cost=32.017
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0269.params"
+INFO:root:Epoch[268] Validation-accuracy=0.575000
+INFO:root:Epoch[269] Batch [20]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[269] Batch [40]	Speed: 43.68 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[269] Batch [60]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[269] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[269] Train-accuracy=1.000000
+INFO:root:Epoch[269] Time cost=31.998
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0270.params"
+INFO:root:Epoch[269] Validation-accuracy=0.575000
+INFO:root:Epoch[270] Batch [20]	Speed: 43.68 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[270] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[270] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[270] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[270] Train-accuracy=0.991071
+INFO:root:Epoch[270] Time cost=31.992
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0271.params"
+INFO:root:Epoch[270] Validation-accuracy=0.578125
+INFO:root:Epoch[271] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[271] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[271] Batch [60]	Speed: 43.73 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[271] Batch [80]	Speed: 43.67 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[271] Train-accuracy=0.989583
+INFO:root:Epoch[271] Time cost=31.630
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0272.params"
+INFO:root:Epoch[271] Validation-accuracy=0.550000
+INFO:root:Epoch[272] Batch [20]	Speed: 43.58 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[272] Batch [40]	Speed: 43.61 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[272] Batch [60]	Speed: 43.59 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[272] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[272] Train-accuracy=0.991071
+INFO:root:Epoch[272] Time cost=33.547
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0273.params"
+INFO:root:Epoch[272] Validation-accuracy=0.562500
+INFO:root:Epoch[273] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[273] Batch [40]	Speed: 43.60 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[273] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[273] Batch [80]	Speed: 43.65 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[273] Train-accuracy=0.982143
+INFO:root:Epoch[273] Time cost=32.023
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0274.params"
+INFO:root:Epoch[273] Validation-accuracy=0.575000
+INFO:root:Epoch[274] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[274] Batch [40]	Speed: 43.62 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[274] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[274] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[274] Train-accuracy=0.991071
+INFO:root:Epoch[274] Time cost=32.024
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0275.params"
+INFO:root:Epoch[274] Validation-accuracy=0.578125
+INFO:root:Epoch[275] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[275] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[275] Batch [60]	Speed: 43.61 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[275] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[275] Train-accuracy=1.000000
+INFO:root:Epoch[275] Time cost=32.026
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0276.params"
+INFO:root:Epoch[275] Validation-accuracy=0.575000
+INFO:root:Epoch[276] Batch [20]	Speed: 43.62 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[276] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[276] Batch [60]	Speed: 43.62 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[276] Batch [80]	Speed: 43.64 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[276] Train-accuracy=0.991071
+INFO:root:Epoch[276] Time cost=32.018
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0277.params"
+INFO:root:Epoch[276] Validation-accuracy=0.562500
+INFO:root:Epoch[277] Batch [20]	Speed: 43.63 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[277] Batch [40]	Speed: 43.64 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[277] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[277] Batch [80]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[277] Train-accuracy=1.000000
+INFO:root:Epoch[277] Time cost=32.014
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0278.params"
+INFO:root:Epoch[277] Validation-accuracy=0.593750
+INFO:root:Epoch[278] Batch [20]	Speed: 43.64 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[278] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[278] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[278] Batch [80]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[278] Train-accuracy=0.991071
+INFO:root:Epoch[278] Time cost=32.002
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0279.params"
+INFO:root:Epoch[278] Validation-accuracy=0.550000
+INFO:root:Epoch[279] Batch [20]	Speed: 43.77 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[279] Batch [40]	Speed: 43.63 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[279] Batch [60]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[279] Batch [80]	Speed: 43.68 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[279] Train-accuracy=1.000000
+INFO:root:Epoch[279] Time cost=31.605
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0280.params"
+INFO:root:Epoch[279] Validation-accuracy=0.550000
+INFO:root:Epoch[280] Batch [20]	Speed: 43.71 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[280] Batch [40]	Speed: 43.67 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[280] Batch [60]	Speed: 43.76 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[280] Batch [80]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[280] Train-accuracy=1.000000
+INFO:root:Epoch[280] Time cost=33.433
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0281.params"
+INFO:root:Epoch[280] Validation-accuracy=0.593750
+INFO:root:Epoch[281] Batch [20]	Speed: 43.79 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[281] Batch [40]	Speed: 43.81 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[281] Batch [60]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[281] Batch [80]	Speed: 43.76 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[281] Train-accuracy=1.000000
+INFO:root:Epoch[281] Time cost=31.904
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0282.params"
+INFO:root:Epoch[281] Validation-accuracy=0.575000
+INFO:root:Epoch[282] Batch [20]	Speed: 43.79 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[282] Batch [40]	Speed: 43.76 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[282] Batch [60]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[282] Batch [80]	Speed: 43.81 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[282] Train-accuracy=1.000000
+INFO:root:Epoch[282] Time cost=31.907
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0283.params"
+INFO:root:Epoch[282] Validation-accuracy=0.562500
+INFO:root:Epoch[283] Batch [20]	Speed: 43.77 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[283] Batch [40]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[283] Batch [60]	Speed: 43.80 samples/sec	Train-accuracy=0.990625
+INFO:root:Epoch[283] Batch [80]	Speed: 43.77 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[283] Train-accuracy=0.991071
+INFO:root:Epoch[283] Time cost=31.910
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0284.params"
+INFO:root:Epoch[283] Validation-accuracy=0.578125
+INFO:root:Epoch[284] Batch [20]	Speed: 43.75 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[284] Batch [40]	Speed: 43.78 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[284] Batch [60]	Speed: 43.74 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[284] Batch [80]	Speed: 43.77 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[284] Train-accuracy=0.991071
+INFO:root:Epoch[284] Time cost=31.924
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0285.params"
+INFO:root:Epoch[284] Validation-accuracy=0.575000
+INFO:root:Epoch[285] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[285] Batch [40]	Speed: 43.66 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[285] Batch [60]	Speed: 43.70 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[285] Batch [80]	Speed: 43.77 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[285] Train-accuracy=0.991071
+INFO:root:Epoch[285] Time cost=31.968
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0286.params"
+INFO:root:Epoch[285] Validation-accuracy=0.562500
+INFO:root:Epoch[286] Batch [20]	Speed: 43.77 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[286] Batch [40]	Speed: 43.75 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[286] Batch [60]	Speed: 43.65 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[286] Batch [80]	Speed: 43.80 samples/sec	Train-accuracy=0.987500
+INFO:root:Epoch[286] Train-accuracy=0.991071
+INFO:root:Epoch[286] Time cost=31.930
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0287.params"
+INFO:root:Epoch[286] Validation-accuracy=0.578125
+INFO:root:Epoch[287] Batch [20]	Speed: 43.82 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[287] Batch [40]	Speed: 43.77 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[287] Batch [60]	Speed: 43.79 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[287] Batch [80]	Speed: 43.79 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[287] Train-accuracy=1.000000
+INFO:root:Epoch[287] Time cost=31.535
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0288.params"
+INFO:root:Epoch[287] Validation-accuracy=0.562500
+INFO:root:Epoch[288] Batch [20]	Speed: 43.76 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[288] Batch [40]	Speed: 43.81 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[288] Batch [60]	Speed: 43.75 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[288] Batch [80]	Speed: 43.79 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[288] Train-accuracy=0.991071
+INFO:root:Epoch[288] Time cost=33.469
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0289.params"
+INFO:root:Epoch[288] Validation-accuracy=0.575000
+INFO:root:Epoch[289] Batch [20]	Speed: 43.73 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[289] Batch [40]	Speed: 43.79 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[289] Batch [60]	Speed: 43.79 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[289] Batch [80]	Speed: 43.80 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[289] Train-accuracy=0.991071
+INFO:root:Epoch[289] Time cost=31.911
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0290.params"
+INFO:root:Epoch[289] Validation-accuracy=0.575000
+INFO:root:Epoch[290] Batch [20]	Speed: 43.74 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[290] Batch [40]	Speed: 43.73 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[290] Batch [60]	Speed: 43.80 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[290] Batch [80]	Speed: 43.75 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[290] Train-accuracy=1.000000
+INFO:root:Epoch[290] Time cost=31.925
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0291.params"
+INFO:root:Epoch[290] Validation-accuracy=0.578125
+INFO:root:Epoch[291] Batch [20]	Speed: 43.76 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[291] Batch [40]	Speed: 43.77 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[291] Batch [60]	Speed: 43.82 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[291] Batch [80]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[291] Train-accuracy=0.991071
+INFO:root:Epoch[291] Time cost=31.906
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0292.params"
+INFO:root:Epoch[291] Validation-accuracy=0.575000
+INFO:root:Epoch[292] Batch [20]	Speed: 43.69 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[292] Batch [40]	Speed: 43.79 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[292] Batch [60]	Speed: 43.80 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[292] Batch [80]	Speed: 43.76 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[292] Train-accuracy=0.982143
+INFO:root:Epoch[292] Time cost=31.924
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0293.params"
+INFO:root:Epoch[292] Validation-accuracy=0.562500
+INFO:root:Epoch[293] Batch [20]	Speed: 43.79 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[293] Batch [40]	Speed: 43.77 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[293] Batch [60]	Speed: 43.77 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[293] Batch [80]	Speed: 43.75 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[293] Train-accuracy=1.000000
+INFO:root:Epoch[293] Time cost=31.917
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0294.params"
+INFO:root:Epoch[293] Validation-accuracy=0.593750
+INFO:root:Epoch[294] Batch [20]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[294] Batch [40]	Speed: 43.70 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[294] Batch [60]	Speed: 43.75 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[294] Batch [80]	Speed: 43.80 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[294] Train-accuracy=1.000000
+INFO:root:Epoch[294] Time cost=31.925
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0295.params"
+INFO:root:Epoch[294] Validation-accuracy=0.562500
+INFO:root:Epoch[295] Batch [20]	Speed: 43.65 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[295] Batch [40]	Speed: 43.76 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[295] Batch [60]	Speed: 43.76 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[295] Batch [80]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[295] Train-accuracy=1.000000
+INFO:root:Epoch[295] Time cost=31.575
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0296.params"
+INFO:root:Epoch[295] Validation-accuracy=0.562500
+INFO:root:Epoch[296] Batch [20]	Speed: 43.77 samples/sec	Train-accuracy=0.994048
+INFO:root:Epoch[296] Batch [40]	Speed: 43.79 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[296] Batch [60]	Speed: 43.79 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[296] Batch [80]	Speed: 43.73 samples/sec	Train-accuracy=0.993750
+INFO:root:Epoch[296] Train-accuracy=1.000000
+INFO:root:Epoch[296] Time cost=33.416
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0297.params"
+INFO:root:Epoch[296] Validation-accuracy=0.593750
+INFO:root:Epoch[297] Batch [20]	Speed: 43.77 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[297] Batch [40]	Speed: 43.74 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[297] Batch [60]	Speed: 43.71 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[297] Batch [80]	Speed: 43.77 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[297] Train-accuracy=1.000000
+INFO:root:Epoch[297] Time cost=31.930
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0298.params"
+INFO:root:Epoch[297] Validation-accuracy=0.575000
+INFO:root:Epoch[298] Batch [20]	Speed: 43.67 samples/sec	Train-accuracy=0.997024
+INFO:root:Epoch[298] Batch [40]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[298] Batch [60]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[298] Batch [80]	Speed: 43.81 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[298] Train-accuracy=1.000000
+INFO:root:Epoch[298] Time cost=31.923
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0299.params"
+INFO:root:Epoch[298] Validation-accuracy=0.562500
+INFO:root:Epoch[299] Batch [20]	Speed: 43.78 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[299] Batch [40]	Speed: 43.76 samples/sec	Train-accuracy=1.000000
+INFO:root:Epoch[299] Batch [60]	Speed: 43.79 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[299] Batch [80]	Speed: 43.80 samples/sec	Train-accuracy=0.996875
+INFO:root:Epoch[299] Train-accuracy=1.000000
+INFO:root:Epoch[299] Time cost=31.907
+INFO:root:Saved checkpoint to "./models/resnet-50-train-seg-224-0300.params"
+INFO:root:Epoch[299] Validation-accuracy=0.578125

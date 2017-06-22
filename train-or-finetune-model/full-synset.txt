@@ -1,0 +1,3 @@
+0 type1
+1 type2
+2 type3
