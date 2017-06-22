@@ -1,7 +1,10 @@
 # cervical-cancer-screening
 Solution for Intel &amp; MobileODT Cervical Cancer Screening
 
-## Data:
+## 0. Data:
+
+* Training set has 1700+ images.
+* Training + Additional set have 8000+ images.
 
 blank files (0 KB) :
 
@@ -19,7 +22,7 @@ Non-cervix images:
 5. `additional/Type_2/1813.jpg`
 6. `additional/Type_2/3086.jpg`
 
-## Train from scratch
+## 1. Train from scratch
 
 First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNet-152`, `inception-ResNet-v2`, and `ResNeXt` models from scratch based on training and additional data.
 *  `MLP` and `LeNet` doesn't converge in 30 even more epochs, logging as the accuracy of validation and training set is between 17%~30%;
@@ -32,11 +35,28 @@ What a pity! I don't try to make augmentation based on original training and add
 
 Note: I found that the index order of GPU in `MXNet` (when declaring `mx.gpu(i)`) is opposite to `nvidia-smi` printed order.
 
-## Fine-tune from pre-trained model
+## 2. Fine-tune from pre-trained model
 
 Although results of training `inception-ResNet-v2` and `ResNet` from scratch are good, but I found the results from fine-tuning pre-trained models (based on ImageNet data set) are better.
 
-I fine-tuned `ResNet-18`, `ResNet-34`, `ResNet-50`, `ResNet-101`, `ResNet-152`, `ResNet-200`, `ResNeXt-50`, `ResNeXt-101` models.
+### 2.1 Easily Over-fitting and Great ResNet Model
 
-Besides, I only made parameter optimization about learning rate, which I find **smaller the learning rate is, more easily over-fitting the model is.**
+* I fine-tuned `ResNet-18`, `ResNet-34`, `ResNet-50`, `ResNet-101`, `ResNet-152`, `ResNet-200`, `ResNeXt-50`, `ResNeXt-101` models.
+* It's very easily over-fitting to fine-tuning on pre-trained model. After three or four epoch, model have apparently over-fitting evidence.
+
+### 2.2 Parameter Optimization
+
+Besides, I only made parameter optimization about learning rate, which I find **smaller the learning rate is, more easily over-fitting the model is.** Of course, you can make some regularization such as `early stopping` to delay this procedure.
+
+### 2.3 Network Depth
+
+Generally speaking, I found deeper the network is, better the result I get, but it's not always true. For instance. Below networks are great:
+
+ |        network      |best val-acc epoch|submission score (log-loss) | val-acc   |train-acc |
+ |---------------------|------------------|--------------------------  |---------  |--------- |
+ |ResNeXt-50-lr-0.01   |         3        | 0.74195                    |  0.695312 | 0.875    |
+ |ResNeXt-101-lr-0.01  |         3        | 0.77904                    |  0.630208 | 0.864583 |
+ |ResNet-101-lr-0.01   |         2        | 0.77222                    |  0.605769 | 0.645833 |
+ |ResNet-152-lr-0.01   |         3        | 0.74618                    |  0.673077 | 0.822917 |
+ |ResNet-200-lr-0.01   |         3        | 0.76409                    |  0.666667 | 0.84375  |
 
