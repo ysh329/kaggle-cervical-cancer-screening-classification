@@ -1,5 +1,13 @@
 # cervical-cancer-screening
-Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screening. Below is repo. structure:
+
+Top 23% (191st of 848) solution for [Kaggle Intel &amp; MobileODT Cervical Cancer Screening](https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening).
+
+## Introduction
+
+In this competition, [Intel](https://www.kaggle.com/intel) is partnering with [MobileODT](http://www.mobileodt.com/) to challenge Kagglers to develop an algorithm which accurately identifies a woman’s cervix type based on images. Doing so will prevent ineffectual treatments and allow healthcare providers to give proper referral for cases that require more advanced treatment.
+
+## Repo. Structure
+
 ```
 ├── `code` contains pre-processing step (image crop), boosting Jupyter notebook
 ├── `intel` contains remote host environments intel provided (useless for me)
@@ -36,8 +44,9 @@ Top 23% (191st of 848) solution for Intel &amp; MobileODT Cervical Cancer Screen
 
 ## 0. Data
 
-* Training set has 1700+ images.
-* Training + Additional set have 8000+ images.
+* 3-class classification
+* Training set has 1700+ images( type1: 250, type2: 781, type3: 450 ).
+* Training + Additional set have 8000+ images ( all type1: 1440,  all type2: 4346, all type3: 2426 ) .
 
 blank files (0 KB) :
 
