@@ -11,7 +11,7 @@ In this competition, [Intel](https://www.kaggle.com/intel) is partnering with [M
 1. [[pre-processing]](./code/cervix-part-crop-GMM-Method-on-train-additional-train-and-test-set.ipnb) Due to big image (`4000*4000`, etc), I resize and crop the original images to fixed size (`224*224`).
 2. [Generate MXNet format binary file of images] Prepare `.lst` and `.rec` files referring [Prepare Datasets | MXNet](https://github.com/dmlc/mxnet/tree/master/example/image-classification#prepare-datasets).
 3. [[Train models from scratch]](./train-or-finetune-model/models/) use `run_train_scripts.sh` and `train_ccs-train.py` to train a network from scratch.
-4. [[fine-tune models]](./train-or-finetune-model/finetune-models/) use `run_finetune_script.sh`, ``run_finetune.py` and `run_finetune_data-aug.py` to fine-tune pre-trained models.
+4. [[fine-tune models]](./train-or-finetune-model/finetune-models/) use `run_finetune_script.sh`, `run_finetune.py` and `run_finetune_data-aug.py` to fine-tune pre-trained models.
 5. [[prepare submission]](./train-or-finetune-model/) use `get_result_for_one_network.sh` and `run_inference.py` scripts to prepare submission based on test set.
 6. [[Boosting multi-sub-models and prepare submission]](./code/train-boost-model-based-on-multi-features.ipynb) train a boosting model based on multi-sub-models. Of course, you should select some sub-models from last step and put preparing-boosting sub-models in `./models` directory.
 
