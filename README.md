@@ -6,7 +6,7 @@ Top 23% (191st of 848) solution for [Kaggle Intel &amp; MobileODT Cervical Cance
 
 In this competition, [Intel](https://www.kaggle.com/intel) is partnering with [MobileODT](http://www.mobileodt.com/) to challenge Kagglers to develop an algorithm which accurately identifies a woman’s cervix type based on images. Doing so will prevent ineffectual treatments and allow healthcare providers to give proper referral for cases that require more advanced treatment.
 
-## Basic Idea and Steps by Steps
+## Basic Idea with Step by Step Implementation
 
 1. [[pre-processing]](./code/cervix-part-crop-GMM-Method-on-train-additional-train-and-test-set.ipnb) Due to big image (`4000*4000`, etc), I resize and crop the original images to fixed size (`224*224`).
 2. [Generate MXNet format binary file of images] Prepare `.lst` and `.rec` files referring [Prepare Datasets | MXNet](https://github.com/dmlc/mxnet/tree/master/example/image-classification#prepare-datasets).
