@@ -83,7 +83,7 @@ First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNe
 
 According to some papers, resolution of image is also significant for performance. Due to limited GPU RAM, three GPUs (0  GeForce GTX TIT 6082MiB, 1  Tesla K20c 4742MiB, 2  TITAN X (Pascal) 12189MiB) , I set batch size (not batch number) between 10 and 30 (10+ images per gpu) and resize original image to `224*224`.
 
-However, the best submission is not those models, which have highest val-acc (such as 70%), but those models whose train-acc and val-acc are similar and just reach a not bad val-acc (such as 60%).
+However, the best submission is not those models, which have highest val-acc (such as 70% while not over-fitting), but those models whose train-acc and val-acc are similar and just reach a not bad val-acc (such as 60%).
 
 What a pity! I don't try to make augmentation based on original training and additional images. I think it must make sense.
 
@@ -130,7 +130,7 @@ Besides, I only made parameter optimization about learning rate, which I find **
 
 ### 2.3 Network Depth
 
-Generally speaking, I found deeper the network is, better the result I get, but it's not always true. For instance. Below networks are great:
+Generally speaking, I found deeper the network is, better the result I get, but it's not always true, such as below ones (of course, good networks after the final fine-tune):
 
  |        model        |best val-acc epoch|submission score (log-loss) | val-acc   |train-acc |
  |---------------------| ---------------- | -------------------------  |---------  |--------- |
