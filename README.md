@@ -62,11 +62,39 @@ First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNe
 *  `ResNeXt`, `AlexNet`, `GoogLeNet` in 30 even more epochs, logging as the accuracy of validation and training set is between 30%~50%;
 *  I found that `inception-ResNet-v2`, `ResNet` performance are best, in 300 epochs val-acc can reach 60% above even 70%.
 
+According to some papers, resolution of image is also significant for performance. Due to limited GPU RAM, three GPUs (0  GeForce GTX TIT 6082MiB, 1  Tesla K20c 4742MiB, 2  TITAN X (Pascal) 12189MiB) , I set batch size (not batch number) between 10 and 30 and resize original image to `224*224`.
+
 However, the best submission is not those models, which have highest val-acc (such as 70%), but those models whose train-acc and val-acc are similar and just reach a not bad val-acc (such as 60%).
 
 What a pity! I don't try to make augmentation based on original training and additional images. I think it must make sense.
 
-Note: I found that the index order of GPU in `MXNet` (when declaring `mx.gpu(i)`) is opposite to `nvidia-smi` printed order.
+Note: I found that the index order of GPU in `MXNet` (when declaring `mx.gpu(i)`) is opposite to `nvidia-smi` printed order( below ). In MXNet, the 0 is not GeForce GTX TITAN but TITAN X (Pascal).
+
+```
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 375.39                 Driver Version: 375.39                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX TIT...  Off  | 0000:02:00.0     Off |                  N/A |
+| 26%   36C    P8    14W / 250W |      2MiB /  6082MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20c          Off  | 0000:03:00.0     Off |                    0 |
+| 30%   36C    P8    26W / 225W |      2MiB /  4742MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  TITAN X (Pascal)    Off  | 0000:82:00.0     Off |                  N/A |
+| 44%   73C    P2   156W / 250W |   8713MiB / 12189MiB |     99%      Default |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    2     31661    C   python                                        8707MiB |
++-----------------------------------------------------------------------------+
+```
+
 
 ## 2. Fine-tune from pre-trained model
 
