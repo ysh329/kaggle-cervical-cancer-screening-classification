@@ -124,7 +124,7 @@ Although results of training `inception-ResNet-v2` and `ResNet` from scratch are
 * I fine-tuned `ResNet-18`, `ResNet-34`, `ResNet-50`, `ResNet-101`, `ResNet-152`, `ResNet-200`, `ResNeXt-50`, `ResNeXt-101` models.
 * It's very easily over-fitting to fine-tuning on pre-trained model. After three or four epoch, model have apparently over-fitting evidence.
 
-### 2.2 Parameter Optimization
+### 2.2 Hyper-Parameter Optimization
 
 Besides, I only made parameter optimization about learning rate, which I find **smaller the learning rate is, more easily over-fitting the model is.** Of course, you can make some regularization such as `early stopping` to delay this procedure.
 
