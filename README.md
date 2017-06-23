@@ -81,7 +81,7 @@ First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNe
 *  `ResNeXt`, `AlexNet`, `GoogLeNet` in 30 even more epochs, logging as the accuracy of validation and training set is between 30%~50%;
 *  I found that `inception-ResNet-v2`, `ResNet` performance are best, in 300 epochs val-acc can reach 60% above even 70%.
 
-According to some papers, resolution of image is also significant for performance. Due to limited GPU RAM, three GPUs (0  GeForce GTX TIT 6082MiB, 1  Tesla K20c 4742MiB, 2  TITAN X (Pascal) 12189MiB) , I set batch size (not batch number) between 10 and 30 and resize original image to `224*224`.
+According to some papers, resolution of image is also significant for performance. Due to limited GPU RAM, three GPUs (0  GeForce GTX TIT 6082MiB, 1  Tesla K20c 4742MiB, 2  TITAN X (Pascal) 12189MiB) , I set batch size (not batch number) between 10 and 30 (10+ images per gpu) and resize original image to `224*224`.
 
 However, the best submission is not those models, which have highest val-acc (such as 70%), but those models whose train-acc and val-acc are similar and just reach a not bad val-acc (such as 60%).
 
