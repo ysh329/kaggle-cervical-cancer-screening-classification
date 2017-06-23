@@ -6,7 +6,7 @@ Top 23% (191st of 848) solution for [Kaggle Intel &amp; MobileODT Cervical Cance
 
 In this competition, [Intel](https://www.kaggle.com/intel) is partnering with [MobileODT](http://www.mobileodt.com/) to challenge Kagglers to develop an algorithm which accurately identifies a woman’s cervix type based on images. Doing so will prevent ineffectual treatments and allow healthcare providers to give proper referral for cases that require more advanced treatment.
 
-## Basic Idea with Step by Step Implementation
+## Basic Idea with Step-by-Step Implementation
 
 1. [[pre-processing]](./code/cervix-part-crop-GMM-Method-on-train-additional-train-and-test-set.ipnb) Due to big image (`4000*4000`, etc), I resize the original images to fixed size (`224*224`) and crop out the no-relevant part.
 2. [Generate MXNet format binary file of images] Prepare `.lst` and `.rec` files referring [Prepare Datasets | MXNet](https://github.com/dmlc/mxnet/tree/master/example/image-classification#prepare-datasets).
@@ -55,7 +55,7 @@ In this competition, [Intel](https://www.kaggle.com/intel) is partnering with [M
 ## 0. Data
 
 * 3-class classification
-* Training set has 1700+ images( type1: 250, type2: 781, type3: 450 ).
+* Training set has 1400+ images( type1: 250, type2: 781, type3: 450 ).
 * Training + Additional set have 8000+ images ( all type1: 1440,  all type2: 4346, all type3: 2426 ) .
 
 blank files (0 KB) :
@@ -74,7 +74,7 @@ Non-cervix images:
 5. `additional/Type_2/1813.jpg`
 6. `additional/Type_2/3086.jpg`
 
-## 1. Train from scratch
+## 1. Train from Scratch
 
 First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNet-152`, `inception-ResNet-v2`, and `ResNeXt` models from scratch based on training and additional data.
 *  `MLP` and `LeNet` doesn't converge in 30 even more epochs, logging as the accuracy of validation and training set is between 17%~30%;
@@ -115,11 +115,11 @@ Note: I found that the index order of GPU in `MXNet` (when declaring `mx.gpu(i)`
 ```
 
 
-## 2. Fine-tune from pre-trained model
+## 2. Fine-tune from Pre-Trained Model
 
 Although results of training `inception-ResNet-v2` and `ResNet` from scratch are good, but I found the results from fine-tuning pre-trained models (based on ImageNet data set) are better.
 
-### 2.1 Easily Over-fitting and Great ResNet Model
+### 2.1 Easily Over-Fitting and Great ResNet Model
 
 * I fine-tuned `ResNet-18`, `ResNet-34`, `ResNet-50`, `ResNet-101`, `ResNet-152`, `ResNet-200`, `ResNeXt-50`, `ResNeXt-101` models.
 * It's very easily over-fitting to fine-tuning on pre-trained model. After three or four epoch, model have apparently over-fitting evidence.
@@ -142,7 +142,7 @@ Generally speaking, I found deeper the network is, better the result I get, but 
 
 so far, I make some parameter modified about learning rate and adding momentum. However, after reducing the learning rate to 0.001 and adding momentum as 0.9, the validation accuracy and submission score (log-loss) have no improvement but submission score dropped.
 
-### 2.4 Pre-trained model
+### 2.4 Pre-trained Model
 
 All pre-trained models're from [data.dmlc.ml/models](http://data.dmlc.ml/models/).
 
@@ -151,8 +151,6 @@ Different pre-trained data sets make fine-tuned model different performance.
 I tried pre-trained models based on two kind images: the one is `ImageNet-11k`, the other is `ImageNet-11k-place365-ch`.
 
 I don't know what's the `ImageNet-11k-place365-ch` image, it seems place or street-view images. The performance of this kind pre-trained model is not good, same as train from scratch.
-
-
 
 ## 3. Boosting
 
