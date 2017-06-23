@@ -79,7 +79,7 @@ Non-cervix images:
 First, I tried train `MLP`, `LeNet`, `GoogLeNet`, `AlexNet`, `ResNet-50`, `ResNet-152`, `inception-ResNet-v2`, and `ResNeXt` models from scratch based on training and additional data.
 *  `MLP` and `LeNet` doesn't converge in 30 even more epochs, logging as the accuracy of validation and training set is between 17%~30%;
 *  `ResNeXt`, `AlexNet`, `GoogLeNet` in 30 even more epochs, logging as the accuracy of validation and training set is between 30%~50%;
-*  I found that `inception-ResNet-v2`, `ResNet` performance are best, in 300 epochs val-acc can reach 60% above even 70%.
+*  I found that `inception-ResNet-v2`, `ResNet` performance are best, in 300 epochs val-acc can reach 50% above even 60%.
 
 According to some papers, resolution of image is also significant for performance. Due to limited GPU RAM, three GPUs (0  GeForce GTX TIT 6082MiB, 1  Tesla K20c 4742MiB, 2  TITAN X (Pascal) 12189MiB) , I set batch size (not batch number) between 10 and 30 (10+ images per gpu) and resize original image to `224*224`.
 
@@ -142,7 +142,7 @@ Generally speaking, I found deeper the network is, better the result I get, but 
 
 so far, I make some parameter modified about learning rate and adding momentum. However, after reducing the learning rate to 0.001 and adding momentum as 0.9, the validation accuracy and submission score (log-loss) have no improvement but submission score dropped.
 
-### 2.4 Pre-trained Model
+### 2.4 Pre-Trained Model
 
 All pre-trained models're from [data.dmlc.ml/models](http://data.dmlc.ml/models/).
 
