@@ -65,7 +65,7 @@ In this competition, [Intel](https://www.kaggle.com/intel) is partnering with [M
 * Training set has 1400+ images( type1: 250, type2: 781, type3: 450 ).
 * Training + Additional set have 8000+ images ( all type1: 1440,  all type2: 4346, all type3: 2426 ) .
 
-blank files (0 KB) :
+Blank files (0 KB) :
 
 1. `additional/Type_1/5893.jpg`
 2. `additional/Type_2/5892.jpg`
