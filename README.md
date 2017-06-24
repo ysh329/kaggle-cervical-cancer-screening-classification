@@ -1,6 +1,13 @@
 # cervical-cancer-screening
 
-Top 23% (191st of 848) solution for [Kaggle Intel &amp; MobileODT Cervical Cancer Screening](https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening).
+Top 22% (183st of 848) solution for [Kaggle Intel &amp; MobileODT Cervical Cancer Screening](https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening).
+
+Other solutions:  
+
+1. 9th solution: https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening/discussion/35104  
+2. 20th solution: https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening/discussion/35168
+3. 26th solution: https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening/discussion/35111  
+3. 94th solution: https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening/discussion/35176
 
 ## Introduction
 
