@@ -1,6 +1,6 @@
 # kaggle-cervical-cancer-screening-classification
 
-Top 22% (183rd of 848) solution for [Kaggle Intel &amp; MobileODT Cervical Cancer Screening](https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening).
+Top 18% (153rd of 848) solution for [Kaggle Intel &amp; MobileODT Cervical Cancer Screening](https://www.kaggle.com/c/intel-mobileodt-cervical-cancer-screening).
 
 Other solutions:  
 
